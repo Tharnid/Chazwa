@@ -11,15 +11,16 @@ namespace TCM.BL
         public static int InstanceCount { get; set; }
 
         private string _lastName;
-        
         public string LastName
         {
             get
             {
+                // Any code here
                 return _lastName;
             }
             set
             {
+                // Any code here
                 _lastName = value;
             }
         }
@@ -30,29 +31,21 @@ namespace TCM.BL
 
         public int CustomerId { get; private set; }
 
-        // public int MyProperty { get; private set; } propg + TAB = property with a privat setter
-
-
         public string FullName
         {
             get
             {
-                string fullName = LastName;  // internal means code is internal to the component in which it is defined
+                string fullName = LastName;
                 if (!string.IsNullOrWhiteSpace(FirstName))
                 {
                     if (!string.IsNullOrWhiteSpace(fullName))
                     {
-                        FullName += ", ";
+                        fullName += ", ";
                     }
-                    FullName += FirstName;
+                    fullName += FirstName;
                 }
-                return FullName;
-            }
-            set
-            {
-                // nothing to see here
+                return fullName;
             }
         }
-        
     }
 }
