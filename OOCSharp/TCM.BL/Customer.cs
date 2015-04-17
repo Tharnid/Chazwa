@@ -8,7 +8,7 @@ namespace TCM.BL
 {
     public class Customer
     {
-        public static int InstanceCount { get; set; }
+        public static int InstanceCount { get; set; }  // static belongs to type instead of any one instance
 
         private string _lastName;
         public string LastName

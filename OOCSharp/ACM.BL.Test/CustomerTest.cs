@@ -92,15 +92,15 @@ namespace TCM.BL.Test
         {
             //-- Arrange
             var c1 = new Customer();
-            c1.FirstName = "Bilbo";
+            c1.FirstName = "Han";
             Customer.InstanceCount += 1;
 
             var c2 = new Customer();
-            c2.FirstName = "Frodo";
+            c2.FirstName = "Chewie";
             Customer.InstanceCount += 1;
 
             var c3 = new Customer();
-            c3.FirstName = "Rosie";
+            c3.FirstName = "Lando";
             Customer.InstanceCount += 1;
 
             //-- Act
