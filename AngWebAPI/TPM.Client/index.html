@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Tharnid Product Management</title>
+
+    <!--Stylesheets-->
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+</head>
+<body ng-app="productManagement">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div class="navbar-brand">Tharnid Project Management</div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div ng-include="'app/products/productListView.html'">
+        </div>
+    </div>
+
+    <!--Library Scripts-->
+
+    <script src="Scripts/angular.js"></script>
+
+    <!--Application Scripts-->
+
+    <script src="app/app.js"></script>
+
+    <!--Services-->
+
+    <!--Product Controllers-->
+
+    <script src="app/products/productListCtrl.js"></script>
+
+</body>
+</html>
