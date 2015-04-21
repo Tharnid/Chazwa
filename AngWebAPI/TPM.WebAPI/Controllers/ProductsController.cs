@@ -4,10 +4,12 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using TPM.WebAPI.Models;
 
 namespace TPM.WebAPI.Controllers
 {
+        [EnableCorsAttribute("http://localhost:51088", "*", "*")]
     public class ProductsController : ApiController
     {
         // GET: api/Products
