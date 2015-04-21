@@ -61,3 +61,6 @@ E:\GH\Chazwa\AngWebAPI\TPM.WebAPI\bin\System.Web.Http.Owin.xml
 E:\GH\Chazwa\AngWebAPI\TPM.WebAPI\obj\Debug\TPM.WebAPI.csprojResolveAssemblyReference.cache
 E:\GH\Chazwa\AngWebAPI\TPM.WebAPI\obj\Debug\TPM.WebAPI.dll
 E:\GH\Chazwa\AngWebAPI\TPM.WebAPI\obj\Debug\TPM.WebAPI.pdb
+E:\GH\Chazwa\AngWebAPI\TPM.WebAPI\bin\System.Web.Cors.dll
+E:\GH\Chazwa\AngWebAPI\TPM.WebAPI\bin\System.Web.Http.Cors.dll
+E:\GH\Chazwa\AngWebAPI\TPM.WebAPI\bin\System.Web.Http.Cors.xml
