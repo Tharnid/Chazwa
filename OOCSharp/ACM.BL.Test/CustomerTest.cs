@@ -108,5 +108,38 @@ namespace TCM.BL.Test
             //-- Assert
             Assert.AreEqual(3, Customer.InstanceCount);
         }
+
+        [TestMethod]
+        public void ValidateValid()
+        {
+            // arrange
+            var customer = new Customer();
+            customer.LastName = "Solo";
+            customer.EmailAddress = "hsolo@solo.com";
+
+            var expected = true;
+
+            // act
+            var actual = customer.Validate();
+            
+            // assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void ValidateMissingLastName()
+        {
+            // arrange
+            var customer = new Customer();
+            customer.EmailAddress = "hsolo@solo.com";
+
+            var expected = false;
+
+            // act
+            var actual = customer.Validate();
+
+            // assert
+            Assert.AreEqual(expected, actual);
+        }
     }
 }

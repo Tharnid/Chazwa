@@ -8,6 +8,16 @@ namespace TCM.BL
 {
     public class Customer
     {
+        public Customer()
+        {
+
+        }
+
+        public Customer(int customerId)  // allows this to be set outside class
+        {
+            this.CustomerId = customerId;
+        }
+
         public static int InstanceCount { get; set; }  // static belongs to type instead of any one instance
 
         private string _lastName;
@@ -46,6 +56,46 @@ namespace TCM.BL
                 }
                 return fullName;
             }
+        }
+
+        // Method Signature
+        // Name + type of it's parameters
+
+        // Method Overloading
+        // Same name different parameters
+
+        // Interface (of a class)
+        // Contract
+
+        // Constructor (ctor + Tab + Tab)
+        // code that is run each time an instance of a class is created
+        // defined at the top of the class above props and methods
+
+        public Customer Retrieve(int customerId)
+        {
+            // code here
+            return new Customer();
+        }
+
+        public List<Customer> Retrieve()
+        {
+            // code that retrieves as customers
+            return new List<Customer>();
+        }
+
+        public bool Save()
+        {
+            // code goes here
+            return true;
+        }
+
+        public bool Validate()
+        {
+            var isValid = true;
+            if (string.IsNullOrWhiteSpace(LastName)) isValid = false;
+            if (string.IsNullOrWhiteSpace(EmailAddress)) isValid = false;
+
+            return isValid;
         }
     }
 }

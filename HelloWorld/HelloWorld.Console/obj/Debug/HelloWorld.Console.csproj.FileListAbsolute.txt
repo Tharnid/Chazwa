@@ -1,0 +1,1 @@
+E:\GH\Chazwa\HelloWorld\HelloWorld.Console\bin\Debug\HelloWorld.Console.exe.config
