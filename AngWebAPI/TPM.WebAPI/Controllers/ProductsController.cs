@@ -51,3 +51,15 @@ namespace TPM.WebAPI.Controllers
         }
     }
 }
+
+// OData Query Options
+
+// $top = returns top N results = $top:3
+
+// $skip = skips N results = $skip:1
+
+// $orderby = sorts the results = $orderby:"ProdNameDesc"
+
+// $filter = filters results based on an expression = $filter:"Price gt 5"
+
+// $select = Selects the properties to include in the response = $select:"ProductName, ProductCode" 

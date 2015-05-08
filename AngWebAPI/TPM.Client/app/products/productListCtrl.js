@@ -25,22 +25,39 @@
                      ["productResource",
                          productListCtrl]);
 
+    // OData Queries #1
     //function productListCtrl(productResource) {
     //    var vm = this;
 
-    //    productResource.query(function (data) {
+    //    vm.searchCriteria = "GDN";
+
+    //    productResource.query({$skip:1, $top:3}, function (data) {
     //        vm.products = data;
     //    });
     //}
 
+    // OData Queries #2 filter
     function productListCtrl(productResource) {
         var vm = this;
 
-        vm.searchCriteria = "TBX";
+        vm.searchCriteria = "GDN";
 
-        productResource.query({search: vm.searchCriteria}, function (data) {
+        productResource.query({
+            $filter: "contains(ProductCode, 'GDN') and Price ge 5 and Price le 20",
+            $orderby: "Price desc"}, // older versions substringOf
+            function (data) {
             vm.products = data;
         });
     }
+
+    //function productListCtrl(productResource) {
+    //    var vm = this;
+
+    //    vm.searchCriteria = "TBX";
+
+    //    productResource.query({search: vm.searchCriteria}, function (data) {
+    //        vm.products = data;
+    //    });
+    //}
 
 }());
