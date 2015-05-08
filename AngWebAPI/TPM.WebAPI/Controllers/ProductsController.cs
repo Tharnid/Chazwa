@@ -4,7 +4,8 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using System.Web.Http.Cors;
+using System.Web.Http.Cors; // added CORS
+using System.Web.OData; // added OData
 using TPM.WebAPI.Models;
 
 namespace TPM.WebAPI.Controllers
@@ -12,13 +13,13 @@ namespace TPM.WebAPI.Controllers
         [EnableCorsAttribute("http://localhost:51088", "*", "*")]
     public class ProductsController : ApiController
     {
-        // GET: api/Products
-        public IEnumerable<Product> Get()
+        // Enable IQueryable Step 1 to adding OData queries
+        [EnableQuery()]
+        public IQueryable<Product> Get()
         {
-            //return new string[] { "value1", "value2" };
             var prodRepo = new ProductRepository();
 
-            return prodRepo.Retrieve();
+            return prodRepo.Retrieve().AsQueryable();
         }
 
         public IEnumerable<Product> Get(string search)
