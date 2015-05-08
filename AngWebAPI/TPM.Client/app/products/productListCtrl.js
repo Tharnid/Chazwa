@@ -36,7 +36,7 @@
     function productListCtrl(productResource) {
         var vm = this;
 
-        vm.searchCriteria = "GDN";
+        vm.searchCriteria = "TBX";
 
         productResource.query({search: vm.searchCriteria}, function (data) {
             vm.products = data;
