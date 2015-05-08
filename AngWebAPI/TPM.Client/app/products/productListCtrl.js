@@ -60,4 +60,26 @@
     //    });
     //}
 
+    // Alternative code using variables instead of hard-coded values
+    //vm.searchCriteria = "GDN";
+    //vm.sortProperty = "Price";
+    //vm.sortDirection = "desc";
+
+    //productResource.query({
+    //    $filter: "contains(ProductCode, '" + vm.searchCriteria + "')" +
+    //        " or contains(ProductName, '" + vm.searchCriteria + "')",
+    //    $orderby: vm.sortProperty + " " + vm.sortDirection
+    //}, function (data) {
+    //    vm.products = data;
+    //})
+
+    // key operators
+    // eq ne gt ge lt le and or not
+
+    // $filter options
+    // startswith endswith contains tolower toupper
+
+    // Check out the rest of the examples here:
+
+    // http://www.odata.org/
 }());
