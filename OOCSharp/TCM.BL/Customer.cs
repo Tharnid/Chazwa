@@ -39,7 +39,7 @@ namespace TCM.BL
 
         public string EmailAddress { get; set; }
 
-        public int CustomerId { get; private set; }
+        public int CustomerId { get; set; }
 
         public string FullName
         {
@@ -99,3 +99,10 @@ namespace TCM.BL
         }
     }
 }
+
+// Decoupling = Degree to which classes are dependent on each other
+
+// Cohesion = Degree to which members of the class relate for the purpose of the class
+
+// Separation of concerns = the idea of decomposing an application into parts with minimal overlap
+// each part is reponsible for a separate concern
