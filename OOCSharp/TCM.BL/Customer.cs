@@ -9,14 +9,23 @@ namespace TCM.BL
     public class Customer
     {
         public Customer()
+            // Constructor Chaining
+            : this(0)
         {
-
+            
         }
 
         public Customer(int customerId)  // allows this to be set outside class
         {
             this.CustomerId = customerId;
+            AddressList = new List<Address>();
         }
+
+        // a list does not have a default value
+        public List<Address> AddressList { get; set; }
+
+        //public Address WorkAddress { get; set; }
+        //public Address HomeAddress { get; set; }
 
         public static int InstanceCount { get; set; }  // static belongs to type instead of any one instance
 

@@ -34,7 +34,7 @@ namespace TCM.BL
             return new List<Customer>();
         }
 
-        public bool Save()
+        public bool Save(Customer customer)
         {
             // Code that saves the defined customer
             return true;
