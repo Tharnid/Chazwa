@@ -19,8 +19,12 @@ namespace TCM.BL
         }
 
         // properties
+        public int CustomerId { get; set; }
+        public int ShippingAddressId { get; set; }
+
         public DateTimeOffset? OrderDate { get; set; }  // can hold value or null
         public int OrderId { get; private set; }
+        public List<OrderItem> orderItems { get; set; }
 
         public Order Retrieve(int orderId)
         {
