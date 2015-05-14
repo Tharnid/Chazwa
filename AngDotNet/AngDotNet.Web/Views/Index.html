@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <!--styles-->
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+
+    <!--scripts-->
+    <script src="../Scripts/jquery-2.1.3.js"></script>
+    <script src="../Scripts/bootstrap.js"></script>
+    <script src="../Scripts/angular.js"></script>
+
+    <!--App Files-->
+
+    <!--Application-->
+    <script src="../AngularScript/Application/Application.js"></script>
+
+    <!--Controllers-->
+    <script src="../AngularScript/Controllers/myController.js"></script>
+
+    <!--Directives-->
+    <script src="../AngularScript/Directives/myDirectives.js"></script>
+
+</head>
+<body>
+    <div class="container table table-striped table-condensed">
+
+        <div class="row success">
+            <div class="col-lg-3">
+                <b>Company</b>
+            </div>
+            <div class="col-lg-3">
+                <b>Representative</b>
+            </div>
+            <div class="col-lg-3">
+                <b>Address</b>
+            </div>
+        </div>
+
+        <div ng-repeat="customers in AllCustomer|filter:search">
+            
+            <div class="col-lg-3">
+                <a href="#" ng-click="GetCustomersByCustomerID(customers.CustomerID)" data-toggle="modal" data-target="#customerByIDModal" style="margin-left:0px">{{customers.CompanyName}}</a>
+            </div>
+
+            <div class="col-lg-3">
+                <b>{{customers.ContactName}}</b><br />
+                {{customers.ContactTitle}}
+            </div>
+            <div class="col-lg-5">
+                {{customers.Address}}<br />
+                {{customers.City}}, {{customers.Country}}
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
