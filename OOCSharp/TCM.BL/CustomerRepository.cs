@@ -8,10 +8,23 @@ namespace TCM.BL
 {
     public class CustomerRepository
     {
+        private AddressRepository addressRepository { get; set; }
+
+        public CustomerRepository()
+        {
+            addressRepository = new AddressRepository();
+        }
+
         public Customer Retrieve(int customerId)
         {
-            // get one customer
             Customer customer = new Customer(customerId);
+            // Address List
+            // customer.AddressList = addressRepository.RetrieveByCustomerId(customerId).ToList();
+
+            // Collaborative Relationship
+            customer.AddressList = addressRepository.RetrieveByCustomerId(customerId).ToList();
+
+            // This will retrieve the customer and it's address(es)
 
             // hard coded value
             if (customerId == 1)
