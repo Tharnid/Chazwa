@@ -27,7 +27,7 @@ namespace TPM.WebAPI
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
-                routeTemplate: "api/{controller}/{search}",
+                routeTemplate: "api/{controller}/{id}",
                 defaults: new { search = RouteParameter.Optional }
             );
         }

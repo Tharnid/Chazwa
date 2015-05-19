@@ -22,17 +22,29 @@ namespace TPM.WebAPI.Controllers
             return prodRepo.Retrieve().AsQueryable();
         }
 
-        public IEnumerable<Product> Get(string search)
-        {
-            var prodRepo = new ProductRepository();
-            var products = prodRepo.Retrieve();
-            return products.Where(p => p.ProductCode.Contains(search));
-        }
+        //public IEnumerable<Product> Get(string search)
+        //{
+        //    var prodRepo = new ProductRepository();
+        //    var products = prodRepo.Retrieve();
+        //    return products.Where(p => p.ProductCode.Contains(search));
+        //}
 
         // GET: api/Products/5
-        public string Get(int id)
+        public Product Get(int id)
         {
-            return "value";
+            Product product;
+            var productRepository = new ProductRepository();
+
+            if (id > 0)
+            {
+                var products = productRepository.Retrieve();
+                product = products.FirstOrDefault(p => p.ProductId == id);
+            }
+            else
+            {
+                product = productRepository.Create();
+            }
+            return product;
         }
 
         // POST: api/Products
