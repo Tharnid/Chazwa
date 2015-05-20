@@ -10,13 +10,13 @@
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
-                <div class="navbar-brand">Tharnid Project Management</div>
+                <div class="navbar-brand">Tharnid Product Management</div>
             </div>
         </div>
     </nav>
 
     <div class="container">
-        <div ng-include="'app/products/productListView.html'">
+        <div ng-include="'app/products/productEditView.html'"> <!--app/products/productListView.html'">-->
         </div>
     </div>
 
@@ -37,6 +37,7 @@
     <!--Product Controllers-->
 
     <script src="app/products/productListCtrl.js"></script>
+    <script src="app/products/productEditCtrl.js"></script>
 
 </body>
 </html>

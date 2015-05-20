@@ -9,8 +9,10 @@ namespace TPM.WebAPI.Models
 {
     public class ProductRepository
     {
-        // class that contains the logic to retrieve and save data
-
+        /// <summary>
+        /// Creates a new product with default values
+        /// </summary>
+        /// <returns></returns>
         internal Product Create()
         {
             Product product = new Product
@@ -20,6 +22,10 @@ namespace TPM.WebAPI.Models
             return product;
         }
 
+        /// <summary>
+        /// Retrieves the list of products.
+        /// </summary>
+        /// <returns></returns>
         internal List<Product> Retrieve()
         {
             var filePath = HostingEnvironment.MapPath(@"~/App_Data/product.json");
@@ -31,6 +37,11 @@ namespace TPM.WebAPI.Models
             return products;
         }
 
+        /// <summary>
+        /// Saves a new product.
+        /// </summary>
+        /// <param name="product"></param>
+        /// <returns></returns>
         internal Product Save(Product product)
         {
             // Read in the existing products
@@ -45,6 +56,12 @@ namespace TPM.WebAPI.Models
             return product;
         }
 
+        /// <summary>
+        /// Updates an existing product
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="product"></param>
+        /// <returns></returns>
         internal Product Save(int id, Product product)
         {
             // Read in the existing products
@@ -64,6 +81,7 @@ namespace TPM.WebAPI.Models
             WriteData(products);
             return product;
         }
+
 
         private bool WriteData(List<Product> products)
         {
