@@ -48,13 +48,19 @@ namespace TPM.WebAPI.Controllers
         }
 
         // POST: api/Products
-        public void Post([FromBody]string value)
+        public void Post([FromBody]Product product) // [fromBody] defines to web api parameter value comes from the body of the request, 
+            // otherwise URL of request
         {
+            var productRepository = new Models.ProductRepository();
+            var newProduct = productRepository.Save(product);
         }
 
         // PUT: api/Products/5
-        public void Put(int id, [FromBody]string value)
+        public void Put(int id, [FromBody]Product product) // first defined by URL and the second is defined by the body of the request
         {
+            var productRepository = new Models.ProductRepository();
+            // pass product id and object to the save method
+            var updateProduct = productRepository.Save(id, product);
         }
 
         // DELETE: api/Products/5
