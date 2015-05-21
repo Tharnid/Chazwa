@@ -1,0 +1,6 @@
+E:\GH\Chazwa\CSharpBeg\Venus\bin\Debug\Venus.exe.config
+E:\GH\Chazwa\CSharpBeg\Venus\bin\Debug\Venus.exe
+E:\GH\Chazwa\CSharpBeg\Venus\bin\Debug\Venus.pdb
+E:\GH\Chazwa\CSharpBeg\Venus\obj\Debug\Venus.csprojResolveAssemblyReference.cache
+E:\GH\Chazwa\CSharpBeg\Venus\obj\Debug\Venus.exe
+E:\GH\Chazwa\CSharpBeg\Venus\obj\Debug\Venus.pdb

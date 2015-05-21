@@ -1,0 +1,6 @@
+E:\GH\Chazwa\CSharpBeg\Planets\bin\Debug\Planets.exe.config
+E:\GH\Chazwa\CSharpBeg\Planets\bin\Debug\Planets.exe
+E:\GH\Chazwa\CSharpBeg\Planets\bin\Debug\Planets.pdb
+E:\GH\Chazwa\CSharpBeg\Planets\obj\Debug\Planets.csprojResolveAssemblyReference.cache
+E:\GH\Chazwa\CSharpBeg\Planets\obj\Debug\Planets.exe
+E:\GH\Chazwa\CSharpBeg\Planets\obj\Debug\Planets.pdb

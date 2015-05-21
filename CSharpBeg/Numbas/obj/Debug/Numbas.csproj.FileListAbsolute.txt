@@ -1,0 +1,6 @@
+E:\GH\Chazwa\CSharpBeg\Numbas\bin\Debug\Numbas.exe.config
+E:\GH\Chazwa\CSharpBeg\Numbas\bin\Debug\Numbas.exe
+E:\GH\Chazwa\CSharpBeg\Numbas\bin\Debug\Numbas.pdb
+E:\GH\Chazwa\CSharpBeg\Numbas\obj\Debug\Numbas.csprojResolveAssemblyReference.cache
+E:\GH\Chazwa\CSharpBeg\Numbas\obj\Debug\Numbas.exe
+E:\GH\Chazwa\CSharpBeg\Numbas\obj\Debug\Numbas.pdb
