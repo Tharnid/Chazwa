@@ -1,0 +1,5 @@
+E:\GH\Chazwa\CSharpBeg\AccurualMethod\bin\Debug\AccurualMethod.exe.config
+E:\GH\Chazwa\CSharpBeg\AccurualMethod\bin\Debug\AccurualMethod.exe
+E:\GH\Chazwa\CSharpBeg\AccurualMethod\bin\Debug\AccurualMethod.pdb
+E:\GH\Chazwa\CSharpBeg\AccurualMethod\obj\Debug\AccurualMethod.exe
+E:\GH\Chazwa\CSharpBeg\AccurualMethod\obj\Debug\AccurualMethod.pdb

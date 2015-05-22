@@ -1,0 +1,5 @@
+E:\GH\Chazwa\CSharpBeg\InflationaryMethod\bin\Debug\InflationaryMethod.exe.config
+E:\GH\Chazwa\CSharpBeg\InflationaryMethod\bin\Debug\InflationaryMethod.exe
+E:\GH\Chazwa\CSharpBeg\InflationaryMethod\bin\Debug\InflationaryMethod.pdb
+E:\GH\Chazwa\CSharpBeg\InflationaryMethod\obj\Debug\InflationaryMethod.exe
+E:\GH\Chazwa\CSharpBeg\InflationaryMethod\obj\Debug\InflationaryMethod.pdb

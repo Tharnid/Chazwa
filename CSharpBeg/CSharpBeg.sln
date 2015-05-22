@@ -11,6 +11,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Islands", "Islands\Islands.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Planets", "Planets\Planets.csproj", "{878FF4AB-F601-42D4-BC66-7611C3FE5A8D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GradeMethod", "GradeMethod\GradeMethod.csproj", "{BC4E4CD9-55A7-4050-9895-F97FE9701CB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PriceMethod", "PriceMethod\PriceMethod.csproj", "{B092806F-CA92-49F6-ADDE-8677DF844A67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InflationaryMethod", "InflationaryMethod\InflationaryMethod.csproj", "{C2D300A0-75D0-4A9A-B152-A137F78F5B9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccurualMethod", "AccurualMethod\AccurualMethod.csproj", "{AEEBACF9-936F-45A2-958C-6BB3A6589931}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FloatDouble", "FloatDouble\FloatDouble.csproj", "{F92B5B2D-3C60-48F4-9DC9-895433DEBD0A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +43,26 @@ Global
 		{878FF4AB-F601-42D4-BC66-7611C3FE5A8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{878FF4AB-F601-42D4-BC66-7611C3FE5A8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{878FF4AB-F601-42D4-BC66-7611C3FE5A8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC4E4CD9-55A7-4050-9895-F97FE9701CB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC4E4CD9-55A7-4050-9895-F97FE9701CB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC4E4CD9-55A7-4050-9895-F97FE9701CB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC4E4CD9-55A7-4050-9895-F97FE9701CB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B092806F-CA92-49F6-ADDE-8677DF844A67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B092806F-CA92-49F6-ADDE-8677DF844A67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B092806F-CA92-49F6-ADDE-8677DF844A67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B092806F-CA92-49F6-ADDE-8677DF844A67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2D300A0-75D0-4A9A-B152-A137F78F5B9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2D300A0-75D0-4A9A-B152-A137F78F5B9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2D300A0-75D0-4A9A-B152-A137F78F5B9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2D300A0-75D0-4A9A-B152-A137F78F5B9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEEBACF9-936F-45A2-958C-6BB3A6589931}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEEBACF9-936F-45A2-958C-6BB3A6589931}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEEBACF9-936F-45A2-958C-6BB3A6589931}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEEBACF9-936F-45A2-958C-6BB3A6589931}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F92B5B2D-3C60-48F4-9DC9-895433DEBD0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F92B5B2D-3C60-48F4-9DC9-895433DEBD0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F92B5B2D-3C60-48F4-9DC9-895433DEBD0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F92B5B2D-3C60-48F4-9DC9-895433DEBD0A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

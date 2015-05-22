@@ -1,0 +1,6 @@
+E:\GH\Chazwa\CSharpBeg\GradeMethod\bin\Debug\GradeMethod.exe.config
+E:\GH\Chazwa\CSharpBeg\GradeMethod\obj\Debug\GradeMethod.csprojResolveAssemblyReference.cache
+E:\GH\Chazwa\CSharpBeg\GradeMethod\bin\Debug\GradeMethod.exe
+E:\GH\Chazwa\CSharpBeg\GradeMethod\bin\Debug\GradeMethod.pdb
+E:\GH\Chazwa\CSharpBeg\GradeMethod\obj\Debug\GradeMethod.exe
+E:\GH\Chazwa\CSharpBeg\GradeMethod\obj\Debug\GradeMethod.pdb

@@ -1,0 +1,6 @@
+E:\GH\Chazwa\CSharpBeg\PriceMethod\bin\Debug\PriceMethod.exe.config
+E:\GH\Chazwa\CSharpBeg\PriceMethod\obj\Debug\PriceMethod.csprojResolveAssemblyReference.cache
+E:\GH\Chazwa\CSharpBeg\PriceMethod\bin\Debug\PriceMethod.exe
+E:\GH\Chazwa\CSharpBeg\PriceMethod\bin\Debug\PriceMethod.pdb
+E:\GH\Chazwa\CSharpBeg\PriceMethod\obj\Debug\PriceMethod.exe
+E:\GH\Chazwa\CSharpBeg\PriceMethod\obj\Debug\PriceMethod.pdb

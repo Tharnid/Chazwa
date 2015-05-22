@@ -1,1 +1,6 @@
 E:\GH\Chazwa\CSharpBeg\Islands\bin\Debug\Islands.exe.config
+E:\GH\Chazwa\CSharpBeg\Islands\bin\Debug\Islands.exe
+E:\GH\Chazwa\CSharpBeg\Islands\bin\Debug\Islands.pdb
+E:\GH\Chazwa\CSharpBeg\Islands\obj\Debug\Islands.csprojResolveAssemblyReference.cache
+E:\GH\Chazwa\CSharpBeg\Islands\obj\Debug\Islands.exe
+E:\GH\Chazwa\CSharpBeg\Islands\obj\Debug\Islands.pdb
