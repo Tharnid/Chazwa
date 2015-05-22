@@ -24,6 +24,9 @@ namespace TCM.BL
         // a list does not have a default value
         public List<Address> AddressList { get; set; }
 
+        // mod 6 adding Customer Type
+        public int CustomerType { get; set; }
+
         //public Address WorkAddress { get; set; }
         //public Address HomeAddress { get; set; }
 
@@ -115,3 +118,9 @@ namespace TCM.BL
 
 // Separation of concerns = the idea of decomposing an application into parts with minimal overlap
 // each part is reponsible for a separate concern
+
+// Inheritance
+
+// Customer Class (Business, Residential, Government, Educator are derived or child class of Customer (they all have an "is a" relationship to the customer class
+
+// C# -- you can only directly inherit from one class
