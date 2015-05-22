@@ -6,6 +6,14 @@ using System.Threading.Tasks;
 
 namespace TCM.BL
 {
+    
+    // Pillars of OO programming
+
+    // Abstraction
+    // Encapsulation
+    // Inheritance
+    // Polymorphism
+
     public class Customer
     {
         public Customer()

@@ -2,7 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TCM.BL;
 
-namespace ACM.BL.Test
+namespace TCM.BL.Test
 {
     [TestClass]
     public class CustomerRepositoryTest
