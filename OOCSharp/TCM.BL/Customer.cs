@@ -132,3 +132,8 @@ namespace TCM.BL
 // Customer Class (Business, Residential, Government, Educator are derived or child class of Customer (they all have an "is a" relationship to the customer class
 
 // C# -- you can only directly inherit from one class
+
+// Polymorphism (many shapes)
+
+// base class can define a method and any derived class can override that method (providing it's own shape for that method)
+// 

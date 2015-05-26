@@ -8,19 +8,13 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace TCM.BL.Test
 {
     [TestClass]
-    public class ProductRepositoryTest
+    public class ProductRepositoryTests
     {
-        [TestMethod]
+        [TestMethod]  // lol...this test wouldn't run because I had [TestMethod()]...looked at it for an hour
         public void RetrieveTest()
         {
-            // Arrange
+            //-- Arrange
             var productRepository = new ProductRepository();
-            //{
-            //    CurrentPrice = 1545.50M,
-            //    ProductDescription = "Ummm...a part of a ship",
-            //    ProductName = "Flux Capacitor"
-            //};
-
             var expected = new Product(2)
             {
                 CurrentPrice = 15.96M,
@@ -28,14 +22,13 @@ namespace TCM.BL.Test
                 ProductName = "Sunflowers"
             };
 
-            // Act
+            //-- Act
             var actual = productRepository.Retrieve(2);
 
-            // Assert
+            //-- Assert
             Assert.AreEqual(expected.CurrentPrice, actual.CurrentPrice);
             Assert.AreEqual(expected.ProductDescription, actual.ProductDescription);
             Assert.AreEqual(expected.ProductName, actual.ProductName);
-
         }
     }
 }
