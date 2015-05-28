@@ -14,12 +14,19 @@ namespace TPM.WebAPI.Controllers
     public class ProductsController : ApiController
     {
         // GET: api/Products
-        [EnableQuery()]
-        public IQueryable<Product> Get()
-        {
-            var productRepository = new ProductRepository();
-            return productRepository.Retrieve().AsQueryable();
-        }
+        //[EnableQuery()]
+        //public IQueryable<Product> Get()
+        //{
+        //    var productRepository = new ProductRepository();
+        //    return productRepository.Retrieve().AsQueryable();
+        //}
+
+            [EnableQuery()]
+            public IQueryable<Product> Get()
+            {
+                var productRepository = new ProductRepository();
+                return productRepository.Retrieve().AsQueryable();
+            }
 
         // GET: api/Products/5
         public Product Get(int id)
