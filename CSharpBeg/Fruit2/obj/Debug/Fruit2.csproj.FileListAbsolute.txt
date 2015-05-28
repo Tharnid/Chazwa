@@ -1,0 +1,6 @@
+E:\GH\Chazwa\CSharpBeg\Fruit2\bin\Debug\Fruit2.exe.config
+E:\GH\Chazwa\CSharpBeg\Fruit2\bin\Debug\Fruit2.exe
+E:\GH\Chazwa\CSharpBeg\Fruit2\bin\Debug\Fruit2.pdb
+E:\GH\Chazwa\CSharpBeg\Fruit2\obj\Debug\Fruit2.csprojResolveAssemblyReference.cache
+E:\GH\Chazwa\CSharpBeg\Fruit2\obj\Debug\Fruit2.exe
+E:\GH\Chazwa\CSharpBeg\Fruit2\obj\Debug\Fruit2.pdb

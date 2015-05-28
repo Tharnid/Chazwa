@@ -1,0 +1,6 @@
+E:\GH\Chazwa\CSharpBeg\Bananas\bin\Debug\Bananas.exe.config
+E:\GH\Chazwa\CSharpBeg\Bananas\bin\Debug\Bananas.exe
+E:\GH\Chazwa\CSharpBeg\Bananas\bin\Debug\Bananas.pdb
+E:\GH\Chazwa\CSharpBeg\Bananas\obj\Debug\Bananas.csprojResolveAssemblyReference.cache
+E:\GH\Chazwa\CSharpBeg\Bananas\obj\Debug\Bananas.exe
+E:\GH\Chazwa\CSharpBeg\Bananas\obj\Debug\Bananas.pdb
