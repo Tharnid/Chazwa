@@ -1,0 +1,5 @@
+E:\GH\Chazwa\CSharpBeg\MississippiCoreClass\bin\Debug\MississippiCoreClass.exe.config
+E:\GH\Chazwa\CSharpBeg\MississippiCoreClass\bin\Debug\MississippiCoreClass.exe
+E:\GH\Chazwa\CSharpBeg\MississippiCoreClass\bin\Debug\MississippiCoreClass.pdb
+E:\GH\Chazwa\CSharpBeg\MississippiCoreClass\obj\Debug\MississippiCoreClass.exe
+E:\GH\Chazwa\CSharpBeg\MississippiCoreClass\obj\Debug\MississippiCoreClass.pdb

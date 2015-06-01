@@ -1,0 +1,5 @@
+E:\GH\Chazwa\CSharpBeg\WhateverArrays\bin\Debug\WhateverArrays.exe.config
+E:\GH\Chazwa\CSharpBeg\WhateverArrays\bin\Debug\WhateverArrays.exe
+E:\GH\Chazwa\CSharpBeg\WhateverArrays\bin\Debug\WhateverArrays.pdb
+E:\GH\Chazwa\CSharpBeg\WhateverArrays\obj\Debug\WhateverArrays.exe
+E:\GH\Chazwa\CSharpBeg\WhateverArrays\obj\Debug\WhateverArrays.pdb

@@ -1,0 +1,6 @@
+E:\GH\Chazwa\CSharpBeg\MathUtil\bin\Debug\MathUtil.exe.config
+E:\GH\Chazwa\CSharpBeg\MathUtil\bin\Debug\MathUtil.exe
+E:\GH\Chazwa\CSharpBeg\MathUtil\bin\Debug\MathUtil.pdb
+E:\GH\Chazwa\CSharpBeg\MathUtil\obj\Debug\MathUtil.csprojResolveAssemblyReference.cache
+E:\GH\Chazwa\CSharpBeg\MathUtil\obj\Debug\MathUtil.exe
+E:\GH\Chazwa\CSharpBeg\MathUtil\obj\Debug\MathUtil.pdb
