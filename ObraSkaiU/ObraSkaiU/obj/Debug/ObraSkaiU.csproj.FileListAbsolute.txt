@@ -53,3 +53,7 @@ E:\GH\Chazwa\ObraSkaiU\ObraSkaiU\bin\Microsoft.Owin.Security.MicrosoftAccount.xm
 E:\GH\Chazwa\ObraSkaiU\ObraSkaiU\obj\Debug\ObraSkaiU.csprojResolveAssemblyReference.cache
 E:\GH\Chazwa\ObraSkaiU\ObraSkaiU\obj\Debug\ObraSkaiU.dll
 E:\GH\Chazwa\ObraSkaiU\ObraSkaiU\obj\Debug\ObraSkaiU.pdb
+E:\GH\Chazwa\ObraSkaiU\ObraSkaiU\bin\PagedList.dll
+E:\GH\Chazwa\ObraSkaiU\ObraSkaiU\bin\PagedList.Mvc.dll
+E:\GH\Chazwa\ObraSkaiU\ObraSkaiU\bin\PagedList.xml
+E:\GH\Chazwa\ObraSkaiU\ObraSkaiU\bin\PagedList.Mvc.xml
