@@ -1,0 +1,12 @@
+E:\GH\Chazwa\ParentChildDataExample\ParentChildData.DataLayer\bin\Debug\ParentChildData.DataLayer.dll.config
+E:\GH\Chazwa\ParentChildDataExample\ParentChildData.DataLayer\bin\Debug\ParentChildData.DataLayer.dll
+E:\GH\Chazwa\ParentChildDataExample\ParentChildData.DataLayer\bin\Debug\ParentChildData.DataLayer.pdb
+E:\GH\Chazwa\ParentChildDataExample\ParentChildData.DataLayer\bin\Debug\EntityFramework.dll
+E:\GH\Chazwa\ParentChildDataExample\ParentChildData.DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+E:\GH\Chazwa\ParentChildDataExample\ParentChildData.DataLayer\bin\Debug\ParentChildData.Model.dll
+E:\GH\Chazwa\ParentChildDataExample\ParentChildData.DataLayer\bin\Debug\ParentChildData.Model.pdb
+E:\GH\Chazwa\ParentChildDataExample\ParentChildData.DataLayer\bin\Debug\EntityFramework.xml
+E:\GH\Chazwa\ParentChildDataExample\ParentChildData.DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+E:\GH\Chazwa\ParentChildDataExample\ParentChildData.DataLayer\obj\Debug\ParentChildData.DataLayer.csprojResolveAssemblyReference.cache
+E:\GH\Chazwa\ParentChildDataExample\ParentChildData.DataLayer\obj\Debug\ParentChildData.DataLayer.dll
+E:\GH\Chazwa\ParentChildDataExample\ParentChildData.DataLayer\obj\Debug\ParentChildData.DataLayer.pdb

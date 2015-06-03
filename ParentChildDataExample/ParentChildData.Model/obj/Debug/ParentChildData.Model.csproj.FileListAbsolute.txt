@@ -1,0 +1,5 @@
+E:\GH\Chazwa\ParentChildDataExample\ParentChildData.Model\bin\Debug\ParentChildData.Model.dll
+E:\GH\Chazwa\ParentChildDataExample\ParentChildData.Model\bin\Debug\ParentChildData.Model.pdb
+E:\GH\Chazwa\ParentChildDataExample\ParentChildData.Model\obj\Debug\ParentChildData.Model.csprojResolveAssemblyReference.cache
+E:\GH\Chazwa\ParentChildDataExample\ParentChildData.Model\obj\Debug\ParentChildData.Model.dll
+E:\GH\Chazwa\ParentChildDataExample\ParentChildData.Model\obj\Debug\ParentChildData.Model.pdb
