@@ -1,0 +1,1 @@
+E:\GH\Chazwa\CSharpBeg\queue\bin\Debug\queue.exe.config
