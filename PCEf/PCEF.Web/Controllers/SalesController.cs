@@ -70,7 +70,16 @@ namespace PCEF.Web.Controllers
             {
                 return HttpNotFound();
             }
-            return View(salesOrder);
+
+            // some of the same stuff from the create
+            SalesOrderViewModel salesOrderViewModel = new SalesOrderViewModel();
+            salesOrderViewModel.SalesOrderId = salesOrder.SalesOrderId;
+            salesOrderViewModel.CustomerName = salesOrder.CustomerName;
+            salesOrderViewModel.PONumber = salesOrder.PONumber;
+            salesOrderViewModel.MessageToClient = string.Format("The original value of Customer Name is {0}.", salesOrderViewModel.CustomerName);
+            // salesOrderViewModel.ObjectState = ObjectState.Unchanged;
+
+            return View(salesOrderViewModel);
         }
 
         public ActionResult Delete(int? id)
@@ -85,15 +94,9 @@ namespace PCEF.Web.Controllers
                 return HttpNotFound();
             }
 
-            // some of the same stuff from the create
-            SalesOrderViewModel salesOrderViewModel = new SalesOrderViewModel();
-            salesOrderViewModel.SalesOrderId = salesOrder.SalesOrderId;
-            salesOrderViewModel.CustomerName = salesOrder.CustomerName;
-            salesOrderViewModel.PONumber = salesOrder.PONumber;
-            salesOrderViewModel.MessageToClient = string.Format("The original value of Customer Name is {0}.", salesOrderViewModel.CustomerName);
-            // salesOrderViewModel.ObjectState = ObjectState.Unchanged;
 
-            return View(salesOrderViewModel);
+
+            return View(salesOrder);
         }
 
         protected override void Dispose(bool disposing)
