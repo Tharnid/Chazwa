@@ -1,8 +1,12 @@
 ﻿@model PCEF.Web.ViewModels.SalesOrderViewModel
+@using System.Web.Script.Serialization
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "Sales Order Details";
 }
+
+@*Serializing Model Data*@
+@{ string data = new JavaScriptSerializer().Serialize(Model); }
 
 @section scripts
 {
@@ -11,15 +15,17 @@
     <script src="~/Scripts/salesorderviewmodel.js"></script>
 
     <script type="text/javascript">
-
+        var salesOrderViewModel = new SalesOrderViewModel(@Html.Raw(data));  // html raw prevents data from being encoded again
+        // debugger; // duh the debugger
+        ko.applyBindings(salesOrderViewModel);  // bring the halves together
     </script>
 }
 
-<h2>Details</h2>
+<h2>@ViewBag.Title</h2>
 
-<span>@Html.DisplayFor(model => model.MessageToClient)</span>
+@*<span>@Html.DisplayFor(model => model.MessageToClient)</span>*@
 
-<div>
+@*<div>
     <h4>SalesOrder</h4>
     <hr />
     <dl class="dl-horizontal">
@@ -40,8 +46,25 @@
         </dd>
 
     </dl>
+</div>*@
+
+<p data-bind="text: MessageToClient"></p>
+
+@* Bootstrap structure *@
+
+<div>
+
+    <div>
+        <label>Customer Name:</label>
+        <span data-bind="text: CustomerName"></span>
+    </div>
+    <div>
+        <label>P.O. Number:</label>
+        <span data-bind="text: PONumber"></span>
+    </div>
+
 </div>
+
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.SalesOrderId }) |
     @Html.ActionLink("Back to List", "Index")
 </p>
