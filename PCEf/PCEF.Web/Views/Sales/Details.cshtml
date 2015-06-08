@@ -4,6 +4,17 @@
     ViewBag.Title = "Details";
 }
 
+@section scripts
+{
+    <script src="~/Scripts/knockout-3.3.0.js"></script>
+    <script src="~/Scripts/knockout.mapping-latest.js"></script>
+    <script src="~/Scripts/salesorderviewmodel.js"></script>
+
+    <script type="text/javascript">
+
+    </script>
+}
+
 <h2>Details</h2>
 
 <span>@Html.DisplayFor(model => model.MessageToClient)</span>
