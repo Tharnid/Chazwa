@@ -17,6 +17,8 @@ namespace PCEF.DAL
 
         public DbSet<SalesOrder> SalesOrders { get; set; }
 
+        // Disabling this is the only way to get the migration on the controller to work...wtf
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             // base.OnModelCreating(modelBuilder);
