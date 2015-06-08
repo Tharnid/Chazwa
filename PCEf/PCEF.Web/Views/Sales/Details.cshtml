@@ -1,10 +1,12 @@
-﻿@model PCEF.Model.SalesOrder
+﻿@model PCEF.Web.ViewModels.SalesOrderViewModel
 
 @{
     ViewBag.Title = "Details";
 }
 
 <h2>Details</h2>
+
+<span>@Html.DisplayFor(model => model.MessageToClient)</span>
 
 <div>
     <h4>SalesOrder</h4>
