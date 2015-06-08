@@ -95,5 +95,26 @@ namespace PCEF.Web.Controllers
             }
             base.Dispose(disposing);
         }
+
+        // Save JsonResult
+        public JsonResult Save(SalesOrderViewModel salesOrderViewModel)
+        {
+            SalesOrder salesOrder = new SalesOrder();
+
+            salesOrder.CustomerName = salesOrderViewModel.CustomerName;
+            salesOrder.PONumber = salesOrderViewModel.PONumber;
+            
+            // add it to the context
+            _salesContext.SalesOrders.Add(salesOrder);
+
+            // Save changes to db
+            _salesContext.SaveChanges();
+
+            // Send message to the client
+            salesOrderViewModel.MessageToClient = string.Format("{0}’s sales order has been added to the database.", salesOrder.CustomerName);
+
+            // return the JSON
+            return Json(new { salesOrderViewModel });
+        }
     }
 }
