@@ -1,0 +1,120 @@
+﻿@model ProfMVC.Web.Models.Racquet
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Racquet</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ManufacturerId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ManufacturerId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HeadSize)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HeadSize)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Length)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Length)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StrungWeight)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StrungWeight)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SwingWeight)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SwingWeight)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Stiffness)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Stiffness)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PowerLevel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PowerLevel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StrokeStyle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StrokeStyle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SwingSpeed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SwingSpeed)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StringPattern)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StringPattern)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SmartSensorReady)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SmartSensorReady)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
