@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PCEF.Web", "PCEF.Web\PCEF.Web.csproj", "{4A890779-358F-4716-A79E-2384B7BE758D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PCEF.Model", "PCEF.Model\PCEF.Model.csproj", "{6ED4E58D-C716-47FA-954F-55CBF12C883F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PCEF.DAL", "PCEF.DAL\PCEF.DAL.csproj", "{58E0A308-2631-4C4E-83D7-821267DD0767}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{DF1FDA02-DB8F-4838-8599-A897B81E90FA}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4A890779-358F-4716-A79E-2384B7BE758D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A890779-358F-4716-A79E-2384B7BE758D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A890779-358F-4716-A79E-2384B7BE758D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A890779-358F-4716-A79E-2384B7BE758D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6ED4E58D-C716-47FA-954F-55CBF12C883F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ED4E58D-C716-47FA-954F-55CBF12C883F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ED4E58D-C716-47FA-954F-55CBF12C883F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ED4E58D-C716-47FA-954F-55CBF12C883F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58E0A308-2631-4C4E-83D7-821267DD0767}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58E0A308-2631-4C4E-83D7-821267DD0767}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58E0A308-2631-4C4E-83D7-821267DD0767}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58E0A308-2631-4C4E-83D7-821267DD0767}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

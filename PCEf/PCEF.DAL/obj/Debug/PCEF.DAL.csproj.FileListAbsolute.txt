@@ -1,0 +1,12 @@
+E:\GH\Chazwa\PCEf\PCEF.DAL\bin\Debug\PCEF.DAL.dll.config
+E:\GH\Chazwa\PCEf\PCEF.DAL\bin\Debug\PCEF.DAL.dll
+E:\GH\Chazwa\PCEf\PCEF.DAL\bin\Debug\PCEF.DAL.pdb
+E:\GH\Chazwa\PCEf\PCEF.DAL\bin\Debug\EntityFramework.dll
+E:\GH\Chazwa\PCEf\PCEF.DAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\GH\Chazwa\PCEf\PCEF.DAL\bin\Debug\PCEF.Model.dll
+E:\GH\Chazwa\PCEf\PCEF.DAL\bin\Debug\PCEF.Model.pdb
+E:\GH\Chazwa\PCEf\PCEF.DAL\bin\Debug\EntityFramework.xml
+E:\GH\Chazwa\PCEf\PCEF.DAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\GH\Chazwa\PCEf\PCEF.DAL\obj\Debug\PCEF.DAL.csprojResolveAssemblyReference.cache
+E:\GH\Chazwa\PCEf\PCEF.DAL\obj\Debug\PCEF.DAL.dll
+E:\GH\Chazwa\PCEf\PCEF.DAL\obj\Debug\PCEF.DAL.pdb
