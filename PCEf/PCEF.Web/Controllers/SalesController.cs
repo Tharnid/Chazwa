@@ -53,7 +53,10 @@ namespace PCEF.Web.Controllers
 
         public ActionResult Create()
         {
-            return View();
+            SalesOrderViewModel salesOrderViewModel = new SalesOrderViewModel();
+
+
+            return View(salesOrderViewModel);
         }
 
         public ActionResult Edit(int? id)
