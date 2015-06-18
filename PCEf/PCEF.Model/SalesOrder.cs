@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace PCEF.Model
 {
-    public class SalesOrder
+    public class SalesOrder : IObjectWithState // Make sure you add the interface
     {
         public int SalesOrderId { get; set; }
         public string CustomerName { get; set; }
         public string PONumber { get; set; }
+
+        public ObjectState ObjectState { get; set; }
     }
 }

@@ -54,7 +54,7 @@ namespace PCEF.Web.Controllers
         public ActionResult Create()
         {
             SalesOrderViewModel salesOrderViewModel = new SalesOrderViewModel();
-
+            salesOrderViewModel.ObjectState = ObjectState.Added;
 
             return View(salesOrderViewModel);
         }
@@ -77,7 +77,7 @@ namespace PCEF.Web.Controllers
             salesOrderViewModel.CustomerName = salesOrder.CustomerName;
             salesOrderViewModel.PONumber = salesOrder.PONumber;
             salesOrderViewModel.MessageToClient = string.Format("The original value of Customer Name is {0}.", salesOrderViewModel.CustomerName);
-            // salesOrderViewModel.ObjectState = ObjectState.Unchanged;
+            salesOrderViewModel.ObjectState = ObjectState.Unchanged;
 
             return View(salesOrderViewModel);
         }
@@ -113,17 +113,36 @@ namespace PCEF.Web.Controllers
         {
             SalesOrder salesOrder = new SalesOrder();
 
+            salesOrder.SalesOrderId = salesOrderViewModel.SalesOrderId;
             salesOrder.CustomerName = salesOrderViewModel.CustomerName;
             salesOrder.PONumber = salesOrderViewModel.PONumber;
             
             // add it to the context
-            _salesContext.SalesOrders.Add(salesOrder);
+            //_salesContext.SalesOrders.Add(salesOrder);
+            // attaching
+            _salesContext.SalesOrders.Attach(salesOrder);
 
             // Save changes to db
             _salesContext.SaveChanges();
+            _salesContext.ChangeTracker.Entries<IObjectWithState>().Single().State = Helpers.ConvertState(salesOrder.ObjectState);
 
             // Send message to the client
-            salesOrderViewModel.MessageToClient = string.Format("{0}’s sales order has been added to the database.", salesOrder.CustomerName);
+            // salesOrderViewModel.MessageToClient = string.Format("{0}’s sales order has been added to the database.", salesOrder.CustomerName);
+
+            // switch statement
+            switch (salesOrderViewModel.ObjectState)
+            {
+                case ObjectState.Added:
+                    salesOrderViewModel.MessageToClient = string.Format("A sales order for {0} has been added to the database.", salesOrder.CustomerName);
+                    break;
+
+                case ObjectState.Modified:
+                    salesOrderViewModel.MessageToClient = string.Format("The customer name for this sales order has been updated to {0} in the database.", salesOrder.CustomerName);
+                    break;
+            }
+
+            salesOrderViewModel.SalesOrderId = salesOrder.SalesOrderId;
+            salesOrderViewModel.ObjectState = ObjectState.Unchanged;
 
             // return the JSON
             return Json(new { salesOrderViewModel });

@@ -1,0 +1,18 @@
+D:\Training\Parent-Child Data with EF, MVC, Knockout, Ajax, and Validation\SolutionName\SolutionName.Model\bin\Debug\SolutionName.Model.dll
+D:\Training\Parent-Child Data with EF, MVC, Knockout, Ajax, and Validation\SolutionName\SolutionName.Model\bin\Debug\SolutionName.Model.pdb
+D:\Training\Parent-Child Data with EF, MVC, Knockout, Ajax, and Validation\SolutionName\SolutionName.Model\obj\Debug\SolutionName.Model.dll
+D:\Training\Parent-Child Data with EF, MVC, Knockout, Ajax, and Validation\SolutionName\SolutionName.Model\obj\Debug\SolutionName.Model.pdb
+D:\Training\Parent-Child\SolutionName\SolutionName.Model\bin\Debug\SolutionName.Model.dll
+D:\Training\Parent-Child\SolutionName\SolutionName.Model\bin\Debug\SolutionName.Model.pdb
+D:\Training\Parent-Child\SolutionName\SolutionName.Model\obj\Debug\SolutionName.Model.dll
+D:\Training\Parent-Child\SolutionName\SolutionName.Model\obj\Debug\SolutionName.Model.pdb
+D:\Training\Parent-Child\parent-child-data-ef-mvc-knockout-ajax-m4-editing-a-single-entity\demos\after\SolutionName\SolutionName.Model\bin\Debug\SolutionName.Model.dll
+D:\Training\Parent-Child\parent-child-data-ef-mvc-knockout-ajax-m4-editing-a-single-entity\demos\after\SolutionName\SolutionName.Model\bin\Debug\SolutionName.Model.pdb
+D:\Training\Parent-Child\parent-child-data-ef-mvc-knockout-ajax-m4-editing-a-single-entity\demos\after\SolutionName\SolutionName.Model\obj\Debug\SolutionName.Model.csprojResolveAssemblyReference.cache
+D:\Training\Parent-Child\parent-child-data-ef-mvc-knockout-ajax-m4-editing-a-single-entity\demos\after\SolutionName\SolutionName.Model\obj\Debug\SolutionName.Model.dll
+D:\Training\Parent-Child\parent-child-data-ef-mvc-knockout-ajax-m4-editing-a-single-entity\demos\after\SolutionName\SolutionName.Model\obj\Debug\SolutionName.Model.pdb
+E:\GH\Chazwa\SolutionName\SolutionName.Model\bin\Debug\SolutionName.Model.dll
+E:\GH\Chazwa\SolutionName\SolutionName.Model\bin\Debug\SolutionName.Model.pdb
+E:\GH\Chazwa\SolutionName\SolutionName.Model\obj\Debug\SolutionName.Model.csprojResolveAssemblyReference.cache
+E:\GH\Chazwa\SolutionName\SolutionName.Model\obj\Debug\SolutionName.Model.dll
+E:\GH\Chazwa\SolutionName\SolutionName.Model\obj\Debug\SolutionName.Model.pdb

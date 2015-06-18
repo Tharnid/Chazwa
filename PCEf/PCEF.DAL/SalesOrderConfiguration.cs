@@ -14,6 +14,9 @@ namespace PCEF.DAL
         {
             Property(so => so.CustomerName).HasMaxLength(30).IsRequired();
             Property(so => so.PONumber).HasMaxLength(10).IsOptional();
+
+            // have to ignore the ObjectState because we don't want to store it
+            Ignore(so => so.ObjectState);
         }
     }
 }

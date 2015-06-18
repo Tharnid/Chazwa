@@ -2,70 +2,37 @@
 @using System.Web.Script.Serialization
 
 @{
-    ViewBag.Title = "Create Sales Order";
+    ViewBag.Title = "Create a Sales Order";
 }
 
-@*Serializing Model Data*@
-@{ string data = new JavaScriptSerializer().Serialize(Model); }
+@{ string data = new JavaScriptSerializer().Serialize(Model);}
 
-@section scripts
-{
-    <script src="~/Scripts/knockout-3.3.0.js"></script>
-    <script src="~/Scripts/knockout.mapping-latest.js"></script>
-    <script src="~/Scripts/salesorderviewmodel.js"></script>
-
+@section scripts{
+<script src="~/Scripts/knockout-3.3.0.js"></script>
+<script src="~/Scripts/knockout.mapping-latest.js"></script>
+<script src="~/Scripts/salesorderviewmodel.js"></script>
     <script type="text/javascript">
-        var salesOrderViewModel = new SalesOrderViewModel(@Html.Raw(data));  // html raw prevents data from being encoded again
-        // debugger; // duh the debugger
-        ko.applyBindings(salesOrderViewModel);  // bring the halves together
+        var salesOrderViewModel = new SalesOrderViewModel(@Html.Raw(data));
+        ko.applyBindings(salesOrderViewModel);
     </script>
 }
 
 <h2>@ViewBag.Title</h2>
 
-@*<span>@Html.DisplayFor(model => model.MessageToClient)</span>*@
-
-@*<div>
-        <h4>SalesOrder</h4>
-        <hr />
-        <dl class="dl-horizontal">
-            <dt>
-                @Html.DisplayNameFor(model => model.CustomerName)
-            </dt>
-
-            <dd>
-                @Html.DisplayFor(model => model.CustomerName)
-            </dd>
-
-            <dt>
-                @Html.DisplayNameFor(model => model.PONumber)
-            </dt>
-
-            <dd>
-                @Html.DisplayFor(model => model.PONumber)
-            </dd>
-
-        </dl>
-    </div>*@
-
 <p data-bind="text: MessageToClient"></p>
 
-@* Bootstrap structure *@
-
 <div>
-
     <div>
         <label>Customer Name:</label>
-        <input data-bind="value: CustomerName" /> @*use value rather than text for create view*@
+        <input data-bind="value: CustomerName, event: {change: flagSalesOrderAsEdited}" />
     </div>
     <div>
         <label>P.O. Number:</label>
-        <input data-bind="value: PONumber" /> @*use value rather than text for create view*@
+        <input data-bind="value: PONumber, event: {change: flagSalesOrderAsEdited}" />
     </div>
-
 </div>
 
-<button class="" data-bind="click: save">Save</button>
+<p><button data-bind="click: save">Save</button></p>
 
 <p>
     @Html.ActionLink("Back to List", "Index")
