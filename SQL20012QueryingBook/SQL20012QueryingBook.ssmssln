@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# SQL Server Management Studio Solution File, Format Version 11.00
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "SQL20012QueryingBook", "SQL20012QueryingBook\SQL20012QueryingBook.ssmssqlproj", "{71B78D3C-C357-4BE8-9ABB-0E79191210ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|Default = Default|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{71B78D3C-C357-4BE8-9ABB-0E79191210ED}.Default|Default.ActiveCfg = Default
+		{EDE3912E-E5CD-41ED-8ED8-F0A660AFD402}.Default|Default.ActiveCfg = Default
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
