@@ -13,6 +13,21 @@ namespace BootstrapBusSetup.Controllers
             return View();
         }
 
+        public ActionResult Darkly()
+        {
+            return View();
+        }
+
+        public ActionResult SH()
+        {
+            return View();
+        }
+
+        public ActionResult Yeti()
+        {
+            return View();
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
