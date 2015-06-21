@@ -1,0 +1,1 @@
+C:\srcCode\GH\Chazwa\BootstrapEx\BootstrapEx.Tests\obj\Debug\BootstrapEx.Tests.csprojResolveAssemblyReference.cache
