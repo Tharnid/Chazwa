@@ -26,5 +26,35 @@ namespace BootstrapEx.Controllers
 
             return View();
         }
+
+        public ActionResult SummaryBlock()
+        {
+            return View();
+        }
+
+        public ActionResult SummaryBlockEx()
+        {
+            return View();
+        }
+
+        public ActionResult ReadmeBox()
+        {
+            return View();
+        }
+
+        public ActionResult AdvReadmeBox()
+        {
+            return View();
+        }
+
+        public ActionResult DDL()
+        {
+            return View();
+        }
+
+        public ActionResult DDL2()
+        {
+            return View();
+        }
     }
 }

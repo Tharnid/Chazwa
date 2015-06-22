@@ -11,8 +11,8 @@ namespace BootstrapEx.Controllers
 {
     public class ProductController : Controller
     {
-        private readonly ApplicationDBContext _context;
-        private readonly ICurrentUser _currentUser;
+        //private readonly ApplicationDBContext _context;
+        //private readonly ICurrentUser _currentUser;
 
         // GET: Product
         public ActionResult Index()
