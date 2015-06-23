@@ -198,6 +198,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\pdsa-panel-additions.css" />
     <Content Include="Content\PDSA-Readme-Box.css" />
     <Content Include="Content\pdsa-summary-block.css" />
     <Content Include="favicon.ico" />
@@ -271,11 +272,12 @@
     <Content Include="Views\DDL\Ex3.cshtml" />
     <Content Include="Views\DDL\Ex4.cshtml" />
     <Content Include="Views\DDL\DA.cshtml" />
+    <Content Include="Views\Panel\P1.cshtml" />
+    <Content Include="Views\Panel\P2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\BootstrapEx\" />
-    <Folder Include="Views\Panel\" />
     <Folder Include="Views\Product\" />
   </ItemGroup>
   <ItemGroup>
