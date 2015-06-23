@@ -21,11 +21,14 @@ namespace BootstrapBusSetup
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
+                      "~/Scripts/moment.js",
+                      "~/Scripts/daterangepicker.js",
                       "~/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/font-awesome.min.css",
+                        "~/Content/daterangepicker-bs3.css",
                       "~/Content/site.css"));
         }
     }
