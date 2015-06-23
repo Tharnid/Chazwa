@@ -63,3 +63,5 @@ C:\srcCode\GH\Chazwa\BootstrapEx\BootstrapEx\bin\Microsoft.Owin.Security.Twitter
 C:\srcCode\GH\Chazwa\BootstrapEx\BootstrapEx\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\srcCode\GH\Chazwa\BootstrapEx\BootstrapEx\obj\Debug\BootstrapEx.dll
 C:\srcCode\GH\Chazwa\BootstrapEx\BootstrapEx\obj\Debug\BootstrapEx.pdb
+C:\srcCode\GH\Chazwa\BootstrapEx\BootstrapEx\bin\DataSamples.dll
+C:\srcCode\GH\Chazwa\BootstrapEx\BootstrapEx\bin\DataSamples.pdb

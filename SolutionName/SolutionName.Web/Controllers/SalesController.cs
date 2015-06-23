@@ -92,7 +92,15 @@ namespace SolutionName.Web.Controllers
             {
                 return HttpNotFound();
             }
-            return View(salesOrder);
+
+            SalesOrderViewModel salesOrderViewModel = new SalesOrderViewModel();
+            salesOrderViewModel.SalesOrderId = salesOrder.SalesOrderId;
+            salesOrderViewModel.CustomerName = salesOrder.CustomerName;
+            salesOrderViewModel.PONumber = salesOrder.PONumber;
+            salesOrderViewModel.MessageToClient = "You are about to permanently delete this sales order.";
+            salesOrderViewModel.ObjectState = ObjectState.Deleted;
+
+            return View(salesOrderViewModel);
         }
 
 
@@ -117,6 +125,9 @@ namespace SolutionName.Web.Controllers
             _salesContext.SalesOrders.Attach(salesOrder);
             _salesContext.ChangeTracker.Entries<IObjectWithState>().Single().State = Helpers.ConvertState(salesOrder.ObjectState);
             _salesContext.SaveChanges();
+
+            if (salesOrder.ObjectState == ObjectState.Deleted)
+                return Json(new { newLocation = "/Sales/Index/" });
 
             switch (salesOrderViewModel.ObjectState)
             {

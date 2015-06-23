@@ -1,0 +1,5 @@
+C:\srcCode\GH\Chazwa\BootstrapEx\DataSamples\bin\Debug\DataSamples.dll
+C:\srcCode\GH\Chazwa\BootstrapEx\DataSamples\bin\Debug\DataSamples.pdb
+C:\srcCode\GH\Chazwa\BootstrapEx\DataSamples\obj\Debug\DataSamples.csprojResolveAssemblyReference.cache
+C:\srcCode\GH\Chazwa\BootstrapEx\DataSamples\obj\Debug\DataSamples.dll
+C:\srcCode\GH\Chazwa\BootstrapEx\DataSamples\obj\Debug\DataSamples.pdb

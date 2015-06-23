@@ -3,3 +3,8 @@ E:\GH\Chazwa\PCEf\PCEF.Model\bin\Debug\PCEF.Model.pdb
 E:\GH\Chazwa\PCEf\PCEF.Model\obj\Debug\PCEF.Model.csprojResolveAssemblyReference.cache
 E:\GH\Chazwa\PCEf\PCEF.Model\obj\Debug\PCEF.Model.dll
 E:\GH\Chazwa\PCEf\PCEF.Model\obj\Debug\PCEF.Model.pdb
+C:\srcCode\GH\Chazwa\PCEf\PCEF.Model\bin\Debug\PCEF.Model.dll
+C:\srcCode\GH\Chazwa\PCEf\PCEF.Model\bin\Debug\PCEF.Model.pdb
+C:\srcCode\GH\Chazwa\PCEf\PCEF.Model\obj\Debug\PCEF.Model.csprojResolveAssemblyReference.cache
+C:\srcCode\GH\Chazwa\PCEf\PCEF.Model\obj\Debug\PCEF.Model.dll
+C:\srcCode\GH\Chazwa\PCEf\PCEF.Model\obj\Debug\PCEF.Model.pdb
