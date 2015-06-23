@@ -1,22 +1,30 @@
-﻿@model IEnumerable<BootstrapEx.Models.MusicGenre>
-
+﻿
 @{
-    ViewBag.Title = "DDL2";
+    ViewBag.Title = "Ex3";
 }
 
-<h2>DDL2</h2>
+<h2>Ex3</h2>
+
+@model SamplesData.MusicGenre
+
+@{
+    ViewBag.Title = "Drop Down 3 - Bootstrap 'dropdown' Toggle with Separation";
+}
 
 @using (Html.BeginForm())
 {
+    @Html.HiddenFor(m => m.Genre)
     <div class="well">
-        <h3>Use a Bootstrap 'dropdown' Toggle</h3>
+        <h3>Bootstrap 'dropdown' Toggle with Separation</h3>
         <div class="row">
             <div class="col-md-12">
                 <div class="dropdown">
                     <button class="btn btn-primary"
-                            id="selectButton"
-                            data-toggle="dropdown">
+                            id="selectButton">
                         Select a Genre
+                    </button>
+                    <button class="btn btn-primary"
+                            data-toggle="dropdown">
                         <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu"
@@ -33,7 +41,7 @@
         <div class="row">
             <div class="col-md-12">
                 @*@Html.SubmitButton("Submit")*@
-                @Html.ActionLink("Home", "Index", "Home")
+                @Html.ActionLink("Submit", "DDL", "Index")
             </div>
         </div>
     </div>
@@ -60,7 +68,3 @@
     });
     </script>
 }
-
-
-
-

@@ -172,10 +172,13 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Components\MVCHelper.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BootstrapExController.cs" />
+    <Compile Include="Controllers\DDLController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PanelController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -188,6 +191,7 @@
     <Compile Include="Models\ProductViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\MusicGenreViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -217,6 +221,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\psda-dropdown.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
@@ -262,10 +267,15 @@
     <Content Include="Views\Home\AdvReadmeBox.cshtml" />
     <Content Include="Views\Home\DDL.cshtml" />
     <Content Include="Views\Home\DDL2.cshtml" />
+    <Content Include="Views\DDL\Ex2.cshtml" />
+    <Content Include="Views\DDL\Ex3.cshtml" />
+    <Content Include="Views\DDL\Ex4.cshtml" />
+    <Content Include="Views\DDL\DA.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\BootstrapEx\" />
+    <Folder Include="Views\Panel\" />
     <Folder Include="Views\Product\" />
   </ItemGroup>
   <ItemGroup>
