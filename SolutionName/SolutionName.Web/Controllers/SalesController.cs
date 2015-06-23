@@ -123,7 +123,7 @@ namespace SolutionName.Web.Controllers
             salesOrder.ObjectState = salesOrderViewModel.ObjectState;
 
             _salesContext.SalesOrders.Attach(salesOrder);
-            _salesContext.ChangeTracker.Entries<IObjectWithState>().Single().State = Helpers.ConvertState(salesOrder.ObjectState);
+            _salesContext.ChangeTracker.Entries<IObjectWithState>().Single().State = DataLayer.Helpers.ConvertState(salesOrder.ObjectState);
             _salesContext.SaveChanges();
 
             if (salesOrder.ObjectState == ObjectState.Deleted)
