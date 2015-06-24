@@ -1,0 +1,95 @@
+﻿@model SamplesData.ProductViewModel3
+
+@{
+  ViewBag.Title = "Table Sample 3 - Paging";
+}
+
+<style>
+  .pagination {
+    margin-top: -1em;
+  }
+</style>
+
+@using (Html.BeginForm())
+{
+  <!-- BEGIN HIDDEN FIELDS AREA -->
+  @Html.HiddenFor(m => m.EventCommand)
+  @Html.HiddenFor(m => m.EventArgument)
+  <!-- END HIDDEN FIELDS AREA -->
+
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="table-responsive">
+        <table class="table table-condensed table-bordered table-striped table-hover">
+          <thead>
+            <tr>
+              <th>
+                Product Name
+              </th>
+              <th>
+                Introduction Date
+              </th>
+              <th>
+                Cost
+              </th>
+              <th>
+                Price
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            @foreach (var item in Model.Products)
+            {
+              <tr>
+                <td>
+                  @item.ProductName
+                </td>
+                <td>
+                  @item.IntroductionDate.ToShortDateString()
+                </td>
+                <td>
+                  @item.Cost.ToString("c")
+                </td>
+                <td>
+                  @item.Price.ToString("c")
+                </td>
+              </tr>
+            }
+          </tbody>
+        </table>
+      </div>
+      @if (Model.IsPagerVisible)
+      {
+        <ul class="pagination pagination-sm">
+          @foreach (SamplesData.PDSAPagerItem item in Model.Pages)
+          {
+            <li class="@item.CssClass">
+              <a href="#"
+                 data-pdsa-action="page"
+                 data-pdsa-val="@item.Argument"
+                 title="@item.Tooltip">
+                @Html.Raw(item.Text)
+              </a>
+            </li>
+          }
+        </ul>
+      }
+    </div>
+  </div>
+}
+
+@section scripts {
+  <script>
+    $(document).ready(function () {
+      // Connect to any elements that have 'data-pdsa-action'
+      $("[data-pdsa-action]").on("click", function (e) {
+        // Fill in hidden fields with action and argument to post back to model
+        $("#EventCommand").val($(this).attr("data-pdsa-action"));
+        $("#EventArgument").val($(this).attr("data-pdsa-val"));
+
+        // Submit form with hidden values filled in
+        $("form").submit();
+      });
+    });
+  </script>
+}

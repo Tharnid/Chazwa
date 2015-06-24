@@ -1,0 +1,21 @@
+﻿@model SamplesData.PagerViewModel
+
+@{
+  ViewBag.Title = "Pager 2 - Data Driven";
+}
+
+<div class="row">
+  <div class="col-md-12 center-block">
+    <ul class="pagination pagination-sm">
+      @foreach (SamplesData.PDSAPagerItem item in Model.Pages)
+      {
+        <li class="@item.CssClass">
+          <a href="#"
+             title="@item.Tooltip">
+            @Html.Raw(item.Text)
+          </a>
+        </li>
+      }
+    </ul>
+  </div>
+</div>
