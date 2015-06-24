@@ -1,0 +1,60 @@
+﻿@model SamplesData.MusicGenreViewModel
+
+@{
+    ViewBag.Title = "Drop Down 5 - Data-Driven";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(m => m.SelectedGenre)
+    @Html.HiddenFor(m => m.SelectedId)
+
+    <div class="well well-sm">
+        <h3>Load data dynamically</h3>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="dropdown">
+                    <button class="btn btn-primary"
+                            id="selectButton"
+                            data-toggle="dropdown">
+                        Select a Genre
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu"
+                        id="ulGenres"
+                        data-pdsa-dropdown-button="selectButton"
+                        data-pdsa-dropdown-submit-button="Submit"
+                        data-pdsa-dropdown-ctl-text="SelectedGenre"
+                        data-pdsa-dropdown-ctl-value="SelectedId">
+                        @foreach (var item in Model.Genres)
+                        {
+                            <li>
+                                <a href="#"
+                                   data-pdsa-dropdown-val="@item.GenreId">@item.Genre</a>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                @*@Html.SubmitButton("Submit", "Submit", true)*@
+                @Html.ActionLink("Submit", "DDL", "Index")
+            </div>
+        </div>
+    </div>
+}
+
+@section scripts
+{
+    <!-- PDSA Drop Down Selector -->
+    <script src="~/Scripts/pdsa-dropdown.js"></script>
+    <script>
+    // Get previous value selected (if any)
+    $(document).ready(function () {
+      GetSelectedDropDownValue($("#selectButton"));
+    });
+    </script>
+}
+

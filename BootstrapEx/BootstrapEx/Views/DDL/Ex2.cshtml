@@ -1,0 +1,63 @@
+﻿@model SamplesData.MusicGenre
+
+@{
+    ViewBag.Title = "Ex2";
+}
+
+<h2>Ex2</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(m => m.Genre)
+
+    <div class="well">
+        <h3>Use a Bootstrap 'dropdown' Toggle</h3>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="dropdown">
+                    <button class="btn btn-primary"
+                            id="selectButton"
+                            data-toggle="dropdown">
+                        Select a Genre
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu"
+                        id="ulGenres">
+                        <li><a href="#">Jazz</a></li>
+                        <li><a href="#">Country</a></li>
+                        <li><a href="#">Rock</a></li>
+                        <li><a href="#">Blues</a></li>
+                        <li><a href="#">Alternative Rock</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                @Html.ActionLink("Submit", "DDL", "Index")
+            </div>
+        </div>
+    </div>
+}
+
+@section scripts
+{
+    <script>
+    $(document).ready(function () {
+      $("#ulGenres li a").on("click", function () {
+        // Get text from anchor tag
+        var text = $(this).text();
+        // Put text into Select button
+        $("#selectButton").text(text);
+        // Put text into hidden field from model
+        $("#Genre").val(text);
+      });
+
+      // Find previously selected Genre
+      var text = $("#Genre").val();
+      if (text != "") {
+        $("#selectButton").text(text);
+      }
+    });
+    </script>
+}

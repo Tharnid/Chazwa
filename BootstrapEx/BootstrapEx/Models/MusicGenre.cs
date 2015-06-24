@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Data;
 using System.ComponentModel;
 
-namespace BootstrapEx.Models
+namespace SamplesData
 {
     public class MusicGenre
     {
@@ -21,7 +22,7 @@ namespace BootstrapEx.Models
             Genre = genre;
             IsSelected = false;
         }
-
+        
         public int GenreId { get; set; }
         public string Genre { get; set; }
         public bool IsSelected { get; set; }

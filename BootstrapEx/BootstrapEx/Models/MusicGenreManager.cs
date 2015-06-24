@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.ComponentModel;
 
-namespace BootstrapEx.Models
+namespace SamplesData
 {
     public class MusicGenreManager
     {

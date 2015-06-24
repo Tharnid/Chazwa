@@ -10,3 +10,15 @@ E:\GH\Chazwa\PCEf\PCEF.DAL\bin\Debug\EntityFramework.SqlServer.xml
 E:\GH\Chazwa\PCEf\PCEF.DAL\obj\Debug\PCEF.DAL.csprojResolveAssemblyReference.cache
 E:\GH\Chazwa\PCEf\PCEF.DAL\obj\Debug\PCEF.DAL.dll
 E:\GH\Chazwa\PCEf\PCEF.DAL\obj\Debug\PCEF.DAL.pdb
+C:\srcCode\GH\Chazwa\PCEf\PCEF.DAL\bin\Debug\PCEF.DAL.dll.config
+C:\srcCode\GH\Chazwa\PCEf\PCEF.DAL\bin\Debug\PCEF.DAL.dll
+C:\srcCode\GH\Chazwa\PCEf\PCEF.DAL\bin\Debug\PCEF.DAL.pdb
+C:\srcCode\GH\Chazwa\PCEf\PCEF.DAL\bin\Debug\EntityFramework.dll
+C:\srcCode\GH\Chazwa\PCEf\PCEF.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\srcCode\GH\Chazwa\PCEf\PCEF.DAL\bin\Debug\PCEF.Model.dll
+C:\srcCode\GH\Chazwa\PCEf\PCEF.DAL\bin\Debug\PCEF.Model.pdb
+C:\srcCode\GH\Chazwa\PCEf\PCEF.DAL\bin\Debug\EntityFramework.xml
+C:\srcCode\GH\Chazwa\PCEf\PCEF.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\srcCode\GH\Chazwa\PCEf\PCEF.DAL\obj\Debug\PCEF.DAL.csprojResolveAssemblyReference.cache
+C:\srcCode\GH\Chazwa\PCEf\PCEF.DAL\obj\Debug\PCEF.DAL.dll
+C:\srcCode\GH\Chazwa\PCEf\PCEF.DAL\obj\Debug\PCEF.DAL.pdb

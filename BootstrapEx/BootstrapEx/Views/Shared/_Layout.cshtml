@@ -25,6 +25,27 @@
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+
+                    <li class="dropdown">
+                        @* This is where you click to activate the dropdown*@
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">DDL <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("DDL", "Index", "DDL")</li>
+                            <li>@Html.ActionLink("Ex2", "Ex2", "DDL")</li>
+                            <li>@Html.ActionLink("Ex3", "Ex3", "DDL")</li>
+                            <li>@Html.ActionLink("Ex4", "Ex4", "DDL")</li>
+                            <li>@Html.ActionLink("DA", "DA", "DDL")</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        @* This is where you click to activate the dropdown*@
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Panel Adds <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Panel", "Index", "Panel")</li>
+                            <li>@Html.ActionLink("P1", "P1", "Panel")</li>
+                            <li>@Html.ActionLink("P2", "P2", "Panel")</li>
+                        </ul>
+                    </li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>

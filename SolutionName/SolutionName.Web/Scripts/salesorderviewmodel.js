@@ -17,8 +17,11 @@ SalesOrderViewModel = function (data) {
             data: ko.toJSON(self),
             contentType: "application/json",
             success: function (data) {
-                if(data.salesOrderViewModel != null)
+                if (data.salesOrderViewModel != null)
                     ko.mapping.fromJS(data.salesOrderViewModel, {}, self);
+
+                if (data.newLocation != null)
+                    window.location = data.newLocation;
             }
         });
     },
@@ -29,6 +32,5 @@ SalesOrderViewModel = function (data) {
         }
 
         return true;
-    };
-
+    };   
 };
