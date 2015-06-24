@@ -1,0 +1,12 @@
+C:\srcCode\GH\Chazwa\MVCU\MVCU.DAL\bin\Debug\MVCU.DAL.dll.config
+C:\srcCode\GH\Chazwa\MVCU\MVCU.DAL\bin\Debug\MVCU.DAL.dll
+C:\srcCode\GH\Chazwa\MVCU\MVCU.DAL\bin\Debug\MVCU.DAL.pdb
+C:\srcCode\GH\Chazwa\MVCU\MVCU.DAL\bin\Debug\EntityFramework.dll
+C:\srcCode\GH\Chazwa\MVCU\MVCU.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\srcCode\GH\Chazwa\MVCU\MVCU.DAL\bin\Debug\MVCU.Models.dll
+C:\srcCode\GH\Chazwa\MVCU\MVCU.DAL\bin\Debug\MVCU.Models.pdb
+C:\srcCode\GH\Chazwa\MVCU\MVCU.DAL\bin\Debug\EntityFramework.xml
+C:\srcCode\GH\Chazwa\MVCU\MVCU.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\srcCode\GH\Chazwa\MVCU\MVCU.DAL\obj\Debug\MVCU.DAL.csprojResolveAssemblyReference.cache
+C:\srcCode\GH\Chazwa\MVCU\MVCU.DAL\obj\Debug\MVCU.DAL.dll
+C:\srcCode\GH\Chazwa\MVCU\MVCU.DAL\obj\Debug\MVCU.DAL.pdb
