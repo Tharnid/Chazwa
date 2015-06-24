@@ -16,6 +16,9 @@ namespace SolutionName.DataLayer
 
 
         public DbSet<SalesOrder> SalesOrders { get; set; }
+        
+        // Need to make sure you add your models to the context
+        public DbSet<SalesOrderItem> SalesOrderItems { get; set; }
 
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
