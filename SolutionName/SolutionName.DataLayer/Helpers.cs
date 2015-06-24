@@ -24,5 +24,15 @@ namespace SolutionName.DataLayer
                     return EntityState.Unchanged;
             }
         }
+
+
+        public static void ApplyStateChanges(this DbContext context)
+        {
+            foreach (var entry in context.ChangeTracker.Entries<IObjectWithState>())
+            {
+                IObjectWithState stateInfo = entry.Entity;
+                entry.State = ConvertState(stateInfo.ObjectState);
+            }
+        }
     }
 }

@@ -8,7 +8,6 @@ namespace SolutionName.Web.ViewModels
 {
     public class SalesOrderViewModel : IObjectWithState
     {
-        // Make sure the child is ready to use by putting it in the constructor
         public SalesOrderViewModel()
         {
             SalesOrderItems = new List<SalesOrderItemViewModel>();
@@ -18,11 +17,10 @@ namespace SolutionName.Web.ViewModels
         public string CustomerName { get; set; }
         public string PONumber { get; set; }
 
+        public List<SalesOrderItemViewModel> SalesOrderItems { get; set; }
+
         public string MessageToClient { get; set; }
 
         public ObjectState ObjectState { get; set; }
-
-        // adding SalesOrderItem
-        public List<SalesOrderItemViewModel> SalesOrderItems { get; set; }
     }
 }

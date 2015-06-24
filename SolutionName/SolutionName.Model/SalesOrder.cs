@@ -8,10 +8,8 @@ namespace SolutionName.Model
 {
     public class SalesOrder : IObjectWithState
     {
-        // Constructor
         public SalesOrder()
         {
-            // Make sure the child is ready to use by putting it in the constructor
             SalesOrderItems = new List<SalesOrderItem>();
         }
 
@@ -19,9 +17,8 @@ namespace SolutionName.Model
         public string CustomerName { get; set; }
         public string PONumber { get; set; }
 
-        public ObjectState ObjectState { get; set; }
+        public virtual List<SalesOrderItem> SalesOrderItems  { get; set; }
 
-        // Adding SalesOrderItem
-        public virtual List<SalesOrderItem> SalesOrderItems { get; set; }
+        public ObjectState ObjectState { get; set; }
     }
 }
