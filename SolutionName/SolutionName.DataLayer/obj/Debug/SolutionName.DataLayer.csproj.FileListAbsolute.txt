@@ -46,3 +46,15 @@ C:\srcCode\GH\Chazwa\SolutionName\SolutionName.DataLayer\bin\Debug\EntityFramewo
 C:\srcCode\GH\Chazwa\SolutionName\SolutionName.DataLayer\obj\Debug\SolutionName.DataLayer.csprojResolveAssemblyReference.cache
 C:\srcCode\GH\Chazwa\SolutionName\SolutionName.DataLayer\obj\Debug\SolutionName.DataLayer.dll
 C:\srcCode\GH\Chazwa\SolutionName\SolutionName.DataLayer\obj\Debug\SolutionName.DataLayer.pdb
+E:\GH\Chazwa\SolutionName\SolutionName.DataLayer\bin\Debug\SolutionName.DataLayer.dll.config
+E:\GH\Chazwa\SolutionName\SolutionName.DataLayer\bin\Debug\SolutionName.DataLayer.dll
+E:\GH\Chazwa\SolutionName\SolutionName.DataLayer\bin\Debug\SolutionName.DataLayer.pdb
+E:\GH\Chazwa\SolutionName\SolutionName.DataLayer\bin\Debug\EntityFramework.dll
+E:\GH\Chazwa\SolutionName\SolutionName.DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+E:\GH\Chazwa\SolutionName\SolutionName.DataLayer\bin\Debug\SolutionName.Model.dll
+E:\GH\Chazwa\SolutionName\SolutionName.DataLayer\bin\Debug\SolutionName.Model.pdb
+E:\GH\Chazwa\SolutionName\SolutionName.DataLayer\bin\Debug\EntityFramework.xml
+E:\GH\Chazwa\SolutionName\SolutionName.DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+E:\GH\Chazwa\SolutionName\SolutionName.DataLayer\obj\Debug\SolutionName.DataLayer.csprojResolveAssemblyReference.cache
+E:\GH\Chazwa\SolutionName\SolutionName.DataLayer\obj\Debug\SolutionName.DataLayer.dll
+E:\GH\Chazwa\SolutionName\SolutionName.DataLayer\obj\Debug\SolutionName.DataLayer.pdb
