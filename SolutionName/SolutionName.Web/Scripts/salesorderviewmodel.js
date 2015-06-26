@@ -76,4 +76,12 @@ SalesOrderViewModel = function (data) {
         });
         return total.toFixed(2);
     });
+
+    self.deleteSalesOrderItem = function (salesOrderItem) {
+        self.addSalesOrderItem.remove(this);
+
+        // tracking the item in the client
+        if (salesOrderItem.SalesOrderItemId() > 0 && self.SalesOrderItemsToDelete.indexOf(salesOrderItem.SalesOrderItemId()) == -1)
+            self.SalesOrderItemsToDelete.push(salesOrderItem.SalesOrderItemId());
+    };
 };

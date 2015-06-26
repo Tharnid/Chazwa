@@ -11,6 +11,8 @@ namespace SolutionName.Web.ViewModels
         public SalesOrderViewModel()
         {
             SalesOrderItems = new List<SalesOrderItemViewModel>();
+            // put the delete salesorderitem here and it will be seen in the client side ViewModel
+            SalesOrderItemsToDelete = new List<int>();
         }
 
         public int SalesOrderId { get; set; }
@@ -18,6 +20,8 @@ namespace SolutionName.Web.ViewModels
         public string PONumber { get; set; }
 
         public List<SalesOrderItemViewModel> SalesOrderItems { get; set; }
+
+        public List<int> SalesOrderItemsToDelete { get; set; }
 
         public string MessageToClient { get; set; }
 
