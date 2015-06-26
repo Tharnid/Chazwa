@@ -21,9 +21,9 @@
         </tr>
         <tbody data-bind="foreach: SalesOrderItems">
             <tr>
-                <td class="form-group"><input class="form-control input-sm" data-bind="value: ProductCode" /></td>
-                <td class="form-group"><input class="form-control input-sm" data-bind="value: Quantity" /></td>
-                <td class="form-group"><input class="form-control input-sm" data-bind="value: UnitPrice" /></td>
+                <td class="form-group"><input class="form-control input-sm" data-bind="value: ProductCode, event: {change: flagSalesOrderAsEdited}" /></td>
+                <td class="form-group"><input class="form-control input-sm" data-bind="value: Quantity, event: {change: flagSalesOrderAsEdited}" /></td>
+                <td class="form-group"><input class="form-control input-sm" data-bind="value: UnitPrice, event: {change: flagSalesOrderAsEdited}" /></td>
                 <td class="form-group">Delete</td>
             </tr>
         </tbody>
