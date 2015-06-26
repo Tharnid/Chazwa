@@ -2,7 +2,7 @@
 
 <p data-bind="text: MessageToClient"></p>
 
-<div>
+<form>
     <div class="form-group">
         <label class="control-label" for="CustomerName">Customer Name:</label>
         <input class="form-control" name="CustomerName" id="CustomerName" data-bind="value: CustomerName, event: {change: flagSalesOrderAsEdited}" />
@@ -38,10 +38,12 @@
         </tr>
     </table>
 
-</div>
+    <p><button type="submit" class="btn btn-primary">Save</button></p>
 
-<p><a class="btn btn-default btn-sm" href="/">&laquo; Back to List</a></p>
+    <p><a class="btn btn-default btn-sm" href="/">&laquo; Back to List</a></p>
 
-<p><button class="btn btn-primary" data-bind="click: save">Save</button></p>
+</form>
+
+
 
 
