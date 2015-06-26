@@ -8,10 +8,10 @@
 
 var salesOrderItemMapping = {
     'SalesOrderItems': {
-        key: function(salesOrderItem) {
+        key: function (salesOrderItem) {
             return ko.utils.unwrapObservable(salesOrderItem.SalesOrderItemId);
         },
-        create: function(options) {
+        create: function (options) {
             return new SalesOrderItemViewModel(options.data);
         }
     }
@@ -28,9 +28,11 @@ SalesOrderItemViewModel = function (data) {
         }
 
         return true;
-    }
+    },
 
-    // Extended price goes here
+    self.ExtendedPrice = ko.computed(function () {
+        return (self.Quantity() * self.UnitPrice()).toFixed(2);
+    });
 };
 
 
@@ -38,7 +40,7 @@ SalesOrderViewModel = function (data) {
     var self = this;
     ko.mapping.fromJS(data, salesOrderItemMapping, self);
 
-    self.save = function() {
+    self.save = function () {
         $.ajax({
             url: "/Sales/Save/",
             type: "POST",
@@ -61,17 +63,17 @@ SalesOrderViewModel = function (data) {
 
         return true;
     },
-    
-    self.addSalesOrderItem = function() {
+
+    self.addSalesOrderItem = function () {
         var salesOrderItem = new SalesOrderItemViewModel({ SalesOrderItemId: 0, ProductCode: "", Quantity: 1, UnitPrice: 0, ObjectState: ObjectState.Added });
         self.SalesOrderItems.push(salesOrderItem);
-    };
+    },
 
-    //self.Total = ko.computed(function () {
-    //    var total = 0;
-    //    ko.utils.arrayForEach(self.SalesOrderItems(), function (salesOrderItem) {
-    //        total += parseFloat(salesOrderItem.ExtendedPrice());
-    //    });
-    //    return total.toFixed(2);
-    //});
+    self.Total = ko.computed(function () {
+        var total = 0;
+        ko.utils.arrayForEach(self.SalesOrderItems(), function (salesOrderItem) {
+            total += parseFloat(salesOrderItem.ExtendedPrice());
+        });
+        return total.toFixed(2);
+    });
 };
