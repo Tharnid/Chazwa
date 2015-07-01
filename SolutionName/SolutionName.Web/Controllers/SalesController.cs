@@ -110,9 +110,8 @@ namespace SolutionName.Web.Controllers
 
             _salesContext.SalesOrders.Attach(salesOrder);
 
-            // adding deleteSalesOrderItem(s) here
-            if (salesOrder.ObjectState == ObjectState.Deleted)
-            {
+            if(salesOrder.ObjectState == ObjectState.Deleted)
+            { 
                 foreach (SalesOrderItemViewModel salesOrderItemViewModel in salesOrderViewModel.SalesOrderItems)
                 {
                     SalesOrderItem salesOrderItem = _salesContext.SalesOrderItems.Find(salesOrderItemViewModel.SalesOrderItemId);
@@ -125,9 +124,9 @@ namespace SolutionName.Web.Controllers
                 foreach (int salesOrderItemId in salesOrderViewModel.SalesOrderItemsToDelete)
                 {
                     SalesOrderItem salesOrderItem = _salesContext.SalesOrderItems.Find(salesOrderItemId);
-                    if (salesOrderItem != null)
+                    if (salesOrderItem != null)                
                         salesOrderItem.ObjectState = ObjectState.Deleted;
-                }
+                }                
             }
 
             _salesContext.ApplyStateChanges();

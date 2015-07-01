@@ -11,7 +11,6 @@ namespace SolutionName.Web.ViewModels
         public SalesOrderViewModel()
         {
             SalesOrderItems = new List<SalesOrderItemViewModel>();
-            // put the delete salesorderitem here and it will be seen in the client side ViewModel
             SalesOrderItemsToDelete = new List<int>();
         }
 
