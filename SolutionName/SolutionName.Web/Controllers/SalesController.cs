@@ -54,7 +54,7 @@ namespace SolutionName.Web.Controllers
             return View(salesOrderViewModel);
         }
 
-  
+
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -104,14 +104,20 @@ namespace SolutionName.Web.Controllers
         }
 
 
+        [HandleModelStateException]
         public JsonResult Save(SalesOrderViewModel salesOrderViewModel)
         {
+            if (!ModelState.IsValid)
+            {
+                throw new ModelStateException(ModelState);
+            }
+
             SalesOrder salesOrder = ViewModels.Helpers.CreateSalesOrderFromSalesOrderViewModel(salesOrderViewModel);
 
             _salesContext.SalesOrders.Attach(salesOrder);
 
-            if(salesOrder.ObjectState == ObjectState.Deleted)
-            { 
+            if (salesOrder.ObjectState == ObjectState.Deleted)
+            {
                 foreach (SalesOrderItemViewModel salesOrderItemViewModel in salesOrderViewModel.SalesOrderItems)
                 {
                     SalesOrderItem salesOrderItem = _salesContext.SalesOrderItems.Find(salesOrderItemViewModel.SalesOrderItemId);
@@ -124,9 +130,9 @@ namespace SolutionName.Web.Controllers
                 foreach (int salesOrderItemId in salesOrderViewModel.SalesOrderItemsToDelete)
                 {
                     SalesOrderItem salesOrderItem = _salesContext.SalesOrderItems.Find(salesOrderItemId);
-                    if (salesOrderItem != null)                
+                    if (salesOrderItem != null)
                         salesOrderItem.ObjectState = ObjectState.Deleted;
-                }                
+                }
             }
 
             _salesContext.ApplyStateChanges();
@@ -139,7 +145,7 @@ namespace SolutionName.Web.Controllers
             salesOrderViewModel = ViewModels.Helpers.CreateSalesOrderViewModelFromSalesOrder(salesOrder);
             salesOrderViewModel.MessageToClient = messageToClient;
 
-            return Json(new {salesOrderViewModel});
+            return Json(new { salesOrderViewModel });
         }
     }
 }

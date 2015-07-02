@@ -93,7 +93,7 @@ $("form").validate({
 
     rules: {
         CustomerName: {
-            required: true,
+            // required: true,
             maxlength: 30
         },
         PONumber: {
