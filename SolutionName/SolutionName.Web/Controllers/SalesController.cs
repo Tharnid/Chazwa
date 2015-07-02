@@ -54,7 +54,7 @@ namespace SolutionName.Web.Controllers
             return View(salesOrderViewModel);
         }
 
-  
+
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -104,13 +104,18 @@ namespace SolutionName.Web.Controllers
         }
 
 
+        [HandleModelStateException]
         public JsonResult Save(SalesOrderViewModel salesOrderViewModel)
         {
+            if (!ModelState.IsValid)
+            {
+                throw new ModelStateException(ModelState);
+            }
+
             SalesOrder salesOrder = ViewModels.Helpers.CreateSalesOrderFromSalesOrderViewModel(salesOrderViewModel);
 
             _salesContext.SalesOrders.Attach(salesOrder);
 
-            // adding deleteSalesOrderItem(s) here
             if (salesOrder.ObjectState == ObjectState.Deleted)
             {
                 foreach (SalesOrderItemViewModel salesOrderItemViewModel in salesOrderViewModel.SalesOrderItems)
@@ -140,7 +145,7 @@ namespace SolutionName.Web.Controllers
             salesOrderViewModel = ViewModels.Helpers.CreateSalesOrderViewModelFromSalesOrder(salesOrder);
             salesOrderViewModel.MessageToClient = messageToClient;
 
-            return Json(new {salesOrderViewModel});
+            return Json(new { salesOrderViewModel });
         }
     }
 }
