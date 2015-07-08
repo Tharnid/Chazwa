@@ -18,7 +18,7 @@ namespace SolutionName.Web.ViewModels
                 throw new ArgumentNullException("filterContext");
             }
 
-            if (filterContext.Exception != null && typeof(ModelStateException).IsInstanceOfType(filterContext.Exception) && !filterContext.ExceptionHandled)
+            if (filterContext.Exception != null && typeof (ModelStateException).IsInstanceOfType(filterContext.Exception) && !filterContext.ExceptionHandled)
             {
                 filterContext.ExceptionHandled = true;
                 filterContext.HttpContext.Response.Clear();
@@ -30,7 +30,7 @@ namespace SolutionName.Web.ViewModels
                 {
                     Content = (filterContext.Exception as ModelStateException).Message,
                     ContentEncoding = Encoding.UTF8,
-                };
+                };          
             }
         }
     }

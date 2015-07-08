@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 using SolutionName.Model;
-using System.ComponentModel.DataAnnotations;
 
 namespace SolutionName.Web.ViewModels
 {
@@ -21,7 +21,7 @@ namespace SolutionName.Web.ViewModels
         public int Quantity { get; set; }
 
         [Required(ErrorMessage = "Server: Unit price is a required field.")]
-        [Range(0, 100000, ErrorMessage = "Server: Unit price must be between zero and 100,000.")]
+        [Range(0, 100000, ErrorMessage = "Server: Unit price must be between zero and 100,000.")]  
         public decimal UnitPrice { get; set; }
 
         public int SalesOrderId { get; set; }

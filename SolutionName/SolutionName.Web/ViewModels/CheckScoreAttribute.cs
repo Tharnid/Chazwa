@@ -11,10 +11,9 @@ namespace SolutionName.Web.ViewModels
         private readonly decimal _minimumScore;
 
 
-        public CheckScoreAttribute(double minimumScore)
-            : base("Invalid score.")
+        public CheckScoreAttribute(double minimumScore) : base("Invalid score.")
         {
-            _minimumScore = (decimal)minimumScore;
+            _minimumScore = (decimal) minimumScore;
         }
 
 

@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 using SolutionName.Model;
-using System.ComponentModel.DataAnnotations;
 
 namespace SolutionName.Web.ViewModels
 {
@@ -16,12 +16,13 @@ namespace SolutionName.Web.ViewModels
         }
 
         public int SalesOrderId { get; set; }
-        
-        [Required(ErrorMessage="Server: you cannot create a sales order unless you provide the customer's name!!!")]
-        [StringLength(30, ErrorMessage="Server: Customer names must be 30 or less characters!!!")]
+
+        [Required(ErrorMessage = "Server: You cannot create a sales order unless you supply the customer's name.")]
+        [StringLength(30, ErrorMessage = "Server: Customer names must be 30 characters or shorter.")]
+        [CheckScore(3.14)]
         public string CustomerName { get; set; }
 
-        [StringLength(10, ErrorMessage="Server: PO numbers must be 10 or less characters!!!")]
+        [StringLength(10, ErrorMessage = "Server: PO numbers must be 10 characters or shorter.")]
         public string PONumber { get; set; }
 
         public List<SalesOrderItemViewModel> SalesOrderItems { get; set; }
