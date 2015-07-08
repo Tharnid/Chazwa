@@ -1,0 +1,76 @@
+﻿@model BootstrappinMVC.Models.Person
+
+@{
+    ViewBag.Title = "I2";
+    var likesMusic = Model.LikesMusic ? "active" : null;
+    var notAMusicFan = !Model.LikesMusic ? "active" : null;
+}
+
+<div class="page-header">
+    <h1>Welcome to the Person Page <small>Read all about @Model.FirstName !!!</small></h1>
+</div>
+
+<div class="">
+    <h3>@Model.LastName, @Model.FirstName</h3>
+    <p>@Model.FirstName was born on @Model.BirthDate.ToString("D").</p>
+    <p>
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-success btn-sm @likesMusic">
+                <input type="radio" name="options" id="option1" />Likes Music
+            </label>
+            <label class="btn btn-success btn-sm @notAMusicFan">
+                <input type="radio" name="options" id="option2" />Suffers in a Di\storted Reality!!!
+            </label>
+        </div>
+        <br />
+        <br />
+        @{
+            ViewBag.ListDescription = "Skills";
+            Html.RenderPartial("_SkillsCollection", Model.Skills);
+        }
+    </p>
+</div>
+
+
+@*<div>
+    <h4>Person</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BirthDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BirthDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LikesMusic)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LikesMusic)
+        </dd>
+
+    </dl>
+</div>*@
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PersonId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
