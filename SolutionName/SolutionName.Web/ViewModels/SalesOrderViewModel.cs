@@ -32,5 +32,7 @@ namespace SolutionName.Web.ViewModels
         public string MessageToClient { get; set; }
 
         public ObjectState ObjectState { get; set; }
+
+        public byte[] RowVersion { get; set; }
     }
 }

@@ -27,5 +27,7 @@ namespace SolutionName.Web.ViewModels
         public int SalesOrderId { get; set; }
 
         public ObjectState ObjectState { get; set; }
+
+        public byte[] RowVersion { get; set; }
     }
 }

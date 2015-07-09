@@ -15,6 +15,8 @@ namespace SolutionName.Web.ViewModels
             salesOrderViewModel.CustomerName = salesOrder.CustomerName;
             salesOrderViewModel.PONumber = salesOrder.PONumber;
             salesOrderViewModel.ObjectState = ObjectState.Unchanged;
+            salesOrderViewModel.RowVersion = salesOrder.RowVersion;
+
 
             foreach (SalesOrderItem salesOrderItem in salesOrder.SalesOrderItems)
             {
@@ -42,6 +44,7 @@ namespace SolutionName.Web.ViewModels
             salesOrder.CustomerName = salesOrderViewModel.CustomerName;
             salesOrder.PONumber = salesOrderViewModel.PONumber;
             salesOrder.ObjectState = salesOrderViewModel.ObjectState;
+            salesOrder.RowVersion = salesOrderViewModel.RowVersion;
 
             int temporarySalesOrderItemId = -1; 
 

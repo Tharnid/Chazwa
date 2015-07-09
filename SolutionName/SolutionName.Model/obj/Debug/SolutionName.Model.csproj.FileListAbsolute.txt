@@ -17,3 +17,7 @@ E:\GH\Chazwa\SolutionName\SolutionName.Model\bin\Debug\SolutionName.Model.pdb
 E:\GH\Chazwa\SolutionName\SolutionName.Model\obj\Debug\SolutionName.Model.csprojResolveAssemblyReference.cache
 E:\GH\Chazwa\SolutionName\SolutionName.Model\obj\Debug\SolutionName.Model.dll
 E:\GH\Chazwa\SolutionName\SolutionName.Model\obj\Debug\SolutionName.Model.pdb
+C:\srcCode\GH\Chazwa\SolutionName\SolutionName.Model\bin\Debug\SolutionName.Model.dll
+C:\srcCode\GH\Chazwa\SolutionName\SolutionName.Model\bin\Debug\SolutionName.Model.pdb
+C:\srcCode\GH\Chazwa\SolutionName\SolutionName.Model\obj\Debug\SolutionName.Model.dll
+C:\srcCode\GH\Chazwa\SolutionName\SolutionName.Model\obj\Debug\SolutionName.Model.pdb

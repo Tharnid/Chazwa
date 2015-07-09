@@ -230,6 +230,7 @@
     <Content Include="Views\Simple\Index.cshtml" />
     <Content Include="Views\Simple\I2.cshtml" />
     <Content Include="Views\Simple\_SkillsCollection.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\Boolean.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
