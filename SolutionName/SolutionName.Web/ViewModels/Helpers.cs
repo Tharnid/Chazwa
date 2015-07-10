@@ -17,7 +17,6 @@ namespace SolutionName.Web.ViewModels
             salesOrderViewModel.ObjectState = ObjectState.Unchanged;
             salesOrderViewModel.RowVersion = salesOrder.RowVersion;
 
-
             foreach (SalesOrderItem salesOrderItem in salesOrder.SalesOrderItems)
             {
                 SalesOrderItemViewModel salesOrderItemViewModel = new SalesOrderItemViewModel();
@@ -27,6 +26,7 @@ namespace SolutionName.Web.ViewModels
                 salesOrderItemViewModel.UnitPrice = salesOrderItem.UnitPrice;
 
                 salesOrderItemViewModel.ObjectState = ObjectState.Unchanged;
+                salesOrderItemViewModel.RowVersion = salesOrderItem.RowVersion;
 
                 salesOrderItemViewModel.SalesOrderId = salesOrder.SalesOrderId;
 
@@ -46,7 +46,7 @@ namespace SolutionName.Web.ViewModels
             salesOrder.ObjectState = salesOrderViewModel.ObjectState;
             salesOrder.RowVersion = salesOrderViewModel.RowVersion;
 
-            int temporarySalesOrderItemId = -1; 
+            int temporarySalesOrderItemId = -1;
 
             foreach (SalesOrderItemViewModel salesOrderItemViewModel in salesOrderViewModel.SalesOrderItems)
             {
@@ -56,6 +56,7 @@ namespace SolutionName.Web.ViewModels
                 salesOrderItem.UnitPrice = salesOrderItemViewModel.UnitPrice;
 
                 salesOrderItem.ObjectState = salesOrderItemViewModel.ObjectState;
+                salesOrderItem.RowVersion = salesOrderItemViewModel.RowVersion;
 
                 if (salesOrderItemViewModel.ObjectState != ObjectState.Added)
                     salesOrderItem.SalesOrderItemId = salesOrderItemViewModel.SalesOrderItemId;

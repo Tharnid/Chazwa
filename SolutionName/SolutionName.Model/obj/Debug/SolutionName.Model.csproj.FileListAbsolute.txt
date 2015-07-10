@@ -4,20 +4,15 @@ D:\Training\Parent-Child Data with EF, MVC, Knockout, Ajax, and Validation\Solut
 D:\Training\Parent-Child Data with EF, MVC, Knockout, Ajax, and Validation\SolutionName\SolutionName.Model\obj\Debug\SolutionName.Model.pdb
 D:\Training\Parent-Child\SolutionName\SolutionName.Model\bin\Debug\SolutionName.Model.dll
 D:\Training\Parent-Child\SolutionName\SolutionName.Model\bin\Debug\SolutionName.Model.pdb
-D:\Training\Parent-Child\SolutionName\SolutionName.Model\obj\Debug\SolutionName.Model.csprojResolveAssemblyReference.cache
 D:\Training\Parent-Child\SolutionName\SolutionName.Model\obj\Debug\SolutionName.Model.dll
 D:\Training\Parent-Child\SolutionName\SolutionName.Model\obj\Debug\SolutionName.Model.pdb
-D:\Training\Parent-Child\parent-child-data-ef-mvc-knockout-ajax-m11-server-side-validation\demos\after\SolutionName\SolutionName.Model\bin\Debug\SolutionName.Model.dll
-D:\Training\Parent-Child\parent-child-data-ef-mvc-knockout-ajax-m11-server-side-validation\demos\after\SolutionName\SolutionName.Model\bin\Debug\SolutionName.Model.pdb
-D:\Training\Parent-Child\parent-child-data-ef-mvc-knockout-ajax-m11-server-side-validation\demos\after\SolutionName\SolutionName.Model\obj\Debug\SolutionName.Model.dll
-D:\Training\Parent-Child\parent-child-data-ef-mvc-knockout-ajax-m11-server-side-validation\demos\after\SolutionName\SolutionName.Model\obj\Debug\SolutionName.Model.pdb
-D:\Training\Parent-Child\parent-child-data-ef-mvc-knockout-ajax-m11-server-side-validation\demos\after\SolutionName\SolutionName.Model\obj\Debug\SolutionName.Model.csprojResolveAssemblyReference.cache
-E:\GH\Chazwa\SolutionName\SolutionName.Model\bin\Debug\SolutionName.Model.dll
-E:\GH\Chazwa\SolutionName\SolutionName.Model\bin\Debug\SolutionName.Model.pdb
-E:\GH\Chazwa\SolutionName\SolutionName.Model\obj\Debug\SolutionName.Model.csprojResolveAssemblyReference.cache
-E:\GH\Chazwa\SolutionName\SolutionName.Model\obj\Debug\SolutionName.Model.dll
-E:\GH\Chazwa\SolutionName\SolutionName.Model\obj\Debug\SolutionName.Model.pdb
+D:\Training\Parent-Child\parent-child-data-ef-mvc-knockout-ajax-m13-handling-concurrency\demos\after\SolutionName\SolutionName.Model\bin\Debug\SolutionName.Model.dll
+D:\Training\Parent-Child\parent-child-data-ef-mvc-knockout-ajax-m13-handling-concurrency\demos\after\SolutionName\SolutionName.Model\bin\Debug\SolutionName.Model.pdb
+D:\Training\Parent-Child\parent-child-data-ef-mvc-knockout-ajax-m13-handling-concurrency\demos\after\SolutionName\SolutionName.Model\obj\Debug\SolutionName.Model.dll
+D:\Training\Parent-Child\parent-child-data-ef-mvc-knockout-ajax-m13-handling-concurrency\demos\after\SolutionName\SolutionName.Model\obj\Debug\SolutionName.Model.pdb
+D:\Training\Parent-Child\parent-child-data-ef-mvc-knockout-ajax-m13-handling-concurrency\demos\after\SolutionName\SolutionName.Model\obj\Debug\SolutionName.Model.csprojResolveAssemblyReference.cache
 C:\srcCode\GH\Chazwa\SolutionName\SolutionName.Model\bin\Debug\SolutionName.Model.dll
 C:\srcCode\GH\Chazwa\SolutionName\SolutionName.Model\bin\Debug\SolutionName.Model.pdb
+C:\srcCode\GH\Chazwa\SolutionName\SolutionName.Model\obj\Debug\SolutionName.Model.csprojResolveAssemblyReference.cache
 C:\srcCode\GH\Chazwa\SolutionName\SolutionName.Model\obj\Debug\SolutionName.Model.dll
 C:\srcCode\GH\Chazwa\SolutionName\SolutionName.Model\obj\Debug\SolutionName.Model.pdb
