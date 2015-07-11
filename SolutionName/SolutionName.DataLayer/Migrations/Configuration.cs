@@ -21,8 +21,8 @@ namespace SolutionName.DataLayer.Migrations
                 so => so.CustomerName,
                 new SalesOrder { CustomerName = "Adam", PONumber = "9876", SalesOrderItems =
                     {
-                        new SalesOrderItem{ProductCode = "ABC123", Quantity = 10, UnitPrice = 1.23m },
-                        new SalesOrderItem{ProductCode = "XYZ987", Quantity = 7, UnitPrice = 14.57m },
+                        new SalesOrderItem{ProductCode = "ABC", Quantity = 10, UnitPrice = 1.23m },
+                        new SalesOrderItem{ProductCode = "XYZ", Quantity = 7, UnitPrice = 14.57m },
                         new SalesOrderItem{ProductCode = "SAMPLE", Quantity = 3, UnitPrice = 15.00m }
                     }
                 },

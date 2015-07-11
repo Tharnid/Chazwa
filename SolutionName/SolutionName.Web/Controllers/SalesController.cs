@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
+using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Net;
 using System.Web;
@@ -136,21 +137,32 @@ namespace SolutionName.Web.Controllers
             }
 
             _salesContext.ApplyStateChanges();
+            string messageToClient = string.Empty;
 
             try
             {
                 _salesContext.SaveChanges();
             }
-            catch(Exception ex)
+            catch (DbUpdateConcurrencyException)
+            {
+                messageToClient = "Someone else have modified this sales order since you retrieved it.  Your changes have not been applied.  What you see now are the current values in the database.";
+            }
+            catch (Exception ex)
             {
                 throw new ModelStateException(ex);
             }
 
-
             if (salesOrder.ObjectState == ObjectState.Deleted)
                 return Json(new { newLocation = "/Sales/Index/" });
 
-            string messageToClient = ViewModels.Helpers.GetMessageToClient(salesOrderViewModel.ObjectState, salesOrder.CustomerName);
+            if (messageToClient.Trim().Length == 0)
+                messageToClient = ViewModels.Helpers.GetMessageToClient(salesOrderViewModel.ObjectState, salesOrder.CustomerName);
+
+            salesOrderViewModel.SalesOrderId = salesOrder.SalesOrderId;
+            _salesContext.Dispose();
+            _salesContext = new SalesContext();
+            salesOrder = _salesContext.SalesOrders.Find(salesOrderViewModel.SalesOrderId);
+
             salesOrderViewModel = ViewModels.Helpers.CreateSalesOrderViewModelFromSalesOrder(salesOrder);
             salesOrderViewModel.MessageToClient = messageToClient;
 
