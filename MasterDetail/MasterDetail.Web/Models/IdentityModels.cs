@@ -4,8 +4,12 @@ using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using MasterDetail.Web.DataLayer;
+<<<<<<< HEAD
+=======
+using MasterDetail.DataLayer;
+>>>>>>> cd696de23f5f55793b4e876577c6152d62e07bf4
 
-namespace MasterDetail.Web.Models
+namespace MasterDetail.Models
 {
     // You can add profile data for the user by adding more properties to your ApplicationUser class, please visit http://go.microsoft.com/fwlink/?LinkID=317594 to learn more.
     public class ApplicationUser : IdentityUser
@@ -22,7 +26,11 @@ namespace MasterDetail.Web.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
+<<<<<<< HEAD
             : base("TharnConnection", throwIfV1Schema: false)
+=======
+            : base("TharndConnection", throwIfV1Schema: false)
+>>>>>>> cd696de23f5f55793b4e876577c6152d62e07bf4
         {
         }
 
@@ -34,6 +42,10 @@ namespace MasterDetail.Web.Models
         public DbSet<ServiceItem> ServiceItems { get; set; }
         public DbSet<WorkOrder> WorkOrders { get; set; }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> cd696de23f5f55793b4e876577c6152d62e07bf4
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Configurations.Add(new CategoryConfiguration());
