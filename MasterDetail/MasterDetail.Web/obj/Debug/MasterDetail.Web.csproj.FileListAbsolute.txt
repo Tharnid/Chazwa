@@ -110,3 +110,5 @@ E:\GH\Chazwa\MasterDetail\MasterDetail.Web\obj\Debug\MasterDetail.Web.dll
 E:\GH\Chazwa\MasterDetail\MasterDetail.Web\obj\Debug\MasterDetail.Web.pdb
 E:\GH\Chazwa\MasterDetail\MasterDetail.Web\obj\Debug\MasterDetail.Web.Migrations.Initial.resources
 E:\GH\Chazwa\MasterDetail\MasterDetail.Web\obj\Debug\MasterDetail.Web.csproj.GenerateResource.Cache
+C:\srcCode\GH\Chazwa\MasterDetail\MasterDetail.Web\obj\Debug\MasterDetail.Web.Migrations.Initial.resources
+C:\srcCode\GH\Chazwa\MasterDetail\MasterDetail.Web\obj\Debug\MasterDetail.Web.csproj.GenerateResource.Cache
