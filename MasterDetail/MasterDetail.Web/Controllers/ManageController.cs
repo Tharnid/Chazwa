@@ -7,6 +7,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using MasterDetail.Models;
+using MasterDetail.Controllers;
 
 namespace MasterDetail.Web.Controllers
 {

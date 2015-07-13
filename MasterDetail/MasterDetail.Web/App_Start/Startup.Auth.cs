@@ -6,6 +6,7 @@ using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Owin;
 using MasterDetail.Models;
+using MasterDetail.DataLayer;
 
 namespace MasterDetail.Web
 {
