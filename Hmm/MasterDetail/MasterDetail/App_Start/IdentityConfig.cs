@@ -20,22 +20,7 @@ namespace MasterDetail
     {
         public Task SendAsync(IdentityMessage message)
         {
-            const string userName = "MeddlingDeveloper";
-            const string from = "admin@masterdetail.com";
-            const string password = "saldoraragoththarnid12";
-            const int port = 587;
 
-            var smtpClient = new SmtpClient("smtp.sendgrid.net", port);
-            smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
-            smtpClient.UseDefaultCredentials = false;
-            smtpClient.EnableSsl = true;
-            smtpClient.Credentials = new NetworkCredential(userName, password);
-
-            var mailMessage = new MailMessage(from, message.Destination);
-            mailMessage.Subject = message.Subject;
-            mailMessage.Body = message.Body;
-
-            return smtpClient.SendMailAsync(mailMessage);
         }
     }
 
