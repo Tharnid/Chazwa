@@ -1,0 +1,40 @@
+﻿
+@using ExampleProjectforTelerik.Controllers
+@using Kendo.Mvc.UI
+@model IEnumerable<ExampleProjectforTelerik.Models.Customer>
+
+
+
+@{
+    ViewBag.Title = "CustomerGrid";
+}
+
+<h2>Customer Grid</h2>
+
+@(Html.SSSGridReadOnly<ExampleProjectforTelerik.Models.Customer>("MainGrid", "250px")
+    .Columns(columns =>
+    {
+        //columns.Bound(o => o.CustomerId);
+        columns.Bound(o => o.CustomerId).ClientTemplate(@Html.ActionLink("#=CustomerId#", "Details", new { CustomerId = "#=CustomerId#" }).ToHtmlString()); //  #=CompanyId#  , CompanyId = "#=CompanyId#"
+        columns.Bound(o => o.Name);
+        columns.Bound(o => o.City);
+        columns.Bound(o => o.CustomerId);
+
+        //columns.Command(command =>
+        //{
+        //    command.Select();
+        //});
+    })
+
+        .DataSource(dataSource => dataSource
+            .Ajax()
+                        .Read(read => read.Action("CustomerGrid_Read", "Customer"))
+
+                    .Model(model =>
+                    {
+                        model.Id(o => o.CustomerId); //PK
+                        //model.Field(o => o.PersonId).Editable(false);
+                    }
+               )
+        )
+)
