@@ -18,5 +18,10 @@ namespace DMP.Web.Entities
 
         // Relationship from Profile to Demographics
         public Demographics Demographics { get; set; }
+
+        // Collections ICollection Adding, Iterating, and Removing  
+        // Probably a good idea to pluralize the properties
+        public ICollection<Interest> Interests { get; set; }
+        public ICollection<Photo> Photos { get; set; }
     }
 }
