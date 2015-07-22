@@ -9,16 +9,17 @@ namespace DMP.Web.Entities
 {
     public class Member
     {
-        public int MemberId { get; set; }
+        public int Id { get; set; }
 
-        public string Username { get; set; }
+        public string UserName { get; set; } // To link with Identity
+        public string MemberName { get; set; } // Visible Username
+
         public DateTime LastLogin { get; set; }
         public DateTime Created { get; set; }
 
-        public Profile Profile  { get; set; }
+        public Profile Profile { get; set; }
 
-        // collection because a member can have multiple 
         public ICollection<Message> Messages { get; set; }
-        public ICollection<Favorite> Favorites { get; set; } 
+        public ICollection<Favorite> Favorites { get; set; }
     }
 }

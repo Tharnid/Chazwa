@@ -7,11 +7,11 @@ namespace DMP.Web.Entities
 {
     public class Photo
     {
-        public int PhotoId { get; set; }
+        public int Id { get; set; }
 
         public string Url { get; set; }
         public string Description { get; set; }
-        public DateTime LastLogin { get; set; }
+        public DateTime DateAdded { get; set; }
         public bool IsMain { get; set; }
     }
 }
