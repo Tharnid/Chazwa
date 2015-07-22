@@ -162,6 +162,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Entities\Demographics.cs" />
+    <Compile Include="Entities\Favorite.cs" />
     <Compile Include="Entities\Interest.cs" />
     <Compile Include="Entities\InterestType.cs" />
     <Compile Include="Entities\Member.cs" />
