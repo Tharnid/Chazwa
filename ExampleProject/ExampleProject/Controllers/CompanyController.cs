@@ -14,12 +14,17 @@ namespace ExampleProject.Controllers
 {
     public class CompanyController : Controller
     {
-        private ExampleDBContext db = new ExampleDBContext();
+        ExampleDBContext db = new ExampleDBContext();
 
         // GET: Company
         public ActionResult Index()
         {
             return View(); // db.Company.ToList()
+        }
+
+        public ActionResult Index2()
+        {
+            return View();
         }
 
         // Ajax Read

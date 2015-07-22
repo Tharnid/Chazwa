@@ -1,5 +1,4 @@
 ﻿
-@using ExampleProject.Controllers
 @model IEnumerable<ExampleProject.Models.Company>
 
 @{
@@ -8,7 +7,7 @@
 
 <h2>Index</h2>
 
-@(Html.SSSGridReadOnly<ExampleProject.Models.Company>("MainGrid", "250px")
+@*@(Html.SSSGridReadOnly<ExampleProject.Models.Company>("MainGrid", "250px")
     .Columns(columns =>
     {
         columns.Bound(c => c.CompanyId);
@@ -26,10 +25,10 @@
                     }
                 )
     )
-)
+)*@
 
 
-@*<p>
+<p>
     @Html.ActionLink("Create New", "Create")
 </p>
 <table class="table">
@@ -38,7 +37,7 @@
             @Html.DisplayNameFor(model => model.TenantId)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Name)
+            @Html.DisplayNameFor(model => model.CompanyId)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.CountryCode)
@@ -77,7 +76,7 @@
     </tr>
 }
 
-</table>*@
+</table>
 
 
 
