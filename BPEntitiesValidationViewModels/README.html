@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>README</title>
+</head>
+<body>
+    <h1>Course Notes</h1>
+
+    Entities = Nouns
+
+    Something that exists in itself, actually, or potentially, concretly, abstractly, physically, or not that can be uniquely identified
+
+Member -> Profile -> Demographic/Interest/Photo
+
+Message - Members
+Favorites - Members
+
+Entity Relational Model
+
+Method for describing Data or Information Needs
+Allows you to abstractly describe your needs to faciltate storage
+Gives you a core vocab for describing your data needs
+
+
+Entity Keys
+
+Primary Key - unique identifies the entity
+Foreign Key - connects to entities
+Natural Key - exists in the real world to identity an entity (Serial Number or SSN)
+
+Attribute Types
+
+Simple (Birthday Last Login)
+Composite (address etc)
+
+By Entities we are not talking about EF
+
+    - Design of Entities does not limit where they are stored
+
+
+View Models
+
+a use case specific view of data for one and two way binding to physical or logical views
+
+** any data passed or used by a view **
+
+!*! Pragmatism - ViewModel for every entity...over engineering match effort with resources !*!
+
+Create them as necessary
+
+Many vm's are not shaped like your domain objects
+
+Separation between entities and vm's can aid in maintenance of large scale projects
+
+    Loosely typed vm's are acceptable if there is a "win" in the schedule is worth the risk
+
+
+</body>
+</html>

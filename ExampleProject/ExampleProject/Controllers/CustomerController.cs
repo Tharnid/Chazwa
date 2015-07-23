@@ -12,7 +12,7 @@ namespace ExampleProject.Controllers
 {
     public class CustomerController : Controller
     {
-        private ExampleDBContext db = new ExampleDBContext();
+        ExampleDBContext db = new ExampleDBContext();
 
         // GET: Customer
         public ActionResult Index()
