@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,22 +22,22 @@ namespace TCM.BL
             //    }
             //}
 
-            var query = from c in customerList
-                        where c.CustomerId == customerId
-                        select c;
+            //var query = from c in customerList
+            //            where c.CustomerId == customerId
+            //            select c;
 
-            foundCustomer = query.First();
+            //foundCustomer = query.First();
 
-            //foundCustomer = customerList.FirstOrDefault(c =>
-            //                    c.CustomerId == customerId);
+            //foundCustomer = customerList.FirstOrDefault(c =>  // returns the first that satisfies the condition
+            //                    c.CustomerId == customerId);  // Single lines do not require a return statement
 
-            //foundCustomer = customerList.FirstOrDefault(c =>
+            //foundCustomer = customerList.FirstOrDefault(c =>  // No entry found...returns default value or null
             //                {
             //                    Debug.WriteLine(c.LastName);
             //                    return c.CustomerId == customerId;
             //                });
 
-            //foundCustomer = customerList.Where(c =>
+            //foundCustomer = customerList.Where(c =>  // Where Skip One...first or default
             //                    c.CustomerId == customerId)
             //                    .Skip(1)
             //                    .FirstOrDefault();
