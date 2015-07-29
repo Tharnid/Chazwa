@@ -1,0 +1,100 @@
+﻿@model ChildGridsHowTo.Models.Customer
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Customer</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+
+    </dl>
+</div>
+
+<div class="panel panel-default">
+    @* This is where I want to implement the Grids with child information *@
+    <div class="panel-heading">
+        Known Addresses
+    </div>
+
+    <div class="panel-body">
+        <div class="panel-body">
+
+            <table class="table table-bordered">
+
+                <tr>
+                    @*<th>Customer Id</th>*@
+                    <th>Type</th>
+                    <th>Address 1</th>
+                    <th>Address 2</th>
+                    <th>State</th>
+                </tr>
+                @foreach (var item in Model.Address)
+                {
+                    <tr>
+                        @*<td>@Html.DisplayFor(modelItem => item.CustomerId)</td>*@
+                        <td>@Html.DisplayFor(modelItem => item.AddressType)</td>
+                        <td>@Html.DisplayFor(modelItem => item.AddressLine1)</td>
+                        @*<td>@Html.DisplayFor(modelItem => item.AddressLine2)</td>*@
+                        <td>@Html.DisplayFor(modelItem => item.City)</td>
+                        <td>@Html.DisplayFor(modelItem => item.State)</td>
+                    </tr>
+                }
+            </table>
+
+        </div>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    @* This is where I want to implement the Grids with child information.  I am not sure how to get that information in a grid.  I have tried multiple things and google'd quite a bit.  I fear at this
+        point that my company spent money on something that I could easily do with a bit of bootstrap which will also be user friendly *@
+    <div class="panel-heading">
+        Orders
+    </div>
+
+    <div class="panel-body">
+        <div class="panel-body">
+
+            <table class="table table-bordered">
+
+                <tr>
+                    @*<th>Customer Id</th>*@
+                    <th>Type</th>
+                    <th>Status</th>
+                </tr>
+                @foreach (var item in Model.Order)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(modelItem => item.OrderType)</td>
+                        <td>@Html.DisplayFor(modelItem => item.OrderStatus)</td>
+                    </tr>
+                }
+            </table>
+
+        </div>
+    </div>
+</div>
+
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CustomerId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
