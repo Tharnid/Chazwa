@@ -1,0 +1,5 @@
+C:\srcCode\GH\Chazwa\PL\TCM.BL\bin\Debug\TCM.BL.dll
+C:\srcCode\GH\Chazwa\PL\TCM.BL\bin\Debug\TCM.BL.pdb
+C:\srcCode\GH\Chazwa\PL\TCM.BL\obj\Debug\TCM.BL.csprojResolveAssemblyReference.cache
+C:\srcCode\GH\Chazwa\PL\TCM.BL\obj\Debug\TCM.BL.dll
+C:\srcCode\GH\Chazwa\PL\TCM.BL\obj\Debug\TCM.BL.pdb
