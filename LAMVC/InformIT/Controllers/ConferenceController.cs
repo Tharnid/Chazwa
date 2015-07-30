@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using InformIT.Domain;
 using InformIT.Infrastructure;
+using InformIT.Models;
 
 namespace InformIT.Controllers
 {
@@ -21,8 +22,13 @@ namespace InformIT.Controllers
         public ActionResult Index()
         {
             IEnumerable<Conference> conferences = _repository.GetAll();
-
+            ConferenceListModel[] models = MapToListModel(conferences);
             return View();
+        }
+
+        private ConferenceListModel[] MapToListModel(IEnumerable<Conference> conferences)
+        {
+            conferences.Select(c => new ConferenceListModel())
         }
     }
 }

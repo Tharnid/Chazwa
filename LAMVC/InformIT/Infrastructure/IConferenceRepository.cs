@@ -14,34 +14,34 @@ namespace InformIT.Infrastructure
         Conference FindByName(string name);
     }
 
-    //public class ConferenceRepository : IConferenceRepository
-    //{
-    //    private readonly IDocumentSession _documentSession;
+    public class ConferenceRepository : IConferenceRepository
+    {
+        private readonly IDocumentSession _documentSession;
 
-    //    public ConferenceRepository(IDocumentSession documentSession)
-    //    {
-    //        _documentSession = documentSession;
-    //    }
+        public ConferenceRepository(IDocumentSession documentSession)
+        {
+            _documentSession = documentSession;
+        }
 
-    //    public Conference Load(Guid id)
-    //    {
-    //        return _documentSession.Load<Conference>(id);
-    //    }
+        //public Conference Load(Guid id)
+        //{
+        //    return _documentSession.Load<Conference>(id);
+        //}
 
-    //    public Conference FindByName(string name)
-    //    {
-    //        return _documentSession.Query<Conference>()
-    //            .FirstOrDefault(c => c.Name == name);
-    //    }
+        //public Conference FindByName(string name)
+        //{
+        //    return _documentSession.Query<Conference>()
+        //        .FirstOrDefault(c => c.Name == name);
+        //}
 
-    //    public IRavenQueryable<Conference> Query()
-    //    {
-    //        return _documentSession.Query<Conference>();
-    //    }
+        //public IRavenQueryable<Conference> Query()
+        //{
+        //    return _documentSession.Query<Conference>();
+        //}
 
-    //    public IEnumerable<Conference> GetAll()
-    //    {
-    //        return _documentSession.Query<Conference>().ToList();
-    //    }
-    //}
+        public IEnumerable<Conference> GetAll()
+        {
+            return _documentSession.Query<Conference>().ToList();
+        }
+    }
 }
