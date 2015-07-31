@@ -16,3 +16,7 @@ C:\srcCode\GH\Chazwa\KVMVC\Basics\bin\System.Web.Mvc.xml
 C:\srcCode\GH\Chazwa\KVMVC\Basics\obj\Debug\Basics.csprojResolveAssemblyReference.cache
 C:\srcCode\GH\Chazwa\KVMVC\Basics\obj\Debug\Basics.dll
 C:\srcCode\GH\Chazwa\KVMVC\Basics\obj\Debug\Basics.pdb
+C:\srcCode\GH\Chazwa\KVMVC\Basics\bin\EntityFramework.dll
+C:\srcCode\GH\Chazwa\KVMVC\Basics\bin\EntityFramework.SqlServer.dll
+C:\srcCode\GH\Chazwa\KVMVC\Basics\bin\EntityFramework.xml
+C:\srcCode\GH\Chazwa\KVMVC\Basics\bin\EntityFramework.SqlServer.xml

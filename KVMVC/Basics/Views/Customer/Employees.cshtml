@@ -1,0 +1,51 @@
+﻿@model Basics.Models.Employee
+
+@{
+    ViewBag.Title = "Employees Details";
+}
+
+<h2>Employees Details</h2>
+
+<table style="font-family:Arial">
+    <tr>
+        <td>
+            Employee ID:
+        </td>
+        <td>
+            @Model.EmployeeId
+        </td>
+    </tr>
+    <tr>
+        <td>
+            First Name:
+        </td>
+        <td>
+            @Model.FirstName
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Last Name:
+        </td>
+        <td>
+            @Model.LastName
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Gender:
+        </td>
+        <td>
+            @Model.Gender
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Phone Number:
+        </td>
+        <td>
+            @Model.PhoneNumber
+        </td>
+    </tr>
+
+</table>
