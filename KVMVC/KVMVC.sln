@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KVMVC", "KVMVC\KVMVC.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngMVC", "AngMVC\AngMVC.csproj", "{88FCC5B0-305C-4FF2-A3E6-92353EE38915}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basics", "Basics\Basics.csproj", "{BB9AE57E-6825-4D4A-A788-CB7FBC761F94}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{88FCC5B0-305C-4FF2-A3E6-92353EE38915}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88FCC5B0-305C-4FF2-A3E6-92353EE38915}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88FCC5B0-305C-4FF2-A3E6-92353EE38915}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB9AE57E-6825-4D4A-A788-CB7FBC761F94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB9AE57E-6825-4D4A-A788-CB7FBC761F94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB9AE57E-6825-4D4A-A788-CB7FBC761F94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB9AE57E-6825-4D4A-A788-CB7FBC761F94}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
