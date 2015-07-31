@@ -1,27 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
 using System.Web;
 using System.Web.Mvc;
 
 namespace Basics.Controllers
 {
-    public class CountryController : Controller
+    public class VBVDController : Controller
     {
-        
-        // List
-        public ActionResult Index()  // views inherit from action result
+        // GET: VBVD
+        public ActionResult Index()
         {
-            //return new List<string>()  // returns name of the type
-            //{
-            //    "India",
-            //    "US",
-            //    "UK",
-            //    "Canada"
-            //};
+            // ViewData || ViewData["WhateverTheKey"]
+            // ViewBag || ViewBag.YourProperty = "Whatever";
 
-            // Convert to ViewBag
             ViewBag.Countries = new List<string>()
             {
                     "India",
