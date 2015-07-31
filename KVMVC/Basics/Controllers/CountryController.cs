@@ -13,12 +13,21 @@ namespace Basics.Controllers
         // List
         public ActionResult Index()  // views inherit from action result
         {
-            return new List<string>()  // returns name of the type
+            //return new List<string>()  // returns name of the type
+            //{
+            //    "India",
+            //    "US",
+            //    "UK",
+            //    "Canada"
+            //};
+
+            // Convert to ViewBag
+            ViewBag.Countries = new List<string>()
             {
-                "India",
-                "US",
-                "UK",
-                "Canada"
+                    "India",
+                    "US",
+                    "UK",
+                    "Canada"
             };
 
             return View();
