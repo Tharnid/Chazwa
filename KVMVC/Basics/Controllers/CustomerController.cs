@@ -35,7 +35,7 @@ namespace Basics.Controllers
                 employee.PhoneNumber = "2225557777";
             };
 
-            return View();
+            return View(employee);
         }
     }
 }
