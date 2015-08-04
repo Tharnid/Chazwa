@@ -27,3 +27,4 @@ C:\srcCode\GH\Chazwa\KVMVC\Sigh\bin\Antlr3.Runtime.pdb
 C:\srcCode\GH\Chazwa\KVMVC\Sigh\bin\Newtonsoft.Json.xml
 C:\srcCode\GH\Chazwa\KVMVC\Sigh\obj\Debug\Sigh.dll
 C:\srcCode\GH\Chazwa\KVMVC\Sigh\obj\Debug\Sigh.pdb
+C:\srcCode\GH\Chazwa\KVMVC\Sigh\obj\Debug\Sigh.csprojResolveAssemblyReference.cache
