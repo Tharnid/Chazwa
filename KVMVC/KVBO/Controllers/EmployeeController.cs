@@ -118,7 +118,7 @@ namespace KVBO.Controllers
 
             if (ModelState.IsValid)
             {
-                employeeBusinessLayer.AddEmmployee(employee);
+                employeeBusinessLayer.AddEmployee(employee);
                 return RedirectToAction("Index");
             }
             else
@@ -127,7 +127,92 @@ namespace KVBO.Controllers
             }
         }
 
- 
+        // Edit Actions
+
+        [HttpGet]
+        public ActionResult Edit(int id)
+        {
+            EmployeeBusinessLayer employeeBusinessLayer =
+                   new EmployeeBusinessLayer();
+            Employee employee =
+                   employeeBusinessLayer.Employees.Single(emp => emp.ID == id);
+
+            return View(employee);
+        }
+
+        //[HttpPost]
+        //public ActionResult Edit(Employee employee)
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        EmployeeBusinessLayer employeeBusinessLayer =
+        //            new EmployeeBusinessLayer();
+        //        employeeBusinessLayer.SaveEmmployee(employee);
+
+        //        return RedirectToAction("Index");
+        //    }
+        //    return View(employee);
+        //}
+
+        //[HttpPost]
+        //[ActionName("Edit")]
+        //public ActionResult Edit_Post(int id)
+        //{
+        //    EmployeeBusinessLayer employeeBusinessLayer = new EmployeeBusinessLayer();
+
+        //    Employee employee = employeeBusinessLayer.Employees.Single(x => x.ID == id);
+        //    UpdateModel(employee, new string[] { "ID", "Gender", "City", "DateOfBirth" });
+
+        //    if (ModelState.IsValid)
+        //    {
+        //        employeeBusinessLayer.SaveEmployee(employee);
+
+        //        return RedirectToAction("Index");
+        //    }
+
+        //    return View(employee);
+        //}
+
+        // Model BINDING
+        [HttpPost]
+        [ActionName("Edit")]
+        public ActionResult Edit_Post([Bind(Include = "Id, Gender, City, DateOfBirth")] Employee employee)
+        {
+            EmployeeBusinessLayer employeeBusinessLayer = new EmployeeBusinessLayer();
+            employee.Name = employeeBusinessLayer.Employees.Single(x => x.ID == employee.ID).Name;
+
+            if (ModelState.IsValid)
+            {
+                employeeBusinessLayer.SaveEmployee(employee);
+
+                return RedirectToAction("Index");
+            }
+
+            return View(employee);
+        }
+
+
+        // Not binding properties to the model
+        //[HttpPost]
+        //[ActionName("Edit")]
+        //public ActionResult Edit_Post(int id)
+        //{
+        //    EmployeeBusinessLayer employeeBusinessLayer = new EmployeeBusinessLayer();
+
+        //    Employee employee = employeeBusinessLayer.Employees.Single(x => x.ID == id);
+        //    UpdateModel(employee, null, null, new string[] { "Name" });
+
+        //    if (ModelState.IsValid)
+        //    {
+        //        employeeBusinessLayer.SaveEmployee(employee);
+
+        //        return RedirectToAction("Index");
+        //    }
+
+        //    return View(employee);
+        //}
+
+        // End Edit Actions
 
 
 
