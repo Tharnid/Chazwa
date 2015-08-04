@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basics", "Basics\Basics.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFModels", "EFModels\EFModels.csproj", "{48487A1D-9CDD-42B2-BD6A-3875DE6EF375}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BleepModel", "BleepModel\BleepModel.csproj", "{427C5BCC-E95A-4150-A3EB-520886B721C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sigh", "Sigh\Sigh.csproj", "{5F917839-6031-4831-9E66-CC5BB715D964}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{48487A1D-9CDD-42B2-BD6A-3875DE6EF375}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48487A1D-9CDD-42B2-BD6A-3875DE6EF375}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48487A1D-9CDD-42B2-BD6A-3875DE6EF375}.Release|Any CPU.Build.0 = Release|Any CPU
+		{427C5BCC-E95A-4150-A3EB-520886B721C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{427C5BCC-E95A-4150-A3EB-520886B721C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{427C5BCC-E95A-4150-A3EB-520886B721C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{427C5BCC-E95A-4150-A3EB-520886B721C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F917839-6031-4831-9E66-CC5BB715D964}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F917839-6031-4831-9E66-CC5BB715D964}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F917839-6031-4831-9E66-CC5BB715D964}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F917839-6031-4831-9E66-CC5BB715D964}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -10,16 +10,14 @@ namespace EFModels.Models
     public partial class Customer
     {
         [Key]
-        [Column(Order = 0)]
+        [Required]
         public int CustomerId { get; set; }
 
-        [Key]
-        [Column(Order = 1)]
+        [Required]
         [StringLength(50)]
         public string FirstName { get; set; }
 
-        [Key]
-        [Column(Order = 2)]
+        [Required]
         [StringLength(50)]
         public string LastName { get; set; }
 

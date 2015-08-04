@@ -21,13 +21,13 @@ namespace EFModels.Controllers
         }
 
         // GET: Customer/Details/5
-        public ActionResult Details(int? id)
+        public ActionResult Details(int CustomerId)
         {
-            if (id == null)
+            if (CustomerId == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Customer customer = db.Customers.Find(id);
+            Customer customer = db.Customers.Find(CustomerId);
             if (customer == null)
             {
                 return HttpNotFound();

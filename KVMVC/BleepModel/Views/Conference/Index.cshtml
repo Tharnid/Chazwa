@@ -1,0 +1,19 @@
+﻿@using BleepModel.Models
+@model IEnumerable<BleepModel.Models.Conference>
+
+@{
+    ViewBag.Title = "Conferences";
+}
+
+<h3>Conference List</h3>
+
+<ul>
+    @foreach (Conference conf in @Model)
+    {
+        <li>
+            @Html.ActionLink(conf.ConferenceName, "Details", new {ConferenceId = conf.ConferenceId, ConferenceName = conf.ConferenceName})
+        </li>
+    }
+</ul>
+
+

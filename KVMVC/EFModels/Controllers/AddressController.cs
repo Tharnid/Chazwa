@@ -17,6 +17,8 @@ namespace EFModels.Controllers
         // GET: Address
         public ActionResult Index()
         {
+            
+
             return View(db.Addresses.ToList());
         }
 

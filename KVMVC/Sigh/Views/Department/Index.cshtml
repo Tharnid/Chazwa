@@ -1,0 +1,21 @@
+﻿@using Sigh.Models
+@model IEnumerable<tblDepartment>
+
+<div style="font-family:Arial">
+    @{
+        ViewBag.Title = "Departments List";
+    }
+
+    <h2>Index</h2>
+
+    <h2>Departments List</h2>
+    <ul>
+        @foreach (tblDepartment department in @Model)
+        {
+            <li>
+                @Html.ActionLink(department.Name, "Index", "Employee",
+                    new { departmentId = department.Id }, null) @* Pass null html attributes *@
+            </li>
+        }
+    </ul>
+</div>
