@@ -32,7 +32,10 @@ namespace BusinessLayer
                         employee.Name = rdr["Name"].ToString();
                         employee.Gender = rdr["Gender"].ToString();
                         employee.City = rdr["City"].ToString();
-                        employee.DateOfBirth = Convert.ToDateTime(rdr["DateOfBirth"]);
+                        if (!(rdr["DateOfBirth"] is DBNull))
+                        {
+                            employee.DateOfBirth = Convert.ToDateTime(rdr["DateOfBirth"]);
+                        }
 
                         employees.Add(employee);
                     }
@@ -46,7 +49,7 @@ namespace BusinessLayer
         public void AddEmmployee(Employee employee)
         {
             string connectionString =
-                    ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
+                    ConfigurationManager.ConnectionStrings["KVE"].ConnectionString;
 
             using (SqlConnection con = new SqlConnection(connectionString))
             {

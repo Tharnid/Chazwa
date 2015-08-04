@@ -24,23 +24,112 @@ namespace KVBO.Controllers
             return View();
         }
 
-        [HttpPost]
-        public ActionResult Create(FormCollection formCollection)
-        {
-            Employee employee = new Employee();
-            // Retrieve form data using form collection
-            employee.Name = formCollection["Name"];
-            employee.Gender = formCollection["Gender"];
-            employee.City = formCollection["City"];
-            employee.DateOfBirth =
-                Convert.ToDateTime(formCollection["DateOfBirth"]);
+        //[HttpPost]
+        //public ActionResult Create(FormCollection formCollection)
+        //{
+        //    Employee employee = new Employee();
+        //    // Retrieve form data using form collection
+        //    employee.Name = formCollection["Name"];
+        //    employee.Gender = formCollection["Gender"];
+        //    employee.City = formCollection["City"];
+        //    employee.DateOfBirth =
+        //        Convert.ToDateTime(formCollection["DateOfBirth"]);
 
+        //    EmployeeBusinessLayer employeeBusinessLayer =
+        //        new EmployeeBusinessLayer();
+
+        //    employeeBusinessLayer.AddEmmployee(employee);
+        //    return RedirectToAction("Index");
+        //}
+
+        //[HttpPost]
+        //public ActionResult Create(string name, string gender, string city, DateTime dateOfBirth)
+        //{
+        //    // Map the form values to properties
+        //    Employee employee = new Employee();
+        //    employee.Name = name;
+        //    employee.Gender = gender;
+        //    employee.City = city;
+        //    employee.DateOfBirth = dateOfBirth;
+
+        //    // context 
+        //    EmployeeBusinessLayer employeeBusinessLayer =
+        //        new EmployeeBusinessLayer();
+            
+        //    // Add employee
+        //    employeeBusinessLayer.AddEmmployee(employee);
+        //    return RedirectToAction("Index");
+        //}
+
+        // Model State
+        [HttpGet]
+        [ActionName("Create")]
+        public ActionResult Create_Get()
+        {
+            return View();
+        }
+
+        //[HttpPost]
+        //[ActionName("Create")]
+        //public ActionResult Create_Post()
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        EmployeeBusinessLayer employeeBusinessLayer =
+        //            new EmployeeBusinessLayer();
+
+        //        Employee employee = new Employee();
+        //        UpdateModel<Employee>(employee);
+
+        //        employeeBusinessLayer.AddEmmployee(employee);
+        //        return RedirectToAction("Index");
+        //    }
+        //    return View();
+        //}
+
+        // TryUpdateModel
+
+        //[HttpPost]
+        //[ActionName("Create")]
+        //public ActionResult Create_Post()
+        //{
+        //    EmployeeBusinessLayer employeeBusinessLayer =
+        //        new EmployeeBusinessLayer();
+
+        //    Employee employee = new Employee();
+        //    TryUpdateModel(employee);
+        //    if (ModelState.IsValid)
+        //    {
+        //        employeeBusinessLayer.AddEmmployee(employee);
+        //        return RedirectToAction("Index");
+        //    }
+        //    else
+        //    {
+        //        return View();
+        //    }
+        //}
+
+        [HttpPost]
+        [ActionName("Create")]
+        public ActionResult Create_Post(Employee employee)
+        {
             EmployeeBusinessLayer employeeBusinessLayer =
                 new EmployeeBusinessLayer();
 
-            employeeBusinessLayer.AddEmmployee(employee);
-            return RedirectToAction("Index");
+            if (ModelState.IsValid)
+            {
+                employeeBusinessLayer.AddEmmployee(employee);
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return View();
+            }
         }
+
+ 
+
+
 
     }
 }
