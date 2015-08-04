@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BleepModel", "BleepModel\Bl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sigh", "Sigh\Sigh.csproj", "{5F917839-6031-4831-9E66-CC5BB715D964}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KVBO", "KVBO\KVBO.csproj", "{D0652517-EDB2-477F-BF1D-5FE02FD7B02A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{003B51A2-F294-4E2C-931C-9E9415944533}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{5F917839-6031-4831-9E66-CC5BB715D964}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F917839-6031-4831-9E66-CC5BB715D964}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F917839-6031-4831-9E66-CC5BB715D964}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0652517-EDB2-477F-BF1D-5FE02FD7B02A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0652517-EDB2-477F-BF1D-5FE02FD7B02A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0652517-EDB2-477F-BF1D-5FE02FD7B02A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0652517-EDB2-477F-BF1D-5FE02FD7B02A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{003B51A2-F294-4E2C-931C-9E9415944533}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{003B51A2-F294-4E2C-931C-9E9415944533}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{003B51A2-F294-4E2C-931C-9E9415944533}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{003B51A2-F294-4E2C-931C-9E9415944533}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

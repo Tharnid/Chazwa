@@ -1,0 +1,5 @@
+C:\srcCode\GH\Chazwa\KVMVC\BusinessLayer\bin\Debug\BusinessLayer.dll
+C:\srcCode\GH\Chazwa\KVMVC\BusinessLayer\bin\Debug\BusinessLayer.pdb
+C:\srcCode\GH\Chazwa\KVMVC\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
+C:\srcCode\GH\Chazwa\KVMVC\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\srcCode\GH\Chazwa\KVMVC\BusinessLayer\obj\Debug\BusinessLayer.pdb
