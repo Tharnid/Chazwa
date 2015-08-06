@@ -11,6 +11,12 @@ namespace Basics.Controllers
     {
         // private readonly SalesEntities _salesEntitiesse;
         // GET: Customer
+
+        public ActionResult Index()
+        {
+            return View();
+        }
+
         public ActionResult CustomerDetails()
         {
             Customer customer = new Customer();

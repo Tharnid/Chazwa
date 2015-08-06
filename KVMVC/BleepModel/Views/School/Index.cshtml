@@ -1,0 +1,21 @@
+﻿@using BleepModel.Models
+@model IEnumerable<BleepModel.Models.School>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@{
+    ViewBag.Title = "Schools";
+}
+
+<h3>School List</h3>
+
+<ul>
+    @foreach (School sc in @Model)
+    {
+        <li>
+            @Html.ActionLink(sc.SchoolName, "Details", new { SchoolId = sc.SchoolId, ConferenceId = sc.ConferenceId })
+        </li>
+    }
+</ul>
