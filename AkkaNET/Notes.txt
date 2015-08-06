@@ -21,3 +21,11 @@ What kind of .Net apps would you use Akka.net?
 -- Services (WCF, Web)
 -- web app backend
 -- Windows service
+
+
+Reactive Manifesto
+==================
+
+Message Driven
+Resillent
+Elastic (allows it to react to worldload changes)
