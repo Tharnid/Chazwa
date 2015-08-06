@@ -1,0 +1,23 @@
+Classes of Applications
+
+Financial
+Betting/Gambling
+Social Media
+Telecoms
+
+Divide workload between Actors
+
+Chat/real time comm
+real time gaming (player interactions)
+Traffic Flow
+Asset location
+
+BI
+Data Mining
+IoT - streams of data
+
+What kind of .Net apps would you use Akka.net?
+
+-- Services (WCF, Web)
+-- web app backend
+-- Windows service

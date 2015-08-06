@@ -174,23 +174,43 @@ namespace KVBO.Controllers
         //}
 
         // Model BINDING
+        //[HttpPost]
+        //[ActionName("Edit")]
+        //public ActionResult Edit_Post([Bind(Include = "Id, Gender, City, DateOfBirth")] Employee employee)
+        //{
+        //    EmployeeBusinessLayer employeeBusinessLayer = new EmployeeBusinessLayer();
+        //    employee.Name = employeeBusinessLayer.Employees.Single(x => x.ID == employee.ID).Name;
+
+        //    if (ModelState.IsValid)
+        //    {
+        //        employeeBusinessLayer.SaveEmployee(employee);
+
+        //        return RedirectToAction("Index");
+        //    }
+
+        //    return View(employee);
+        //}
+
+        // MODEL BINDING USING INTERFACE
         [HttpPost]
         [ActionName("Edit")]
-        public ActionResult Edit_Post([Bind(Include = "Id, Gender, City, DateOfBirth")] Employee employee)
+        public ActionResult Edit_Post(int id)
         {
             EmployeeBusinessLayer employeeBusinessLayer = new EmployeeBusinessLayer();
-            employee.Name = employeeBusinessLayer.Employees.Single(x => x.ID == employee.ID).Name;
+            Employee employee = employeeBusinessLayer.Employees.Single(x => x.ID == id);
+            
+            // Vid #22 will only update properties present in the interface
+            // Might be able to use this in Save/Edit methods
+            UpdateModel<IEmployee>(employee);
 
             if (ModelState.IsValid)
             {
                 employeeBusinessLayer.SaveEmployee(employee);
-
                 return RedirectToAction("Index");
             }
 
             return View(employee);
         }
-
 
         // Not binding properties to the model
         //[HttpPost]
@@ -214,7 +234,27 @@ namespace KVBO.Controllers
 
         // End Edit Actions
 
+        // Delete Methods
 
+        // Not recommended way from M$...can cause security breach
+        //public ActionResult Delete(int id)
+        //{
+        //    EmployeeBusinessLayer employeeBusinessLayer =
+        //        new EmployeeBusinessLayer();
+        //    employeeBusinessLayer.DeleteEmployee(id);
+        //    return RedirectToAction("Index");
+        //}
+
+        [HttpPost]
+        public ActionResult Delete(int id)
+        {
+            EmployeeBusinessLayer employeeBusinessLayer =
+                new EmployeeBusinessLayer();
+            employeeBusinessLayer.DeleteEmployee(id);
+            return RedirectToAction("Index");
+        }
+
+        // End Delete Methods
 
     }
 }
