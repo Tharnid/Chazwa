@@ -1,0 +1,4 @@
+E:\GH\Chazwa\WAPISF\WAPISF.Web.Common.Tests\bin\Debug\WAPISF.Web.Common.Tests.dll
+E:\GH\Chazwa\WAPISF\WAPISF.Web.Common.Tests\bin\Debug\WAPISF.Web.Common.Tests.pdb
+E:\GH\Chazwa\WAPISF\WAPISF.Web.Common.Tests\obj\Debug\WAPISF.Web.Common.Tests.dll
+E:\GH\Chazwa\WAPISF\WAPISF.Web.Common.Tests\obj\Debug\WAPISF.Web.Common.Tests.pdb

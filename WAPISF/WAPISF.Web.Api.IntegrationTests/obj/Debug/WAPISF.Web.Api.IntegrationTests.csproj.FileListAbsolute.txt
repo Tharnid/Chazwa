@@ -1,0 +1,4 @@
+E:\GH\Chazwa\WAPISF\WAPISF.Web.Api.IntegrationTests\bin\Debug\WAPISF.Web.Api.IntegrationTests.dll
+E:\GH\Chazwa\WAPISF\WAPISF.Web.Api.IntegrationTests\bin\Debug\WAPISF.Web.Api.IntegrationTests.pdb
+E:\GH\Chazwa\WAPISF\WAPISF.Web.Api.IntegrationTests\obj\Debug\WAPISF.Web.Api.IntegrationTests.dll
+E:\GH\Chazwa\WAPISF\WAPISF.Web.Api.IntegrationTests\obj\Debug\WAPISF.Web.Api.IntegrationTests.pdb

@@ -1,0 +1,7 @@
+E:\GH\Chazwa\WAPISF\WAPISFDB\bin\Debug\WAPISFDB.dacpac
+E:\GH\Chazwa\WAPISF\WAPISFDB\obj\Debug\Model.xml
+E:\GH\Chazwa\WAPISF\WAPISFDB\obj\Debug\refactor.xml
+E:\GH\Chazwa\WAPISF\WAPISFDB\obj\Debug\postdeploy.sql
+E:\GH\Chazwa\WAPISF\WAPISFDB\obj\Debug\predeploy.sql
+E:\GH\Chazwa\WAPISF\WAPISFDB\obj\Debug\WAPISFDB.dll
+E:\GH\Chazwa\WAPISF\WAPISFDB\obj\Debug\WAPISFDB.pdb

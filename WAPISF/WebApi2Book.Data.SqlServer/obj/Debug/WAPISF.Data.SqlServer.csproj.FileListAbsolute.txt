@@ -1,0 +1,14 @@
+E:\GH\Chazwa\WAPISF\WebApi2Book.Data.SqlServer\bin\Debug\WebApi2Book.Data.SqlServer.dll
+E:\GH\Chazwa\WAPISF\WebApi2Book.Data.SqlServer\bin\Debug\WebApi2Book.Data.SqlServer.pdb
+E:\GH\Chazwa\WAPISF\WebApi2Book.Data.SqlServer\bin\Debug\FluentNHibernate.dll
+E:\GH\Chazwa\WAPISF\WebApi2Book.Data.SqlServer\bin\Debug\Iesi.Collections.dll
+E:\GH\Chazwa\WAPISF\WebApi2Book.Data.SqlServer\bin\Debug\NHibernate.dll
+E:\GH\Chazwa\WAPISF\WebApi2Book.Data.SqlServer\bin\Debug\WAPISF.Data.dll
+E:\GH\Chazwa\WAPISF\WebApi2Book.Data.SqlServer\bin\Debug\WAPISF.Data.pdb
+E:\GH\Chazwa\WAPISF\WebApi2Book.Data.SqlServer\bin\Debug\FluentNHibernate.pdb
+E:\GH\Chazwa\WAPISF\WebApi2Book.Data.SqlServer\bin\Debug\FluentNHibernate.xml
+E:\GH\Chazwa\WAPISF\WebApi2Book.Data.SqlServer\bin\Debug\Iesi.Collections.xml
+E:\GH\Chazwa\WAPISF\WebApi2Book.Data.SqlServer\bin\Debug\NHibernate.xml
+E:\GH\Chazwa\WAPISF\WebApi2Book.Data.SqlServer\obj\Debug\WAPISF.Data.SqlServer.csprojResolveAssemblyReference.cache
+E:\GH\Chazwa\WAPISF\WebApi2Book.Data.SqlServer\obj\Debug\WebApi2Book.Data.SqlServer.dll
+E:\GH\Chazwa\WAPISF\WebApi2Book.Data.SqlServer\obj\Debug\WebApi2Book.Data.SqlServer.pdb
