@@ -14,7 +14,7 @@ namespace Sigh.Controllers
             CompanyDB cdb = new CompanyDB();
             // All - Employees - List<tblEmployee> employees = cdb.tblEmployees.ToList();
             // Sort by DepartmentId
-            List<tblEmployee> employees = cdb.tblEmployees.Where(emp => emp.DepartmentId == departmentId).ToList();
+            List<tblEmployee> employees = cdb.tblEmployees.Where(emp => emp. == departmentId).ToList();
 
             return View(employees);
         }

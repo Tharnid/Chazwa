@@ -9,20 +9,25 @@ namespace Sigh.Models
     [Table("tblEmployee")]
     public class tblEmployee
     {
-        [Key]
-        public int EmployeeId { get; set; }
+        [MetadataType(typeof (EmployeeMetaData))]
+        public partial class Employee
+        {
+        }
 
-        [StringLength(50)]
-        public string Name { get; set; }
+        public class EmployeeMetaData
+        {
+            [Required]
+            public string Name { get; set; }
 
-        [StringLength(10)]
-        public string Gender { get; set; }
+            [Required]
+            public string Gender { get; set; }
 
-        [StringLength(50)]
-        public string City { get; set; }
+            [Required]
+            public string City { get; set; }
 
-        public int? DepartmentId { get; set; }
-
-        public virtual tblDepartment tblDepartment { get; set; }
+            [Required]
+            [Display(Name = "Department")]
+            public int DepartmentId { get; set; }
+        }
     }
 }
