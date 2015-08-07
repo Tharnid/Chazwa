@@ -4,3 +4,8 @@ If you want to limit on what can be bound, explicitly invoking model binding can
 
 TryUpdateModel - does not throw an exception
 UpdateModel - will throw an exception if validation fails
+
+XXModelDesigner.cs 
+==================
+
+-- Contains auto-generated code for entities
