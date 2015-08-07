@@ -1,0 +1,31 @@
+LINQ Notes
+==========
+
+Extension Methods
+
+-- Static Class...Static method...this keyword...called as an instance
+
+-- method syntax that passes delegates style safe function pointer
+
+Multi Line 
+==========
+
+-- single statement does not require a return
+
+foundCustomer = customerList.FirstOrDefault(c =>
+{
+	Debug.WriteLine(c.LastName);
+	return c.CustomerId == customerId; // or whatever
+})
+
+Chaining
+
+foundCustomer = customerList.FirstOrDefault(c =>
+{
+	.Where(c =>
+		c.CustomerId == customerId)
+	.Skip(1)
+	.FirstOrDefault();
+})
+
+foundCustomer = query.First(); // as an example
