@@ -1,0 +1,4 @@
+E:\GH\Chazwa\WAPISF\WAPISF.Web.Api.Tests\bin\Debug\WAPISF.Web.Api.Tests.dll
+E:\GH\Chazwa\WAPISF\WAPISF.Web.Api.Tests\bin\Debug\WAPISF.Web.Api.Tests.pdb
+E:\GH\Chazwa\WAPISF\WAPISF.Web.Api.Tests\obj\Debug\WAPISF.Web.Api.Tests.dll
+E:\GH\Chazwa\WAPISF\WAPISF.Web.Api.Tests\obj\Debug\WAPISF.Web.Api.Tests.pdb

@@ -1,0 +1,5 @@
+E:\GH\Chazwa\WAPISF\WAPISF.Web.Api.Models\bin\Debug\WAPISF.Web.Api.Models.dll
+E:\GH\Chazwa\WAPISF\WAPISF.Web.Api.Models\bin\Debug\WAPISF.Web.Api.Models.pdb
+E:\GH\Chazwa\WAPISF\WAPISF.Web.Api.Models\obj\Debug\WAPISF.Web.Api.Models.csprojResolveAssemblyReference.cache
+E:\GH\Chazwa\WAPISF\WAPISF.Web.Api.Models\obj\Debug\WAPISF.Web.Api.Models.dll
+E:\GH\Chazwa\WAPISF\WAPISF.Web.Api.Models\obj\Debug\WAPISF.Web.Api.Models.pdb

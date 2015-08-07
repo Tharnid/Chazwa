@@ -1,0 +1,4 @@
+E:\GH\Chazwa\WAPISF\WAPISF.Data.SqlServer.IntegrationTests\bin\Debug\WAPISF.Data.SqlServer.IntegrationTests.dll
+E:\GH\Chazwa\WAPISF\WAPISF.Data.SqlServer.IntegrationTests\bin\Debug\WAPISF.Data.SqlServer.IntegrationTests.pdb
+E:\GH\Chazwa\WAPISF\WAPISF.Data.SqlServer.IntegrationTests\obj\Debug\WAPISF.Data.SqlServer.IntegrationTests.dll
+E:\GH\Chazwa\WAPISF\WAPISF.Data.SqlServer.IntegrationTests\obj\Debug\WAPISF.Data.SqlServer.IntegrationTests.pdb

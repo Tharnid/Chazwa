@@ -1,0 +1,9 @@
+E:\GH\Chazwa\WAPISF\WAPISF.Common\bin\Debug\WAPISF.Common.dll
+E:\GH\Chazwa\WAPISF\WAPISF.Common\bin\Debug\WAPISF.Common.pdb
+E:\GH\Chazwa\WAPISF\WAPISF.Common\bin\Debug\AutoMapper.dll
+E:\GH\Chazwa\WAPISF\WAPISF.Common\bin\Debug\log4net.dll
+E:\GH\Chazwa\WAPISF\WAPISF.Common\bin\Debug\AutoMapper.xml
+E:\GH\Chazwa\WAPISF\WAPISF.Common\bin\Debug\log4net.xml
+E:\GH\Chazwa\WAPISF\WAPISF.Common\obj\Debug\WAPISF.Common.csprojResolveAssemblyReference.cache
+E:\GH\Chazwa\WAPISF\WAPISF.Common\obj\Debug\WAPISF.Common.dll
+E:\GH\Chazwa\WAPISF\WAPISF.Common\obj\Debug\WAPISF.Common.pdb

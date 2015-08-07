@@ -1,0 +1,2 @@
+E:\GH\Chazwa\WAPISF\WebApi2Book.Web.Common\obj\Debug\WAPISF.Web.Common.csprojResolveAssemblyReference.cache
+E:\GH\Chazwa\WAPISF\WebApi2Book.Web.Common\obj\Debug\WebApi2Book.Web.Common.dll

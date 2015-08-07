@@ -1,0 +1,5 @@
+E:\GH\Chazwa\WAPISF\WAPISF.Data\bin\Debug\WAPISF.Data.dll
+E:\GH\Chazwa\WAPISF\WAPISF.Data\bin\Debug\WAPISF.Data.pdb
+E:\GH\Chazwa\WAPISF\WAPISF.Data\obj\Debug\WAPISF.Data.csprojResolveAssemblyReference.cache
+E:\GH\Chazwa\WAPISF\WAPISF.Data\obj\Debug\WAPISF.Data.dll
+E:\GH\Chazwa\WAPISF\WAPISF.Data\obj\Debug\WAPISF.Data.pdb

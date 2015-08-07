@@ -1,0 +1,1 @@
+E:\GH\Chazwa\WAPISF\RestAPI\obj\Debug\RestAPI.csprojResolveAssemblyReference.cache
