@@ -96,14 +96,11 @@ namespace TCM.BL
 
         public IEnumerable<Customer> SortByType(List<Customer> customerList)
         {
-            return customerList.OrderByDescending(c => c.CustomerTypeId.HasValue)
-                                .ThenBy(c=>c.CustomerTypeId);
+            //return customerList.OrderByDescending(c => c.CustomerTypeId.HasValue)
+            //                    .ThenByDescending(c=>c.CustomerTypeId);
+
+            return SortByName(customerList).Reverse();
         }
 
-        //public IEnumerable<Customer> SortByType(List<Customer> customerList)
-        //{
-        //    return customerList.OrderByDescending(c => c.CustomerTypeId.HasValue)
-        //                        .ThenBy(c => c.CustomerTypeId);
-        //}
     }
 }
