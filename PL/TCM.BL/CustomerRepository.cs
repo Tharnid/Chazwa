@@ -102,5 +102,10 @@ namespace TCM.BL
             return SortByName(customerList).Reverse();
         }
 
+        public IEnumerable<Customer> RetrieveEmptyList()
+        {
+            return Enumerable.Repeat(new Customer(), 5);
+        }
+
     }
 }

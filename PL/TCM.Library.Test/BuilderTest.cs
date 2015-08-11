@@ -47,5 +47,24 @@ namespace TCM.Library.Test
             Assert.IsNotNull(result);
 
         }
+
+        [TestMethod]
+        public void CompareSequenceTest()
+        {
+            // Arrange
+            Builder listBuilder = new Builder();
+
+            // Act
+            var result = listBuilder.CompareSequences();
+
+            // Analyze
+            foreach (var item in result)
+            {
+                TestContext.WriteLine(item.ToString());
+            }
+
+            // Assert
+            Assert.IsNotNull(result);
+        }
     }
 }

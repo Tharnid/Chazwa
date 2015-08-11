@@ -52,3 +52,33 @@ Operators:
 Enumerable class methods
 	NOT extension methods
 	NOT Deferred
+
+Comparing and combining
+=======================
+
+	Set Operators
+
+		Intersect
+		Except
+		Concat
+		Distinct
+		Union
+
+	Extension Methods
+
+Projections
+===========
+
+	Select
+	SelectMany
+
+	Why?
+		Limit to needed props
+		Perform an action on the properties
+		Morph the sequence into another type
+
+	Projects a Type
+		
+		OriginalType
+		ExistingType
+		AnonymousType
