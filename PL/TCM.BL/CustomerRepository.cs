@@ -79,5 +79,31 @@ namespace TCM.BL
                             CustomerTypeId=2}};
             return custList;
         }
+
+        public IEnumerable<Customer> SortByName(List<Customer> customerList)
+        {
+            return customerList.OrderBy(c => c.LastName)
+                .ThenBy(c => c.FirstName);
+        }
+
+        public IEnumerable<Customer> SortByNameInReverse(List<Customer> customerList)
+        {
+            //return customerList.OrderByDescending(c => c.LastName)
+            //    .ThenByDescending(c => c.LastName);
+
+            return SortByName(customerList).ToList();
+        }
+
+        public IEnumerable<Customer> SortByType(List<Customer> customerList)
+        {
+            return customerList.OrderByDescending(c => c.CustomerTypeId.HasValue)
+                                .ThenBy(c=>c.CustomerTypeId);
+        }
+
+        //public IEnumerable<Customer> SortByType(List<Customer> customerList)
+        //{
+        //    return customerList.OrderByDescending(c => c.CustomerTypeId.HasValue)
+        //                        .ThenBy(c => c.CustomerTypeId);
+        //}
     }
 }

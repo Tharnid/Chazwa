@@ -29,3 +29,14 @@ foundCustomer = customerList.FirstOrDefault(c =>
 })
 
 foundCustomer = query.First(); // as an example
+
+Sorting
+=======
+
+OrderBy
+OrdByDescending
+ThenBy
+ThenByDescending
+Reverse - reverses the order
+
+(Deferred Execution)
