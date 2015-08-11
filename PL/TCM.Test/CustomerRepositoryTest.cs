@@ -31,11 +31,11 @@ namespace TCM.Test
         public void SortByNameTest()
         {
             // Arrange
-            CustomerRepository cr = new CustomerRepository();
-            var customerList = cr.Retrieve();
+            CustomerRepository repository = new CustomerRepository();
+            var customerList = repository.Retrieve();
 
             // Act
-            var result = cr.SortByName(customerList);
+            var result = repository.SortByName(customerList);
 
             // Assert
             Assert.IsNotNull(result);

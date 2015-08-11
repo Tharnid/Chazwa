@@ -40,3 +40,15 @@ ThenByDescending
 Reverse - reverses the order
 
 (Deferred Execution)
+
+Creating
+========
+
+Operators:
+
+	Range 
+	Repeat
+
+Enumerable class methods
+	NOT extension methods
+	NOT Deferred

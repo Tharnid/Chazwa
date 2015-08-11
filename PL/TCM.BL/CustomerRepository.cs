@@ -96,7 +96,7 @@ namespace TCM.BL
 
         public IEnumerable<Customer> SortByType(List<Customer> customerList)
         {
-            //return customerList.OrderByDescending(c => c.CustomerTypeId.HasValue)
+            //return customerList.OrderByDescending(c => c.CustomerTypeId.HasValue) // ** Null values go to the top of the list ** /
             //                    .ThenByDescending(c=>c.CustomerTypeId);
 
             return SortByName(customerList).Reverse();
