@@ -50,6 +50,59 @@ namespace TCM.BL
             return foundCustomer;
 
         }
+
+        // create a type for an email and Name...anonymous method
+        //public dynamic IEnumerable<string> GetNamesAndEmail(List<Customer> customerList)  // dynamic allows bypassing of compile time checking
+        //{
+        //    var query = customerList.Select(c => new
+        //    {
+        //        Name = c.FirstName + ", " + c.LastName,
+        //        c.EmailAddress
+        //    });
+        //    return query;
+        //}
+
+        public dynamic GetNamesAndEmail(List<Customer> customerList)
+        {
+            var query = customerList.Select(c => new
+            {
+                Name = c.LastName + ", " + c.FirstName,
+                c.EmailAddress
+            });
+
+            foreach (var item in query)
+            {
+                Console.WriteLine(item.Name + ": " + item.EmailAddress);
+            }
+            return query;
+        }
+
+        public IEnumerable<string> GetNames(List<Customer> customerList)
+        {
+            var query = customerList.Select(f => f.LastName + ", " + f.LastName);
+            return query;
+        }
+
+        public dynamic GetNamesAndType(List<Customer> customerList,
+                                        List<CustomerType> customerTypeList)
+        {
+            var query = customerList.Join(customerTypeList,
+                                c => c.CustomerTypeId,
+                                ct => ct.CustomerTypeId,
+                                (c, ct) => new
+                                {
+                                    Name = c.LastName + ", " + c.FirstName,
+                                    CustomerTypeName = ct.TypeName
+                                });
+
+            foreach (var item in query)
+            {
+                Console.WriteLine(item.Name + ": " + item.CustomerTypeName);
+            }
+
+            return query;
+        }
+
         public List<Customer> Retrieve()
         {
             List<Customer> custList = new List<Customer>

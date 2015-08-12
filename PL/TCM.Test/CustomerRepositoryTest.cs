@@ -58,5 +58,54 @@ namespace TCM.Test
             Assert.IsNotNull(result);
             Assert.AreEqual(null, result.First().CustomerTypeId);
         }
+
+        [TestMethod]
+        public void GetNamesTest()
+        {
+            // Arrange
+            CustomerRepository cr = new CustomerRepository();
+            var customerList = cr.Retrieve();
+
+            // Act
+            var query = cr.GetNames(customerList);
+
+            // Analyze
+            foreach (var item in query)
+            {
+                TestContext.WriteLine(item);
+            }
+
+            // Assert
+            Assert.IsNotNull(query);
+        }
+
+        [TestMethod]
+        public void GetNamesAndEmailTest()
+        {
+            // Arrange
+            CustomerRepository repository = new CustomerRepository();
+            var customerList = repository.Retrieve();
+
+            // Act
+            var query = repository.GetNamesAndEmail(customerList);
+
+            // NOT REALLY A TEST
+        }
+
+        [TestMethod]
+        public void GetNamesAndTypeTest()
+        {
+            // Arrange
+            CustomerRepository repository = new CustomerRepository();
+            var customerList = repository.Retrieve();
+
+            CustomerTypeRepository typeRepository = new CustomerTypeRepository();
+            var customerTypeList = typeRepository.Retrieve();
+
+            // Act
+            var query = repository.GetNamesAndType(customerList, customerTypeList);
+
+            // NOT REALLY A TEST
+        }
     }
 }

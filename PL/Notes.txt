@@ -82,3 +82,6 @@ Projections
 		OriginalType
 		ExistingType
 		AnonymousType
+
+Parent/Child Data Scenarios
+===========================
