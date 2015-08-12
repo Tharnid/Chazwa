@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TCM.BL;
@@ -106,6 +107,47 @@ namespace TCM.Test
             var query = repository.GetNamesAndType(customerList, customerTypeList);
 
             // NOT REALLY A TEST
+        }
+
+        //[TestMethod]
+        //public void GetOverdueCustomersTest()
+        //{
+        //    // Arrange
+        //    CustomerRepository cr = new CustomerRepository();
+        //    var customerList = cr.Retrieve();
+
+        //    // Act
+        //    var query = cr.GetOverdueCustomers(customerList);
+
+        //    // Analyze
+        //    foreach (var item in query)
+        //    {
+        //        TestContext.WriteLine(itemToString());
+        //        //TestContext.WriteLine(item.ToString());
+        //    }
+
+        //    // Assert
+        //    Assert.IsNotNull(query);
+        //}
+
+        [TestMethod]
+        public void GetOverdueCustomersTest()
+        {
+            // Arrange
+            CustomerRepository repository = new CustomerRepository();
+            var customerList = repository.Retrieve();
+
+            // Act
+            var query = repository.GetOverdueCustomers(customerList);
+
+            // Analyze
+            foreach (var item in query)
+            {
+                TestContext.WriteLine(item.LastName + ", " + item.FirstName);
+            }
+
+            // Assert
+            Assert.IsNotNull(query);
         }
     }
 }
