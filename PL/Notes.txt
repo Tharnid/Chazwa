@@ -118,3 +118,33 @@ Data Binding
 	Goal
 
 		-- Using the results of a LINQ query for binding
+
+
+Analyzing Data
+==============
+
+Totaling
+	
+	-- Sum
+
+Grouping and Summing
+
+	-- GroupBy
+	-- Display result in WPF Chart
+
+Mean (AVG), Median (Middle Number), and Mode (occurs most time)
+
+	-- Average
+	-- OrderBy
+	-- GroupBy
+
+	Totaling
+	========
+
+		Analysis:
+
+			-- What is the total amount we have invoiced?
+			-- How many units have we sold?
+
+		Sum Operator:
+
