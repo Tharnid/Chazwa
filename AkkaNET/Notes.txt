@@ -44,3 +44,25 @@ Actor
 		-- create more actors
 		-- send messages to other actors
 		-- change behavior for next message
+
+Messages
+========
+
+	POCO - Plain old Class Object
+
+Actor Systems
+=============
+
+	-- contains actors
+	-- can send messages to each other
+
+Location Transparency
+=====================
+
+	-- The ability to send a message to another actor without needing to know where it is; whehter it be in the same actor system instance on the same computer or
+		another actor system on the other side of the earth lol
+
+Actor Supervision Hierarchies
+=============================
+
+	-- Actor parent fixes problems with actor children
