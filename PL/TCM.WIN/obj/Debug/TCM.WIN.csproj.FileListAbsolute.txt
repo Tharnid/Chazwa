@@ -1,0 +1,8 @@
+C:\srcCode\GH\Chazwa\PL\TCM.WIN\bin\Debug\TCM.WIN.exe.config
+C:\srcCode\GH\Chazwa\PL\TCM.WIN\bin\Debug\TCM.WIN.exe
+C:\srcCode\GH\Chazwa\PL\TCM.WIN\bin\Debug\TCM.WIN.pdb
+C:\srcCode\GH\Chazwa\PL\TCM.WIN\obj\Debug\TCM.WIN.csprojResolveAssemblyReference.cache
+C:\srcCode\GH\Chazwa\PL\TCM.WIN\obj\Debug\TCM.WIN.Properties.Resources.resources
+C:\srcCode\GH\Chazwa\PL\TCM.WIN\obj\Debug\TCM.WIN.csproj.GenerateResource.Cache
+C:\srcCode\GH\Chazwa\PL\TCM.WIN\obj\Debug\TCM.WIN.exe
+C:\srcCode\GH\Chazwa\PL\TCM.WIN\obj\Debug\TCM.WIN.pdb
