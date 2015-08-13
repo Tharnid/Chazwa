@@ -29,3 +29,18 @@ Reactive Manifesto
 Message Driven
 Resillent
 Elastic (allows it to react to worldload changes)
+
+Actor
+=====
+
+-- building blocks
+-- perform small well-defined task
+-- Fundamental primitive computational unit
+
+	Four Things Actors can do
+	=========================
+
+		-- Receive and react to messages
+		-- create more actors
+		-- send messages to other actors
+		-- change behavior for next message
