@@ -5,5 +5,3 @@ C:\srcCode\GH\Chazwa\PL\TCM.Library.Test\bin\Debug\TCM.Library.pdb
 C:\srcCode\GH\Chazwa\PL\TCM.Library.Test\obj\Debug\TCM.Library.Test.csprojResolveAssemblyReference.cache
 C:\srcCode\GH\Chazwa\PL\TCM.Library.Test\obj\Debug\TCM.Library.Test.dll
 C:\srcCode\GH\Chazwa\PL\TCM.Library.Test\obj\Debug\TCM.Library.Test.pdb
-C:\srcCode\GH\Chazwa\PL\TCM.Library.Test\bin\Debug\TCM.Library.Test.dll.CodeAnalysisLog.xml
-C:\srcCode\GH\Chazwa\PL\TCM.Library.Test\bin\Debug\TCM.Library.Test.dll.lastcodeanalysissucceeded

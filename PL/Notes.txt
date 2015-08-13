@@ -29,3 +29,122 @@ foundCustomer = customerList.FirstOrDefault(c =>
 })
 
 foundCustomer = query.First(); // as an example
+
+Sorting
+=======
+
+OrderBy
+OrdByDescending
+ThenBy
+ThenByDescending
+Reverse - reverses the order
+
+(Deferred Execution)
+
+Creating
+========
+
+Operators:
+
+	Range 
+	Repeat
+
+Enumerable class methods
+	NOT extension methods
+	NOT Deferred
+
+Comparing and combining
+=======================
+
+	Set Operators
+
+		Intersect
+		Except
+		Concat
+		Distinct
+		Union
+
+	Extension Methods
+
+Projections
+===========
+
+	Select
+	SelectMany
+
+	Why?
+		Limit to needed props
+		Perform an action on the properties
+		Morph the sequence into another type
+
+	Projects a Type
+		
+		OriginalType
+		ExistingType
+		AnonymousType
+
+Parent/Child Data Scenarios
+===========================
+
+	Parent Objects have a list of child related data
+		
+		-- Shopping cart as an example
+
+
+	SelectMany
+
+		-- 
+
+Data Binding
+============
+
+	Windows Forms
+
+	WPF
+		SilverLight (riiight)
+		Windows 8
+		Windows Phone 8
+
+	DataSource  Property
+		
+		-- Binds data directly to a control on the user interface
+
+	BindingSource Control
+
+		-- Separate control on the form
+		-- Bind each control to the BindingSource
+		-- Bind the data to the BindingSource
+
+	Goal
+
+		-- Using the results of a LINQ query for binding
+
+
+Analyzing Data
+==============
+
+Totaling
+	
+	-- Sum
+
+Grouping and Summing
+
+	-- GroupBy
+	-- Display result in WPF Chart
+
+Mean (AVG), Median (Middle Number), and Mode (occurs most time)
+
+	-- Average
+	-- OrderBy
+	-- GroupBy
+
+	Totaling
+	========
+
+		Analysis:
+
+			-- What is the total amount we have invoiced?
+			-- How many units have we sold?
+
+		Sum Operator:
+
