@@ -1,0 +1,7 @@
+C# Design Patterns
+==================
+
+Abstract Factory Pattern
+------------------------
+
+	+ multiple database types (SQL, Oracle)
