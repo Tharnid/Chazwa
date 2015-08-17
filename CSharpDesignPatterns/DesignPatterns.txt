@@ -5,3 +5,6 @@ Abstract Factory Pattern
 ------------------------
 
 	+ multiple database types (SQL, Oracle)
+	+ Report types PDF Word etc
+	+ Serial Port...Ethernet...device driver
+	+ keep db info from app
