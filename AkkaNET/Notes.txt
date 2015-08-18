@@ -72,6 +72,7 @@ Akka on Nuget
 =============
 
 	+ Akka
+<<<<<<< HEAD
 	+ Akka.Logger.*
 	+ Akka.Persistance.*
 	+ Akka.DI.* (Dependency Injection)
@@ -90,3 +91,6 @@ Defining an Actor
 
 	+ ref to all child child reference
 	+ parent ref 
+=======
+	+ Akka.Logger.*
+>>>>>>> 9d9213c78e62bf5133c34ab20e41461cefc7fc45
