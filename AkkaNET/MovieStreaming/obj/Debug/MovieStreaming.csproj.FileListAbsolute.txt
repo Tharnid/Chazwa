@@ -1,0 +1,10 @@
+E:\GH\Chazwa\AkkaNET\MovieStreaming\bin\Debug\MovieStreaming.exe.config
+E:\GH\Chazwa\AkkaNET\MovieStreaming\bin\Debug\MovieStreaming.exe
+E:\GH\Chazwa\AkkaNET\MovieStreaming\bin\Debug\MovieStreaming.pdb
+E:\GH\Chazwa\AkkaNET\MovieStreaming\bin\Debug\Akka.dll
+E:\GH\Chazwa\AkkaNET\MovieStreaming\bin\Debug\Newtonsoft.Json.dll
+E:\GH\Chazwa\AkkaNET\MovieStreaming\bin\Debug\Akka.xml
+E:\GH\Chazwa\AkkaNET\MovieStreaming\bin\Debug\Newtonsoft.Json.xml
+E:\GH\Chazwa\AkkaNET\MovieStreaming\obj\Debug\MovieStreaming.csprojResolveAssemblyReference.cache
+E:\GH\Chazwa\AkkaNET\MovieStreaming\obj\Debug\MovieStreaming.exe
+E:\GH\Chazwa\AkkaNET\MovieStreaming\obj\Debug\MovieStreaming.pdb

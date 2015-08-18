@@ -59,10 +59,34 @@ Actor Systems
 Location Transparency
 =====================
 
-	-- The ability to send a message to another actor without needing to know where it is; whehter it be in the same actor system instance on the same computer or
+	-- The ability to send a message to another actor without needing to know where it is; whether it be in the same actor system instance on the same computer or
 		another actor system on the other side of the earth lol
 
 Actor Supervision Hierarchies
 =============================
 
 	-- Actor parent fixes problems with actor children
+
+
+Akka on Nuget
+=============
+
+	+ Akka
+	+ Akka.Logger.*
+	+ Akka.Persistance.*
+	+ Akka.DI.* (Dependency Injection)
+	+ Akka.Cluster
+	+ Akka.Remote (Remote Actors)
+
+Defining an Actor
+=================
+
+	+ define class
+	+ inherit from Akka base class
+	+ define the message handling
+
+	Actor References
+	================
+
+	+ ref to all child child reference
+	+ parent ref 

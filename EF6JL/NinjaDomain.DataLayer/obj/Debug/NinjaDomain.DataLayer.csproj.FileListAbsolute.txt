@@ -1,0 +1,12 @@
+E:\GH\Chazwa\EF6JL\NinjaDomain.DataLayer\bin\Debug\NinjaDomain.DataLayer.dll.config
+E:\GH\Chazwa\EF6JL\NinjaDomain.DataLayer\bin\Debug\NinjaDomain.DataLayer.dll
+E:\GH\Chazwa\EF6JL\NinjaDomain.DataLayer\bin\Debug\NinjaDomain.DataLayer.pdb
+E:\GH\Chazwa\EF6JL\NinjaDomain.DataLayer\bin\Debug\EntityFramework.dll
+E:\GH\Chazwa\EF6JL\NinjaDomain.DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+E:\GH\Chazwa\EF6JL\NinjaDomain.DataLayer\bin\Debug\NinjaDomain.Classes.dll
+E:\GH\Chazwa\EF6JL\NinjaDomain.DataLayer\bin\Debug\NinjaDomain.Classes.pdb
+E:\GH\Chazwa\EF6JL\NinjaDomain.DataLayer\bin\Debug\EntityFramework.xml
+E:\GH\Chazwa\EF6JL\NinjaDomain.DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+E:\GH\Chazwa\EF6JL\NinjaDomain.DataLayer\obj\Debug\NinjaDomain.DataLayer.csprojResolveAssemblyReference.cache
+E:\GH\Chazwa\EF6JL\NinjaDomain.DataLayer\obj\Debug\NinjaDomain.DataLayer.dll
+E:\GH\Chazwa\EF6JL\NinjaDomain.DataLayer\obj\Debug\NinjaDomain.DataLayer.pdb

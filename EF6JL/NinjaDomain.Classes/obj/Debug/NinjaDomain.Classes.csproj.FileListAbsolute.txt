@@ -1,0 +1,10 @@
+E:\GH\Chazwa\EF6JL\NinjaDomain.Classes\obj\Debug\NinjaDomain.Classes.csprojResolveAssemblyReference.cache
+E:\GH\Chazwa\EF6JL\NinjaDomain.Classes\bin\Debug\NinjaDomain.Classes.dll.config
+E:\GH\Chazwa\EF6JL\NinjaDomain.Classes\bin\Debug\NinjaDomain.Classes.dll
+E:\GH\Chazwa\EF6JL\NinjaDomain.Classes\bin\Debug\NinjaDomain.Classes.pdb
+E:\GH\Chazwa\EF6JL\NinjaDomain.Classes\bin\Debug\EntityFramework.dll
+E:\GH\Chazwa\EF6JL\NinjaDomain.Classes\bin\Debug\EntityFramework.SqlServer.dll
+E:\GH\Chazwa\EF6JL\NinjaDomain.Classes\bin\Debug\EntityFramework.xml
+E:\GH\Chazwa\EF6JL\NinjaDomain.Classes\bin\Debug\EntityFramework.SqlServer.xml
+E:\GH\Chazwa\EF6JL\NinjaDomain.Classes\obj\Debug\NinjaDomain.Classes.dll
+E:\GH\Chazwa\EF6JL\NinjaDomain.Classes\obj\Debug\NinjaDomain.Classes.pdb

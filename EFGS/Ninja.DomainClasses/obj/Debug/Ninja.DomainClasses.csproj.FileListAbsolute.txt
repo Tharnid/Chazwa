@@ -1,0 +1,5 @@
+E:\GH\Chazwa\EFGS\Ninja.DomainClasses\obj\Debug\Ninja.DomainClasses.csprojResolveAssemblyReference.cache
+E:\GH\Chazwa\EFGS\Ninja.DomainClasses\bin\Debug\Ninja.DomainClasses.dll
+E:\GH\Chazwa\EFGS\Ninja.DomainClasses\bin\Debug\Ninja.DomainClasses.pdb
+E:\GH\Chazwa\EFGS\Ninja.DomainClasses\obj\Debug\Ninja.DomainClasses.dll
+E:\GH\Chazwa\EFGS\Ninja.DomainClasses\obj\Debug\Ninja.DomainClasses.pdb

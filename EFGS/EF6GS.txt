@@ -1,0 +1,7 @@
+EF 6 Notes
+==========
+
+ORM - Object Relational Mapper
+
+EF7 will support on No or Non Sql systems
+EF6 only relational
