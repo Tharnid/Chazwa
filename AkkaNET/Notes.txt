@@ -72,7 +72,6 @@ Akka on Nuget
 =============
 
 	+ Akka
-<<<<<<< HEAD
 	+ Akka.Logger.*
 	+ Akka.Persistance.*
 	+ Akka.DI.* (Dependency Injection)
@@ -93,4 +92,52 @@ Defining an Actor
 	+ parent ref 
 =======
 	+ Akka.Logger.*
->>>>>>> 9d9213c78e62bf5133c34ab20e41461cefc7fc45
+
+	Actor Reference
+	===============
+
+		+ each actor has a reference to it'self
+		+ ref to all of its children
+		+ children have reference to parent etc
+
+		+ Create a new Actor - ActorOf()
+		+ Lookup existing actor - ActorSelection()
+
+	Defining Messages
+	=================
+
+		+ Create POCO class
+		+ Add properties
+		+ Make setters private
+
+		- Don't pass mutable state between actors
+		- Create Immutable messages (thread-safe)
+		- Consider remote use(serializable & size)
+
+	Types of Message Sending
+	========================
+
+	Tell - Tells target something - Doesn't block waiting for a reply - Fire and Forget - Better scaling and concurrency
+	Ask - send message/expect response - target actor has to reply - Timeout TaskCancelledException
+	Forward - forward a sent message
+
+	Actor Instantiation
+	===================
+
+	Define Props - recipe for how to make an instance of an actor
+
+	Define which messages an actor will handle?
+	===========================================
+
+		Modify Playback actor to...
+
+			++ respond to string an int messages
+
+			++ use actor reference and Tell() to send a message
+
+		Sending a custom message....
+
+			++ Create PlayMovieMessage class, Modify OnReceive() method, and send new message to the actor
+
+	Receive Actor?
+	==============
