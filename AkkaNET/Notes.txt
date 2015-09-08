@@ -141,3 +141,7 @@ Defining an Actor
 
 	Receive Actor?
 	==============
+
+		++ More elegant way of specifying what message types can be handled
+		++ Additionally specify predicates to further filter if a message will be handled
+		++ will automatically call the Unhandled method if a message is not matched...won't have to manually call it
