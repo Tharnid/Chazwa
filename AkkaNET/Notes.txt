@@ -78,3 +78,77 @@ Akka on Nuget
 	+ Akka.Cluster
 	+ Akka.Remote (Remote Actors)
 
+<<<<<<< HEAD
+=======
+Defining an Actor
+=================
+
+	+ define class
+	+ inherit from Akka base class
+	+ define the message handling
+
+	Actor References
+	================
+
+	+ ref to all child child reference
+	+ parent ref 
+=======
+	+ Akka.Logger.*
+
+	Actor Reference
+	===============
+
+		+ each actor has a reference to it'self
+		+ ref to all of its children
+		+ children have reference to parent etc
+
+		+ Create a new Actor - ActorOf()
+		+ Lookup existing actor - ActorSelection()
+
+	Defining Messages
+	=================
+
+		+ Create POCO class
+		+ Add properties
+		+ Make setters private
+
+		- Don't pass mutable state between actors
+		- Create Immutable messages (thread-safe)
+		- Consider remote use(serializable & size)
+
+	Types of Message Sending
+	========================
+
+	Tell - Tells target something - Doesn't block waiting for a reply - Fire and Forget - Better scaling and concurrency
+	Ask - send message/expect response - target actor has to reply - Timeout TaskCancelledException
+	Forward - forward a sent message
+
+	Actor Instantiation
+	===================
+
+	Define Props - recipe for how to make an instance of an actor
+
+	Define which messages an actor will handle?
+	===========================================
+
+		Modify Playback actor to...
+
+			++ respond to string an int messages
+
+			++ use actor reference and Tell() to send a message
+
+		Sending a custom message....
+
+			++ Create PlayMovieMessage class, Modify OnReceive() method, and send new message to the actor
+
+	Receive Actor?
+	==============
+
+		++ More elegant way of specifying what message types can be handled
+		++ Additionally specify predicates to further filter if a message will be handled
+		++ will automatically call the Unhandled method if a message is not matched...won't have to manually call it
+
+
+Part Three
+==========
+>>>>>>> 9a21509a9b599d85aa1519747844255c85e4e539

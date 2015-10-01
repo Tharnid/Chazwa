@@ -237,6 +237,8 @@
     <Content Include="Forms4\Forms4.html" />
     <Content Include="Forms5\Form5.html" />
     <Content Include="Forms5\Forms2.css" />
+    <Content Include="Forms6\Forms2.css" />
+    <Content Include="Forms6\InlineForm.html" />
     <Content Include="Global.asax" />
     <Content Include="Areas\HelpPage\Views\Web.config" />
     <Content Include="Areas\HelpPage\Views\Shared\_Layout.cshtml" />

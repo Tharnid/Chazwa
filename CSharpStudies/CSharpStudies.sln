@@ -7,8 +7,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basics", "Basics", "{75DD0D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Best Practices", "Best Practices", "{A9790F0C-C2C1-489C-AFD1-C40DAB61EAA7}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Desgin Patterns", "Desgin Patterns", "{184C3DCA-5D62-4146-8473-4E322CD6203B}"
-EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
