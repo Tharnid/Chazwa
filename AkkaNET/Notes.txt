@@ -73,3 +73,8 @@ Akka on Nuget
 
 	+ Akka
 	+ Akka.Logger.*
+	+ Akka.Persistance.*
+	+ Akka.DI.* (Dependency Injection)
+	+ Akka.Cluster
+	+ Akka.Remote (Remote Actors)
+
