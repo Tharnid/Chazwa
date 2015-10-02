@@ -1,0 +1,1 @@
+C:\srcCode\GH\Chazwa\AkkaNET\MovingStreaming.Console\bin\Debug\MovingStreaming.Console.exe.config

@@ -78,6 +78,8 @@ Akka on Nuget
 	+ Akka.Cluster
 	+ Akka.Remote (Remote Actors)
 
+<<<<<<< HEAD
+=======
 Defining an Actor
 =================
 
@@ -149,3 +151,4 @@ Defining an Actor
 
 Part Three
 ==========
+>>>>>>> 9a21509a9b599d85aa1519747844255c85e4e539
