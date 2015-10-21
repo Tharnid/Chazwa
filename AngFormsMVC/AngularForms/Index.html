@@ -4,13 +4,20 @@
     <title>AJS Example</title>
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-route.min.js"></script>
     <script src="app/AngularFormsApp.js"></script>
     <script src="app/EmployeeForm/efController.js"></script>
     <script src="app/EmployeeForm/efDirective.js"></script>
     <script src="app/EmployeeForm/efService.js"></script>
 </head>
 <body ng-controller="efController" class="container">
-    <br />
-    <employee-form />
+    <!--<br />
+    <employee-form />-->
+
+    <h2>Start Page</h2>
+    <div ng-view>
+
+    </div>
+
 </body>
 </html>
