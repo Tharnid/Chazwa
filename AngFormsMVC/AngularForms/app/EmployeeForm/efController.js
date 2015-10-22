@@ -1,14 +1,24 @@
-﻿angularFormsApp.controller('efController', function efController($scope, DataService) {
-    $scope.employee = DataService.employee;
+﻿angularFormsApp.controller('efController',
+    function efController($scope, $window, DataService) {
 
-    $scope.departments = [
-    "Engineering",
-    "Procurement",
-    "Finance",
-    "Administration"
-    ];
+        $scope.employee = DataService.employee;
 
-    $scope.submitForm = function () {
+        $scope.editableEmployee = angular.copy($scope.employee);
 
-    }
-});
+        $scope.departments = [
+            "Engineering",
+            "Procurement",
+            "Finance",
+            "Administration"
+        ];
+
+        $scope.submitForm = function () {
+            $scope.employee = angular.copy($scope.editableEmployee);
+            $window.history.back();  // naviagates to previous page
+        };
+
+        $scope.cancelForm = function () {
+            $window.history.back();
+        };
+
+    });
