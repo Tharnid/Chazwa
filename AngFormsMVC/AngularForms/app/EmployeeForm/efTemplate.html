@@ -32,6 +32,23 @@
                             ng-options="dept for dept in departments"></select>
                 </div>
             </div>
+
+            <div class="form-group">
+                <label for="dateHired" class="col-sm-3 control-label">Date Hired</label>
+                <div class="col-sm-9">
+                    <datepicker name="dateHired" ng-model="editableEmployee.dateHired">
+                    </datepicker>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="breakTime" class="col-sm-3 control-label">Break Time</label>
+                <div class="col-sm-9">
+                    <timepicker name="breakTime" ng-model="editableEmployee.breakTime">
+                    </timepicker>
+                </div>
+            </div>
+
         </fieldset>
         <br />
 

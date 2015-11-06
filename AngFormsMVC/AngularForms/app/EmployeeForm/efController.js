@@ -34,7 +34,8 @@ angularFormsApp.controller('efController',
         };
 
         $scope.cancelForm = function () {
-            // $window.history.back();
+            //$window.history.back();
+
             $modalInstance.dismiss();
         };
 
