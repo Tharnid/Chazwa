@@ -33,7 +33,7 @@
                 </div>
             </div>
 
-            <div class="form-group">
+            <!--<div class="form-group">
                 <label for="dateHired" class="col-sm-3 control-label">Date Hired</label>
                 <div class="col-sm-9">
                     <datepicker name="dateHired" ng-model="editableEmployee.dateHired">
@@ -46,6 +46,18 @@
                 <div class="col-sm-9">
                     <timepicker name="breakTime" ng-model="editableEmployee.breakTime">
                     </timepicker>
+                </div>
+            </div>-->
+
+            <div class="form-group">
+                <label for="topProgrammingLanguage" class="col-sm-3 control-label">
+                    Top Programming Language
+                </label>
+                <div class="col-sm-9">
+                    <input type="text" id="topProgrammingLanguage" name="topProgrammingLanguage"
+                           class="form-control"
+                           ng-model="editableEmployee.topProgrammingLanguage" 
+                           typeahead="language for language in programmingLanguages | filter:$viewValue"/>
                 </div>
             </div>
 
