@@ -7,11 +7,137 @@
     <script src="../Scripts/jquery-2.1.4.min.js"></script>
 
     <script type="text/javascript">
+        
+        //$(document).ready(function () {
+        //    $("img:odd").mouseenter(function (e) {
+        //        $(this).css("opacity", 0.5);
+        //    }).mouseout(function (e) {
+        //        $(this).css("opacity", 1.0);
+        //    });
+        //});
+
+        //context
+        //$(document).ready(function () {
+        //    $("img:odd", $(".drow")).mouseenter(function (e) {
+        //        $(this).css("opacity", 0.5);
+        //    }).mouseout(function (e) {
+        //        $(this).css("opacity", 1.0);
+        //    });
+        //});
+
+        //$(document).ready(function () {
+
+        //    // HTMLElement
+        //    var elem = document.getElementById("onblock");
+
+        //    $("img:odd", elem).mouseenter(function (e) {
+        //        $(this).css("opacity", 0.5);
+        //    }).mouseout(function (e) {
+        //        $(this).css("opacity", 1.0);
+        //    });
+        //});
+
+        //$(document).ready(function () {
+        //    var jq1 = $("img:odd");
+        //    console.log("No context: " + jq1.context.tagName);
+
+        //    var jq2 = $("img:odd", $(".drow"));
+        //    console.log("Multiple Context elements: " + jq2.tagName);
+
+        //    var jq3 = $("img:odd", document.getElementById("oblock"));
+        //    console.log("Single context element: " + jq3.context.tagName);
+        //});
+
+        //$(document).ready(function () {
+        //    // dom object
+        //    var elems = document.getElementsByTagName("img");
+
+        //    $(elems).mouseenter(function (e) {
+        //        $(this).css("opacity", 0.25);
+        //    }).mouseout(function (e) {
+        //        $(this).css("opacity", 0.75);
+        //    }); 
+        //});
+
+        // JQuery Object as an Array
+        // returns a list of odd numbered img elements
+        //$(document).ready(function () {
+        //    var elems = $("img:odd");
+        //    for (var i = 0; i < elems.length; i++) {
+        //        console.log("Element: " + elems[i].tagName + " " + elems[i].src);
+        //    }
+        //});
+
+        // Iterate a function over DOM elements
+        //$(document).ready(function () {
+
+        //});
+
+        //$(document).ready(function () {
+        //    $("img:odd").each(function (index, elem) {
+        //        console.log("Element: " + elem.tagName + " " + elem.src);
+        //    });
+        //});
+
+        // Index of HTMLElement
+        //$(document).ready(function () {
+        //    var elems = $("body *");
+
+        //    var index = elems.index(document.getElementById("oblock"));
+        //    console.log("Index using DOM elements is: " + index);
+
+        //    // find index using jquery object
+        //    index = elems.index($("#oblock"));
+        //    console.log("Index using JQuery object is: " + index);
+        //});
+
+        // Selector version of the Index methods
+        //$(document).ready(function () {
+        //    var imgElems = $("img:odd");
+
+        //    // find index using selector
+        //    index = imgElems.index("body *");
+        //    console.log("Index using selector is: " + index);
+
+        //    // perform the same task using a Jquery object
+        //    index = $("body *").index(imgElems);
+        //    console.log("Index using JQuery object is: " + index);
+        //});
+        //$(document).ready(function () {
+
+        //});
+
+        // Method chaining calls on a jquery object
+        //$(document).ready(function () {
+        //    $("label").css("color", "blue").css("font-size", ".75em");
+
+        //    var labelElems = document.getElementsByTagName("label");
+        //    for (var i = 0; i < labelElems.length; i++) {
+        //        labelElems[i].style.color = "blue";
+        //        labelElems[i].style.fontSize = ".75em";
+        //    }
+        //});
+
+        // more sophisticated chaining
         $(document).ready(function () {
-            $("img:odd").mouseenter(function (e) {
-                $(this).css("opacity", 0.5);
-            }).mouseout(function (e) {
-                $(this).css("opacity", 1.0);
+            $(document).ready(function () {
+
+                $("label").css("color", "blue").add("input[name!='rose']")
+                            .filter("[for!='snowdrop']").css("font-size", ".75em");
+
+                var elems = document.getElementsByTagName("label");
+                for (var i = 0; i < elems.length; i++) {
+                    elems[i].style.color = "blue";
+                    if (elems[i].getAttribute("for") != "snowdrop") {
+                        elems[i].style.fontSize = ".75em";
+                    }
+                }
+                elems = document.getElementsByTagName("input");
+                for (var i = 0; i < elems.length; i++) {
+                    if (elems[i].getAttribute("name") != "rose") {
+                        elems[i].style.fontSize = ".75em";
+                    }
+                }
             });
         });
     </script>

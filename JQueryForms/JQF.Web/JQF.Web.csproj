@@ -282,7 +282,11 @@
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="ItemUnitCode\Forms2.css" />
     <Content Include="ItemUnitCode\itemUnitCodeMockup.html" />
+    <Content Include="JQF2\ChangeEvent.html" />
+    <Content Include="JQF2\FormSerialization.html" />
     <Content Include="JQF2\JQF2.html" />
+    <Content Include="JQF2\SubmitEvent.html" />
+    <Content Include="JQP\FP2.html" />
     <Content Include="JQP\FS1.html" />
     <Content Include="MCForms\Forms2.css" />
     <Content Include="MCForms\MCForms.html" />
