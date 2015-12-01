@@ -1,12 +1,22 @@
-﻿<form class="form-horizontal" role="form">
+﻿<form class="form-horizontal" name="employeeForm" novalidate role="form">
 
     <fieldset>
         <legend>Basic Information</legend>
+        <!--<div class="form-group">
+            <label for="fullName" class="col-sm-3 control-label">Name</label>
+            <div class="col-sm-9">
+                <input type="text" id="fullName" name="fullName" class="form-control"
+                       ng-model="editableEmployee.fullName" required />
+                <span ng-show="employeeForm.fullname.$error.required">Full Name is required!!!</span>
+            </div>
+        </div>-->
+
         <div class="form-group">
             <label for="fullName" class="col-sm-3 control-label">Name</label>
             <div class="col-sm-9">
                 <input type="text" id="fullName" name="fullName" class="form-control"
-                       ng-model="editableEmployee.fullName" />
+                       ng-model="editableEmployee.fullName" ng-required="shouldShowFullName()" /> <!--ng-required="shouldShowFullName()" ng-required="true" required -->
+                <span ng-show="employeeForm.fullName.$error.required">Full Name is required</span>
             </div>
         </div>
 
