@@ -1,0 +1,12 @@
+Angular Forms MVC Notes
+
+ng-pristine = field just appeared
+ng-dirty = field has input
+ng-valid = based on validation settings
+ng-invalid = based on validation settings
+
+Bootstrap CSS classes for styling errors (on field and input control)
+
+has-success
+has-warning
+has-error
