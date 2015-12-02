@@ -70,6 +70,7 @@
     <Content Include="app\EmployeeForm\efDirective.js" />
     <Content Include="app\DataService.js" />
     <Content Include="app\EmployeeForm\efTemplate.html" />
+    <Content Include="app\EmployeeForm\ValidationDirective.js" />
     <Content Include="app\Home.html" />
     <Content Include="Content\app.css" />
     <Content Include="Content\bootstrap-theme.css" />
