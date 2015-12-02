@@ -30,7 +30,8 @@ namespace AFormsMVC.Controllers
                 Content = JsonConvert.SerializeObject(list, camelCaseFormatter),
                 ContentType = "application/json"
             };
-            return jsonResult;
+            //return jsonResult;
+            return new HttpStatusCodeResult(404, "Our custom message here.....");
         }
     }
 }

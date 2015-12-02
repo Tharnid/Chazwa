@@ -29,6 +29,17 @@ angularFormsApp.controller("HomeController",
             var data = results.data;
         });
 
+    //    DataService.getEmployees().then(
+    //function (results) {
+    //    // on success
+    //    var data = results.data;
+    //},
+    //function (results) {
+    //    // on error
+    //    var data = results.data;
+    //}
+);
+
         $scope.showCreateEmployeeForm = function () {
             $location.path('/newEmployeeForm');
         };
