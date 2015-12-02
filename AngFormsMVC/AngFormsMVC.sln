@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Notes.txt = Notes.txt
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AFormsMVC", "AFormsMVC\AFormsMVC.csproj", "{20594E37-A609-4683-9A15-3ACAADACA0CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +22,10 @@ Global
 		{756D3FD1-2142-4152-9CB1-45CFE189DC06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{756D3FD1-2142-4152-9CB1-45CFE189DC06}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{756D3FD1-2142-4152-9CB1-45CFE189DC06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20594E37-A609-4683-9A15-3ACAADACA0CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20594E37-A609-4683-9A15-3ACAADACA0CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20594E37-A609-4683-9A15-3ACAADACA0CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20594E37-A609-4683-9A15-3ACAADACA0CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
