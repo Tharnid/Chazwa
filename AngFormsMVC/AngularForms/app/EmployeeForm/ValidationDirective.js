@@ -1,4 +1,4 @@
-﻿angularFormsApp.directive('showErrors', function () {
+﻿angularFormsApp.directive('showErrors', function ($timeout) {
     return {
         restrict: 'A',
         require: '^form',
@@ -24,6 +24,13 @@
 
             scope.$on('show-errors-event', function () {
                 el.toggleClass('has-error', formCtrl[inputName].$invalid);
+            });
+
+            // listens for reset event
+            scope.$on('hide-errors-event', function () {
+                $timeout(function () {
+                    el.removeClass('has-error');
+                }, 0, false);
             });
         }
     }
