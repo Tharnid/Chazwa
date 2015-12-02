@@ -28,7 +28,7 @@
             <div class="col-sm-9">
                 <input type="email" id="email" name="email" class="form-control"
                        ng-model="editableEmployee.email" ng-required="true" />
-                <span class="help-block hide">A valid email is required</span>
+                <span class="help-block" ng-if="employeeForm.fullName.$error.required">A valid email is required</span>
             </div>
         </div>
 
@@ -37,7 +37,7 @@
             <div class="col-sm-9">
                 <input type="url" id="url" name="url" class="form-control"
                        ng-model="editableEmployee.url" ng-required="true" />
-                <span class="help-block hide">A valid url is required</span>
+                <span class="help-block" ng-if="employeeForm.fullName.$error.required">A valid url is required</span>
             </div>
         </div>
 
@@ -58,53 +58,8 @@
             </div>
         </div>
 
-        <div class="form-group">
-            <label for="dateHired" class="col-sm-3 control-label">Date Hired</label>
-            <div class="col-sm-9">
-                <datepicker name="dateHired" ng-model="editableEmployee.dateHired">
-                </datepicker>
-            </div>
-        </div>
-
-        <div class="form-group">
-            <label for="breakTime" class="col-sm-3 control-label">Break Time</label>
-            <div class="col-sm-9">
-                <timepicker name="breakTime" ng-model="editableEmployee.breakTime">
-                </timepicker>
-            </div>
-        </div>
-
     </fieldset>
-    <br />
 
-    <fieldset>
-        <legend>Perks</legend>
-        <div class="form-group">
-            <div class="col-sm-3">
-            </div>
-            <div class="col-sm-9">
-
-                <div class="checkbox">
-                    <label>
-                        <input type="checkbox" value="perkCar"
-                               ng-model="editableEmployee.perkCar" />Company Car
-                    </label>
-                </div>
-                <div class="checkbox">
-                    <label>
-                        <input type="checkbox" value="perkStock"
-                               ng-model="editableEmployee.perkStock" />Stock Options
-                    </label>
-                </div>
-                <div class="checkbox">
-                    <label>
-                        <input type="checkbox" value="perkSixWeeks"
-                               ng-model="editableEmployee.perkSixWeeks" />Six Weeks Vacation
-                    </label>
-                </div>
-            </div>
-        </div>
-    </fieldset>
     <br />
 
     <fieldset>
@@ -142,7 +97,7 @@
         <input type="button" class="btn btn-default" value="Cancel"
                ng-click="cancelForm()" />
         <input type="submit" class="btn btn-primary" value="Submit"
-               ng-click="submitForm()" />
+               ng-click="submitForm()" />  <!--ng-disabled="employeeForm.$invalid"-->
     </div>
 
 </form>

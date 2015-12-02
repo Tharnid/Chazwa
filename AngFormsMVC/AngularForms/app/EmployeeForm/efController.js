@@ -39,6 +39,11 @@ angularFormsApp.controller('efController',
 
         $scope.submitForm = function () {
 
+            $scope.$broadcast('show-errors-event');
+
+            if ($scope.employeeForm.$invalid)
+                return;
+
             if ($scope.editableEmployee.id == 0) {
                 // insert new employee
                 DataService.insertEmployee($scope.editableEmployee);
