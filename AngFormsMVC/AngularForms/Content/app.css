@@ -14,3 +14,14 @@ input.ng-valid {
 input.ng-invalid {
     border: 3px solid black;
 }*/
+
+
+.form-group .help-block {
+  display: none;
+}
+
+.form-group.has-error .help-block {
+  display: block;
+}
+
+
