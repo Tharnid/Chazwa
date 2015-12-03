@@ -1,5 +1,4 @@
-﻿
-angularFormsApp.factory('DataService',
+﻿angularFormsApp.factory('DataService',
     ["$http",
     function ($http) {
 
@@ -28,18 +27,11 @@ angularFormsApp.factory('DataService',
 
         var insertEmployee = function (newEmployee) {
 
-            var data = {
-                NewEmployee: newEmployee,
-                PriorPlaceOfWork: {
-                    id: 123
-                }
-            };
-
-            return $http.post("Employee/Create", data); // newEmployee
+            return $http.post("Employee/Create", newEmployee);
         };
 
         var updateEmployee = function (employee) {
-            return true;
+            return $http.post("Employee/Update", employee);
         };
 
         return {

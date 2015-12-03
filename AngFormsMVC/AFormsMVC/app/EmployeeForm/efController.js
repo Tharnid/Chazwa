@@ -35,7 +35,6 @@ angularFormsApp.controller('efController',
                     function (results) {
                         // on success
                         $scope.employee = angular.copy($scope.editableEmployee);
-                        // include new id
                         $scope.employee.id = results.data.id;
                         $window.history.back();
                     },
@@ -47,10 +46,20 @@ angularFormsApp.controller('efController',
             }
             else {
                 // update the employee
-                DataService.updateEmployee($scope.editableEmployee);
+                DataService.updateEmployee($scope.editableEmployee).then(
+                    function (results) {
+                        // on success
+                        $scope.employee = angular.copy($scope.editableEmployee);
+                        $window.history.back();
+                    },
+                    function (results) {
+                        // on error
+                        $scope.hasFormError = true;
+                        $scope.formErrors = results.statusText;
+                    });
             }
 
-
+            
         };
 
         $scope.cancelForm = function () {

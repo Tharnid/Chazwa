@@ -60,6 +60,23 @@ namespace AFormsMVC.Controllers
 
         }
 
+        public ActionResult Update(EmployeeVM employee)
+        {
+            if (ModelState.IsValid)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.OK, "Update success");
+            }
+
+            List<string> errors = new List<string>();
+            errors.Add("Update failed.");
+            if (!ModelState.IsValidField("Notes"))
+                errors.Add("Notes must be at least 5 characters long.");
+
+            return new HttpStatusCodeResult(HttpStatusCode.InternalServerError,
+                String.Join("  ", errors));
+
+        }
+
         public ContentResult GetJsonContentResult(object data)
         {
             var camelCaseFormatter = new JsonSerializerSettings();
