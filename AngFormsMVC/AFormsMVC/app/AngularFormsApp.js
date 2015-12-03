@@ -38,7 +38,7 @@ angularFormsApp.controller("HomeController",
     //    // on error
     //    var data = results.data;
     //}
-);
+
 
         $scope.showCreateEmployeeForm = function () {
             $location.path('/newEmployeeForm');
