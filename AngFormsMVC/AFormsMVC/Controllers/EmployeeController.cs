@@ -35,7 +35,10 @@ namespace AFormsMVC.Controllers
             return new HttpStatusCodeResult(404, "Our custom error message...");
         }
 
-        public ActionResult Create(EmployeeVM employee)
+        public ActionResult Create([Bind(Prefix="NewEmployee")] EmployeeVM employee) // [Bind(Exclude="Notes")] [Bind(Include="Notes")]...without prefix employee not populated!!!
+        // Include White list
+        // Exclude Black list
+        // Prefix 
         {
             if (ModelState.IsValid)
             {

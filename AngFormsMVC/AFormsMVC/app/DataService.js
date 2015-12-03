@@ -27,7 +27,15 @@ angularFormsApp.factory('DataService',
         };
 
         var insertEmployee = function (newEmployee) {
-            return $http.post("Employee/Create", newEmployee);
+
+            var data = {
+                NewEmployee: newEmployee,
+                PriorPlaceOfWork: {
+                    id: 123
+                }
+            };
+
+            return $http.post("Employee/Create", data); // newEmployee
         };
 
         var updateEmployee = function (employee) {
