@@ -1,4 +1,5 @@
-﻿var angularFormsApp = angular.module('angularFormsApp', ["ngRoute", "ui.bootstrap"]);
+﻿
+var angularFormsApp = angular.module('angularFormsApp', ["ngRoute", "ui.bootstrap"]);
 
 angularFormsApp.config(["$routeProvider", "$locationProvider",
     function ($routeProvider, $locationProvider) {
@@ -18,27 +19,23 @@ angularFormsApp.config(["$routeProvider", "$locationProvider",
             .otherwise({
                 redirectTo: "/home"
             });
-        //$locationProvider.html5Mode(true);
+        $locationProvider.html5Mode(true);
     }]);
 
 angularFormsApp.controller("HomeController",
     ["$scope", "$location", "DataService",
     function ($scope, $location, DataService) {
 
-        DataService.getEmployees().then(function (results) {
-            var data = results.data;
-        });
-
-    //    DataService.getEmployees().then(
-    //function (results) {
-    //    // on success
-    //    var data = results.data;
-    //},
-    //function (results) {
-    //    // on error
-    //    var data = results.data;
-    //}
-
+        DataService.getEmployees().then(
+            function (results) {
+                // on success
+                var data = results.data;
+            },
+            function (results) {
+                // on error
+                var data = results.data;
+            }
+        );
 
         $scope.showCreateEmployeeForm = function () {
             $location.path('/newEmployeeForm');

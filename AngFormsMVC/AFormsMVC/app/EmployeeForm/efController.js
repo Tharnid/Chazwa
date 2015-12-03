@@ -27,6 +27,8 @@ angularFormsApp.controller('efController',
 
             if ($scope.employeeForm.$invalid)
                 return;
+
+
             if ($scope.editableEmployee.id == 0) {
                 // insert new employee
                 DataService.insertEmployee($scope.editableEmployee).then(
@@ -37,13 +39,16 @@ angularFormsApp.controller('efController',
                     },
                     function (results) {
                         // on error
-                        alert(results);
+                        $scope.hasFormError = true;
+                        $scope.formErrors = results.statusText;
                     });
             }
             else {
                 // update the employee
                 DataService.updateEmployee($scope.editableEmployee);
             }
+
+
         };
 
         $scope.cancelForm = function () {

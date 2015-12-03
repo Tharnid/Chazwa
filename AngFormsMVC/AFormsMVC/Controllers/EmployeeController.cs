@@ -32,19 +32,24 @@ namespace AFormsMVC.Controllers
                 ContentType = "application/json"
             };
             //return jsonResult;
-            return new HttpStatusCodeResult(404, "Our custom message here.....");
+            return new HttpStatusCodeResult(404, "Our custom error message...");
         }
 
         public ActionResult Create(EmployeeVM employee)
         {
-            //if (ModelState.IsValid)
-            //{
-            //    return new HttpStatusCodeResult(HttpStatusCode.Created, "New employee added");
-            //}
+            if (ModelState.IsValid)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.Created, "New employee added");
+            }
 
-            //return new HttpStatusCodeResult(HttpStatusCode.InternalServerError);
+            List<string> errors = new List<string>();
+            errors.Add("Insert failed.");
+            if (!ModelState.IsValidField("Notes"))
+                errors.Add("Notes must be at least 5 characters long.");
 
-            return new HttpStatusCodeResult(201, "New Employee added!!!");
+            return new HttpStatusCodeResult(HttpStatusCode.InternalServerError,
+                String.Join("  ", errors));
+
         }
     }
 }

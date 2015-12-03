@@ -1,4 +1,5 @@
-﻿angularFormsApp.factory('DataService',
+﻿
+angularFormsApp.factory('DataService',
     ["$http",
     function ($http) {
 
@@ -7,28 +8,25 @@
             return $http.get("Employee/GetEmployees");
         };
 
-                var getEmployee = function (id) {
-                    if (id == 123) {
-                        return {
-                            id: 123,
-                            fullName: "Milton Waddams",
-                            notes: "The ideal employee.  Just don't touch his red stapler.",
-                            department: "Administration",
-                            dateHired: "July 11 2014",
-                            breakTime: "July 11 2014 3:00 PM",
-                            email: "mwaddams@initech.com",
-                            url: "http://wwww.blah.com",
-                            perkCar: true,
-                            perkStock: false,
-                            perkSixWeeks: true,
-                            payrollType: "none"
-                        };
-                    }
-                    return undefined;
+        var getEmployee = function (id) {
+            if (id == 123) {
+                return {
+                    id: 123,
+                    fullName: "Milton Waddams",
+                    notes: "The ideal employee.  Just don't touch his red stapler.",
+                    department: "Administration",
+                    dateHired: "July 11 2014",
+                    breakTime: "July 11 2014 3:00 PM",
+                    perkCar: true,
+                    perkStock: false,
+                    perkSixWeeks: true,
+                    payrollType: "none"
                 };
+            }
+            return undefined;
+        };
 
         var insertEmployee = function (newEmployee) {
-            //return true;
             return $http.post("Employee/Create", newEmployee);
         };
 
@@ -43,4 +41,3 @@
             getEmployees: getEmployees
         };
     }]);
-
