@@ -11,8 +11,42 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Intermediate", "Intermediat
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LinqToObjects", "LinqToObjects", "{D504C2E4-2341-448A-BA81-456EBE346778}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VariablesOne", "VariablesOne\VariablesOne.csproj", "{CD16FEA9-AF50-42EE-9359-D47E5C780B05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntArith", "IntArith\IntArith.csproj", "{E432D5EA-52E6-48EC-AAA6-CF8524D4B53F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arith2", "Arith2\Arith2.csproj", "{77BFC036-ACA5-4EE2-94F6-9835605B924D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{56F482CB-77BB-49E5-8194-640239F1937F}"
+	ProjectSection(SolutionItems) = preProject
+		Notes.html = Notes.html
+	EndProjectSection
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD16FEA9-AF50-42EE-9359-D47E5C780B05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD16FEA9-AF50-42EE-9359-D47E5C780B05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD16FEA9-AF50-42EE-9359-D47E5C780B05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD16FEA9-AF50-42EE-9359-D47E5C780B05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E432D5EA-52E6-48EC-AAA6-CF8524D4B53F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E432D5EA-52E6-48EC-AAA6-CF8524D4B53F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E432D5EA-52E6-48EC-AAA6-CF8524D4B53F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E432D5EA-52E6-48EC-AAA6-CF8524D4B53F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77BFC036-ACA5-4EE2-94F6-9835605B924D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77BFC036-ACA5-4EE2-94F6-9835605B924D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77BFC036-ACA5-4EE2-94F6-9835605B924D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77BFC036-ACA5-4EE2-94F6-9835605B924D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CD16FEA9-AF50-42EE-9359-D47E5C780B05} = {A9790F0C-C2C1-489C-AFD1-C40DAB61EAA7}
+		{E432D5EA-52E6-48EC-AAA6-CF8524D4B53F} = {A9790F0C-C2C1-489C-AFD1-C40DAB61EAA7}
+		{77BFC036-ACA5-4EE2-94F6-9835605B924D} = {75DD0DB5-33CD-489B-9EE4-2D4A6A6D74D7}
 	EndGlobalSection
 EndGlobal
