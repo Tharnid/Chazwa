@@ -10,4 +10,6 @@
 0/30 Intermediate CSharp
 0/57 Design Patterns
 
+dnvm use -r coreclr -arch x86 1.0.0-beta5-11682
+
 ----------

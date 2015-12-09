@@ -3,8 +3,49 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TharnApp.Win", "TharnApp.Win\TharnApp.Win.csproj", "{28BA0EAA-AC9C-410B-8DDE-F8B3D127A699}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TharnApp.WPF", "TharnApp.WPF\TharnApp.WPF.csproj", "{5B3263D6-527E-4302-9B63-CA6DAE3BD0E9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{C3EBDA79-2FFC-49D5-A8C4-A6DDDD8BE758}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TharnApp.Common", "TharnApp.Common\TharnApp.Common.csproj", "{0ACEF9C5-48D3-4B75-B6C2-64531E97FBF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TharnApp.Biz", "TharnApp.Biz\TharnApp.Biz.csproj", "{7989931D-F5BE-4CE8-A7C2-BC07578FB947}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TharnApp.BizTests", "TharnApp.BizTests\TharnApp.BizTests.csproj", "{898885A8-0708-4449-9E13-32960F0F6A9D}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28BA0EAA-AC9C-410B-8DDE-F8B3D127A699}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28BA0EAA-AC9C-410B-8DDE-F8B3D127A699}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28BA0EAA-AC9C-410B-8DDE-F8B3D127A699}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28BA0EAA-AC9C-410B-8DDE-F8B3D127A699}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B3263D6-527E-4302-9B63-CA6DAE3BD0E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B3263D6-527E-4302-9B63-CA6DAE3BD0E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B3263D6-527E-4302-9B63-CA6DAE3BD0E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B3263D6-527E-4302-9B63-CA6DAE3BD0E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0ACEF9C5-48D3-4B75-B6C2-64531E97FBF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ACEF9C5-48D3-4B75-B6C2-64531E97FBF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ACEF9C5-48D3-4B75-B6C2-64531E97FBF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ACEF9C5-48D3-4B75-B6C2-64531E97FBF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7989931D-F5BE-4CE8-A7C2-BC07578FB947}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7989931D-F5BE-4CE8-A7C2-BC07578FB947}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7989931D-F5BE-4CE8-A7C2-BC07578FB947}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7989931D-F5BE-4CE8-A7C2-BC07578FB947}.Release|Any CPU.Build.0 = Release|Any CPU
+		{898885A8-0708-4449-9E13-32960F0F6A9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{898885A8-0708-4449-9E13-32960F0F6A9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{898885A8-0708-4449-9E13-32960F0F6A9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{898885A8-0708-4449-9E13-32960F0F6A9D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{898885A8-0708-4449-9E13-32960F0F6A9D} = {C3EBDA79-2FFC-49D5-A8C4-A6DDDD8BE758}
 	EndGlobalSection
 EndGlobal
