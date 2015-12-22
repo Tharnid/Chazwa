@@ -39,9 +39,58 @@ Methods
 		A template for the objects created at runtime
 		It specifies the data and operations for each entity
 
+	
+
 3. What are the benefits of unit testing?
 
     	Higher quality code, faster and easier debugging, and they are repeatable over the life of the application
 
-		
+# Object Oriented Programming
+---
+
+**Definition**  
+
+    Programming paradigm based on the concept of objects
+
+**What is it good for?**
+
+**Abstraction**
+
+	the process of providing only essential information to the the outside world and hiding overall background details
+
+**OOP Design technique**
+
+**Encapsulation**
+
+    Information Hiding
+
+**Inheritance**
+
+	allows us to create a new class using an existing one...extending one class to another
+
+**Composition**
+
+    Complex objects are composed of simpler objects, which in turn are composed of even simpler objects
+
+**Polymorphism**
+
+	means having many forms ie method overloading (method with same name different signature/parameters in the same or differenct class) and operator over loading
+
+**SRP**
+
+    The Single Responsibility Principle
+    A class should have one, and only one, reason to change.
+
+**Constructors**
+
+	are special methods used when instantiating a class
+
+**Destructors**
+
+	method called once an object is disposed, can be used to cleanup resources
+
+
+
+---
+
 ----------
