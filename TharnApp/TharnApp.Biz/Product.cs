@@ -16,11 +16,11 @@ namespace TharnApp.Biz
             Console.WriteLine("Product Instance Created!!!");
         }
 
-        public Product(int productId, string productName, string description) : this()
+        public Product(int productId, string productName, string description) : this() // invoke default constructor
         {
-            this.ProductId = productId;
             this.productName = productName;
             this.Description = description;
+            this.ProductId = productId;
 
             Console.WriteLine("Product Instance has a name: " + ProductName);
         }

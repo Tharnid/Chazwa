@@ -85,11 +85,39 @@ Methods
 
 	are special methods used when instantiating a class
 
+	Consider providing a default constructor
+
+	Consider providing a parameterized construtor
+
+	Initialize the minimum properties for a valid object
+
+	Name the parameters the same name as the related properties
+
 **Destructors**
 
 	method called once an object is disposed, can be used to cleanup resources
 
 
+**Namespace Best Practices**
+
+	<company>.<technology>.<feature>
+	TharnApp.Wpf.Pm
+	Microsoft.Office.Interop.PowerPoint
+
+	Use PascalCasing
+
+	Avoid
+
+	Using the a classname
+	Using System namespaces
+
+###Static Class
+---
+
+	static keyword in the signature
+	Only static members
+
+---
 
 ---
 
