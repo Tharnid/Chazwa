@@ -176,10 +176,30 @@ Methods
 **Non-static Class**
 
 	var whatever = new Whatever();
+	var blah = blah.HelloWorld();
 
 **Static Class**
 
-	
+	var result = WhateverService.LogAction("");
+
+**Object vs. Class**
+
+	Object - one specific things (Hammer or Saw)
+	Class - things of the same type (Product)
+
+	Defines the template specifying the data 
+	and processing associated with all things
+	of that type
+
+**Object Initialization**
+
+	- setting properties (assign all properties...
+	- best used when populating from database values)
+	- Parameterized constructor (added the values...
+	- setting the basic set of properties)
+	- object initializers
+	- (readability is important and when initializing a sub or superset of
+	- properties)
 
 ---
 

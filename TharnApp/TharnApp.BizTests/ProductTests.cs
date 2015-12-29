@@ -43,5 +43,25 @@ namespace TharnApp.Biz.Tests
             //Assert
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod()]
+        public void SayHello_OjbectInitializer()
+        {
+            // Arrange
+            var currentProduct = new Product
+            {
+                ProductId = 1,
+                ProductName = "Saw",
+                Description =  "17-inch steel blade hand saw"
+            };
+
+            var expected = "Hello Saw (1): 17-inch steel blade hand saw";
+
+            // Act
+            var actual = currentProduct.SayHello();
+
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
