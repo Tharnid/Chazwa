@@ -1,4 +1,7 @@
 ﻿using System;
+using TharnApp.Common;
+using static TharnApp.Common.LoggingService;
+using static TharnApp.Common.EmailService;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -49,6 +52,17 @@ namespace TharnApp.Biz
 
         public string SayHello()
         {
+            var vendor = new Vendor();
+
+            vendor.SendWelcomeEmail("Message from product");
+
+            var emailService = new EmailService();
+
+            var confirmation = emailService.SendMessage("New Product",
+                this.productName, "sales@abc.com");
+
+            var result = LogAction("Saying Hello");
+
             return "Hello " + ProductName +
                     " (" + ProductId + "): " +
                     Description;

@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TharnApp.Biz", "TharnApp.Bi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TharnApp.BizTests", "TharnApp.BizTests\TharnApp.BizTests.csproj", "{898885A8-0708-4449-9E13-32960F0F6A9D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TharnApp.Common.Tests", "TharnApp.Common.Tests\TharnApp.Common.Tests.csproj", "{0A3F615A-C998-4147-96DE-29B8A1B90839}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,11 +43,16 @@ Global
 		{898885A8-0708-4449-9E13-32960F0F6A9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{898885A8-0708-4449-9E13-32960F0F6A9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{898885A8-0708-4449-9E13-32960F0F6A9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A3F615A-C998-4147-96DE-29B8A1B90839}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A3F615A-C998-4147-96DE-29B8A1B90839}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A3F615A-C998-4147-96DE-29B8A1B90839}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A3F615A-C998-4147-96DE-29B8A1B90839}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{898885A8-0708-4449-9E13-32960F0F6A9D} = {C3EBDA79-2FFC-49D5-A8C4-A6DDDD8BE758}
+		{0A3F615A-C998-4147-96DE-29B8A1B90839} = {C3EBDA79-2FFC-49D5-A8C4-A6DDDD8BE758}
 	EndGlobalSection
 EndGlobal

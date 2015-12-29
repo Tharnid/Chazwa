@@ -24,10 +24,12 @@ Properties
 
 	Getter and Setter functions
 	Guard access to the fields
+	Gate keepers, providing access to data
 
 Methods
 
 	Functions contain behaviors and operations for the class
+	The operations
 
 1. Why is a layered architecture important?
 
@@ -93,6 +95,8 @@ Methods
 
 	Name the parameters the same name as the related properties
 
+	Method executed when an instance is created from a class
+
 **Destructors**
 
 	method called once an object is disposed, can be used to cleanup resources
@@ -117,7 +121,53 @@ Methods
 	static keyword in the signature
 	Only static members
 
+	
+- Cannot instantiate a static class use the class name instead
+
+- Use sparingly
+- only be used as supporting classes
+- don't participate with other OOP programming constructs
+- cannot have parameterized constructors
+- cannot implement an interface
+- can't inherit from a static class
+- Avoid using as misc bucket
+- Every class should have a purpose
+
+
 ---
+
+### Singleton 
+
+---
+
+- Provides only one instance
+- Private Constructors
+- static property provides one instance
+- Single instance of self
+
+**Advantages**
+
+- has an instance
+- Can be passed to the other codes as needed
+- Can have child objects
+- user interface has a set of roles associated with it
+- supports OOP constructs
+- can implement an interface
+- it can be inherited from
+
+**Disadvantages**
+
+	Static class cannot be instantiated
+	Singleton can be instantiate itself and provide that instance
+
+---
+
+###Defining References
+
+---
+
+	Identifies the component containing the class
+
 
 ---
 
