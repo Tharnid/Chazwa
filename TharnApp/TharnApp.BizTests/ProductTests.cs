@@ -19,6 +19,7 @@ namespace TharnApp.Biz.Tests
             currentProduct.ProductName = "Saw";
             currentProduct.ProductId = 1;
             currentProduct.Description = "15-inch steel blade hand saw";
+            currentProduct.ProductVendor.CompanyName = "ABC Corp";
 
             var expected = "Hello Saw (1): 15-inch steel blade hand saw";
 
@@ -59,6 +60,21 @@ namespace TharnApp.Biz.Tests
 
             // Act
             var actual = currentProduct.SayHello();
+
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
+        [TestMethod()]
+        public void Product_Null()
+        {
+            // Arrange
+            Product currentProduct = null;
+            var companyName = currentProduct?.ProductVendor?.CompanyName;
+
+            string expected = null;
+
+            // Act
+            var actual = companyName;
 
             // Assert
             Assert.AreEqual(expected, actual);

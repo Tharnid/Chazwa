@@ -17,6 +17,7 @@ namespace TharnApp.Biz
         public Product()
         {
             Console.WriteLine("Product Instance Created!!!");
+            this.ProductVendor = new Vendor();
         }
 
         public Product(int productId, string productName, string description) : this() // invoke default constructor
@@ -50,11 +51,35 @@ namespace TharnApp.Biz
             set { productId = value; }
         }
 
+        //private Vendor productVendor;
+
+        //public Vendor ProductVendor
+        //{
+        //    get { return productVendor; }
+        //    set { productVendor = value; }
+        //}
+
+        private Vendor productVendor;
+
+        public Vendor ProductVendor
+        {
+            get
+            {
+                if (productVendor == null)
+                {
+                    productVendor = new Vendor(); // create if null
+                }
+                return productVendor;
+            }
+            set { productVendor = value; }
+        }
+
+
         public string SayHello()
         {
-            var vendor = new Vendor();
+            //var vendor = new Vendor();
 
-            vendor.SendWelcomeEmail("Message from product");
+            //vendor.SendWelcomeEmail("Message from product");
 
             var emailService = new EmailService();
 

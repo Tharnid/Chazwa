@@ -47,6 +47,19 @@ Methods
 
     	Higher quality code, faster and easier debugging, and they are repeatable over the life of the application
 
+4. What is the difference between an object and a class?
+	
+		classes are templates that specify the data and operations for an entity
+
+		Objects are instances of a class created at runtime using the new
+		keyword
+
+5. What is lazy loading and when do you use it?
+
+		- Instantiating objects when they are needed and not before
+		- involves creating an instance in the property getter for the related object
+
+
 # Object Oriented Programming
 ---
 
@@ -200,6 +213,41 @@ Methods
 	- object initializers
 	- (readability is important and when initializing a sub or superset of
 	- properties)
+
+
+**Instantiating Related Objects**
+
+	- related object only needed in one method
+	- always needed by class (vendor always included w/ product)
+	- Sometimes
+
+	One Method - Initialize in the method that needs it
+	Always Needed - Define a property || Initialize in constructor
+	Sometimes - Define a prop || init in the prop getter || called lazy loading
+
+**Null Checking**
+
+	Object variable is local variable
+
+	Object variable is backing field with a property (priv and then pub)
+
+	private Vendor productVendor;
+	public Vendor ProductVendor
+	{
+		get { return productVendor; }
+		set { productVendor = value; }
+	}
+
+ 	if (whatever == null && whatever2 == null)
+	{
+		return whatever ? (called Elvis operator)
+	}
+
+**If null then null; if not then dot**
+
+	var whatever = currentA?.CurrentB?.Whatever;
+
+
 
 ---
 
