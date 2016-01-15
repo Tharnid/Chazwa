@@ -14,17 +14,27 @@ namespace TharnApp.Biz
         /// <summary>
         /// Manages products carried in inventory
         /// </summary>
+
+        public const double InchesPerMeter = 39.37;
+        public readonly decimal MinimumPrice;
+
         public Product()
         {
             Console.WriteLine("Product Instance Created!!!");
+            this.MinimumPrice = .96m;
             this.ProductVendor = new Vendor();
         }
 
         public Product(int productId, string productName, string description) : this() // invoke default constructor
         {
-            this.productName = productName;
+            this.ProductName = productName;
             this.Description = description;
             this.ProductId = productId;
+
+            if (ProductName.StartsWith("Bulk"))
+            {
+                this.MinimumPrice = 9.99m;
+            }
 
             Console.WriteLine("Product Instance has a name: " + ProductName);
         }

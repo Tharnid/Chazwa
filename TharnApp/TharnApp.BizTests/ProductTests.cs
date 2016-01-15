@@ -79,5 +79,30 @@ namespace TharnApp.Biz.Tests
             // Assert
             Assert.AreEqual(expected, actual);
         }
+        [TestMethod()]
+        public void ConvertToInchesTest()
+        {
+            // Arrange
+            var expected = 78.74;
+
+            // Act
+            var actual = 2 * Product.InchesPerMeter;
+
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
+        [TestMethod()]
+        public void MimimalPriceTest_Default()
+        {
+            // Arrange
+            var currentProduct = new Product(1, "Bulk Tooks", "");
+            var expected = 9.99m;
+
+            // Act
+            var actual = currentProduct.MinimumPrice;
+
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }   
     }
 }

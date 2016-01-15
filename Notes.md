@@ -294,6 +294,136 @@ Methods
 	Do Not's
 
 	Use them if not necessary
+
+**Constants**
+
+	defined in a class
+	
+	Holds a hard coded value
+
+	Must be assigned to an expression that can be fully evaluated at compile 
+	time...ie compile time constant value
+
+	access ability modifier (not private) unlike backing field
+	const keyword used
+
+	public const whatever
+
+	Access Modifier - const - Data type - Name
+
+	**Constant BP**
+	
+	Do:
+	
+		Class Naming
+		Define a meaningful name
+		User PascalCasing
+		Compile time constants that will never change
+	
+	Avoid:
+	
+		Avoid single character
+		Avoid using abbreviations
+		Avoid using All upper case
+		For fields that could change over time
+	
+
+**Read-Only Fields**
+
+	Variable defined in a class
+	Holds a value that is initialized and then not changes
+	
+	Must be initialized:
+
+	in the declaration 
+	or in the constructor
+
+
+	public readonly whatever;
+	public readonly string Default Whatever = GetWhatever();
+	
+	public Product()
+	{
+		Whatever = RetrieveWhatever();
+	}
+
+	Optional static keyword (defines readonly belonging to all instances of class)
+
+	Runtime constant value
+	
+	public 	readonly 	decimal 	MinimumPrice;
+
+	Accessisbilty modifier	readonly keyword	data type	Name
+
+	(Can have assigned value as well)
+
+
+Do's
+
+- Class naming
+- Define a meaningful name
+- Use Pascal casing
+
+Do Not's
+
+- Class naming
+- Use abbreviations
+
+Constant	
+
+- Compile time
+- Assigned to an expression evaluated at compile time
+- Assigned on declaration
+
+VS		
+
+Readonly
+
+- Runtime constant 
+- Assigned to any valid expression at runtime
+- Assigned on declaration or constructor
+
+Data Enscapsulation principle
+---
+
+- An object's data should be accessible only to the object
+- Backing fields containing the object data should be marked as private
+
+
+What is a backing field?
+---
+
+- a variable in a class used to retain each object's data
+
+When to use a backing field?
+---
+
+- for every data field retained for an object
+
+When should you use a constant?
+---
+
+- When defining a field with a simple data type that will never change (PI etc)
+
+- When should you used a read-only field?
+---
+
+- When defining a field that is initialized from a file, table, or code but should not then be changed anywhere else in the application
+
+What is the difference between a constant and a read-only field?
+---
+
+- A constant
+	- is static
+	- Assigned on declaration 
+	- Assigned to an expression that is full evaluated at compile time
+
+- A read-only field
+	- can be static or non-static
+	- Assigned in the declaration or in a constructor
+	- Assigned to any valid expression
+
+
 ---
 
 ----------
