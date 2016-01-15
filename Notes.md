@@ -247,6 +247,7 @@ Methods
 
 	var whatever = currentA?.CurrentB?.Whatever;
 
+## Defining Fields
 
 **Define Fields correctly**
 
@@ -271,12 +272,28 @@ Methods
 
 	Define meaningful name
 	user camelCasing
+	Keep fields private
+	Use props to provide access to fields
 
 **Don't's**
 
 	Single character name
 	Abbreviations
+	Initialize to the fields default value
+**Nullable Types**
 
+	Allows definition of a value OR null
+	Specified with a "?" suffix on the type
+	Distinguishes "not set" form the default value
+
+	Do's
+
+	Use simple types to distinguish "not set" and "default value"
+	Use properties of the type suck as HasValue and Value as needed
+
+	Do Not's
+
+	Use them if not necessary
 ---
 
 ----------

@@ -21,7 +21,7 @@ namespace TharnApp.Biz.Tests
             currentProduct.Description = "15-inch steel blade hand saw";
             currentProduct.ProductVendor.CompanyName = "ABC Corp";
 
-            var expected = "Hello Saw (1): 15-inch steel blade hand saw";
+            var expected = "Hello Saw (1): 15-inch steel blade hand saw" + " Available on: ";
 
             // Act
             var actual = currentProduct.SayHello();
@@ -36,7 +36,7 @@ namespace TharnApp.Biz.Tests
             //Arrange
             var currentProduct = new Product(1, "Saw",
                                 "15-inch steel blade hand saw");
-            var expected = "Hello Saw (1): 15-inch steel blade hand saw";
+            var expected = "Hello Saw (1): 15-inch steel blade hand saw" + " Available on: "; ;
 
             //Act
             var actual = currentProduct.SayHello();
@@ -56,7 +56,7 @@ namespace TharnApp.Biz.Tests
                 Description =  "17-inch steel blade hand saw"
             };
 
-            var expected = "Hello Saw (1): 17-inch steel blade hand saw";
+            var expected = "Hello Saw (1): 17-inch steel blade hand saw" + " Available on: "; ;
 
             // Act
             var actual = currentProduct.SayHello();

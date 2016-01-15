@@ -29,6 +29,23 @@ namespace TharnApp.Biz
             Console.WriteLine("Product Instance has a name: " + ProductName);
         }
 
+        //private DateTime availabilityDate;
+
+        //public DateTime MyProperty
+        //{
+        //    get { return availabilityDate; }
+        //    set { availabilityDate = value; }
+        //}
+
+        private DateTime? availabilityDate;
+
+        public DateTime? MyProperty
+        {
+            get { return availabilityDate; }
+            set { availabilityDate = value; }
+        }
+
+
         private string productName;
 
         public string ProductName
@@ -90,7 +107,9 @@ namespace TharnApp.Biz
 
             return "Hello " + ProductName +
                     " (" + ProductId + "): " +
-                    Description;
+                    Description +
+                    " Available on: " +
+                    availabilityDate?.ToShortDateString();
         }
 
     }
