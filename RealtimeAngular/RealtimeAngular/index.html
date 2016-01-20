@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html ng-app="app">
+<html>
 <head>
     <title>Gauge Test</title>
     <script src="Scripts/jquery-2.2.0.min.js"></script>
@@ -9,6 +9,17 @@
     <script src="ext-modules/psGauge/psGaugeModule.js"></script>
     <script src="ext-modules/psGauge/psGaugeDirective.js"></script>
     <script src="app/appModule.js"></script>
+
+    <!--Google Charts-->
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script>
+        google.load('visualization', '1.0', { 'packages': ['gauge'] });
+        google.setOnLoadCallback(function () {
+            angular.bootstrap(document, ['app']);
+        });
+    </script>
+
+
 
 </head>
 <body>
