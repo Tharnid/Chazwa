@@ -23,6 +23,8 @@ namespace TharnApp.Biz
             Console.WriteLine("Product Instance Created!!!");
             this.MinimumPrice = .96m;
             this.ProductVendor = new Vendor();
+            // setting intial category
+            this.Category = "Tools";
         }
 
         public Product(int productId, string productName, string description) : this() // invoke default constructor
@@ -39,14 +41,6 @@ namespace TharnApp.Biz
             Console.WriteLine("Product Instance has a name: " + ProductName);
         }
 
-        //private DateTime availabilityDate;
-
-        //public DateTime MyProperty
-        //{
-        //    get { return availabilityDate; }
-        //    set { availabilityDate = value; }
-        //}
-
         private DateTime? availabilityDate;
 
         public DateTime? MyProperty
@@ -56,13 +50,40 @@ namespace TharnApp.Biz
         }
 
 
+        //private string productName;
+
+        //public string ProductName
+        //{
+        //    get { return productName; }
+        //    set { productName = value; }
+        //}
+
         private string productName;
 
         public string ProductName
         {
-            get { return productName; }
-            set { productName = value; }
+            get {
+                var formattedValue = productName?.Trim(); // trim any leading or traling spaces
+                return formattedValue; // If null then null if not then dot lol
+            }
+
+            set
+            {
+                if (value.Length < 3)
+                {
+                    ValidationMessage = "Product Name must be at least 3 characters";
+                }
+                else if (value.Length > 20)
+                {
+                    ValidationMessage = "Product Name cannot be more than 20 characters";
+                }
+                else
+                {
+                    productName = value;
+                }
+            }
         }
+
         private string description;
 
         public string Description
@@ -77,14 +98,6 @@ namespace TharnApp.Biz
             get { return productId; }
             set { productId = value; }
         }
-
-        //private Vendor productVendor;
-
-        //public Vendor ProductVendor
-        //{
-        //    get { return productVendor; }
-        //    set { productVendor = value; }
-        //}
 
         private Vendor productVendor;
 
@@ -101,6 +114,14 @@ namespace TharnApp.Biz
             set { productVendor = value; }
         }
 
+        // Auto implemented props
+        // public string Category { get; set; }
+        // changing getter to internal
+        internal string Category {  get; set; }  // private set causes error in test
+        public int SequenceNumber { get; set; } = 1;
+
+
+        public string ValidationMessage { get; private set; }
 
         public string SayHello()
         {

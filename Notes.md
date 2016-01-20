@@ -426,4 +426,113 @@ What is the difference between a constant and a read-only field?
 
 ---
 
-----------
+## Good Properties
+---
+
+**Code in the getter**
+
+- Check the user's credentials
+- Check application state
+- Format the returned value
+- Log
+- Lazy loading
+
+**Code in setter**
+
+- Check user's credentials
+- Check application state
+- Validate the incoming value
+- Log or change tracking
+- Format, convert, clean up
+
+### Properties Best Practices
+
+**Do:**
+
+- Meaningful property name
+- Use PascalCasing
+- Add code in getter to protect, format, and initialize
+- Add code in setter to protect, format, and validate
+
+**Avoid:**
+
+- Avoid single character or abbreviated names
+- N/A
+
+---
+
+## Auto-Implemented Properties
+---
+
+- Concise property declaration
+- Implicit backing field
+- Don't allow code in the getter or setter
+- Best used for simple properties
+- Initialize the property
+
+    	public string Category { get; set; } = "Tools";
+    	public int SequenceNumber { get; set; } = 1;
+    	public Vendor productVendor { get; set; } = GetDefaultVendor();
+
+### Auto-Property BP
+---
+**Do:**
+
+- Naming
+	- Define a meaningful name
+	- Use PascalCasing
+
+- Initialize on declaration when needed
+
+
+**Avoid:**
+
+- Naming
+	- Avoid single characters
+	- Avoid abbreviations
+
+- If property requires code in getter or setter
+
+---
+
+## Property Accessibility
+---
+
+**Public**
+
+	Grant access to property from anywhere in code
+
+**Protected**
+
+	when working with inheritance and a base class
+
+**Internal**
+
+	only available in the component in which the property is defined
+	ie viewmodel and user interface component make them only available to UI classes
+
+**Protected Internal**
+
+	only available in the component and to inherited classes
+
+**Private**
+
+	Only available to the class in which it was prepared
+
+
+**Getter/Setter**
+
+	Can include property modifiers and they must be more restrictive then
+	what's on the prop modifier ie:
+
+	internal string Category { public get; set; }
+
+### General rule of thumb
+
+	Select the most restrictive accessibility that still gets the job done
+
+---
+
+
+---
+---
