@@ -2,15 +2,21 @@
 <html>
 <head>
     <title>Gauge Test</title>
+
     <script src="Scripts/jquery-2.2.0.min.js"></script>
+    <script src="Scripts/jquery.signalR-2.2.0.min.js"></script>
     <script src="Scripts/angular.min.js"></script>
+    <script src="signalr/hubs"></script>
 
     <!--Modules-->
+
+    <script src="ext-modules/psWebMetricService/psWebMetricsService.js"></script>
     <script src="ext-modules/psGauge/psGaugeModule.js"></script>
     <script src="ext-modules/psGauge/psGaugeDirective.js"></script>
     <script src="app/appModule.js"></script>
 
     <!--Google Charts-->
+
     <script type="text/javascript" src="http://www.google.com/jsapi"></script>
     <script>
         google.load('visualization', '1.0', { 'packages': ['gauge'] });

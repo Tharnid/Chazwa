@@ -94,6 +94,7 @@
     <Content Include="ext-modules\psGauge\psGaugeDirective.js" />
     <Content Include="ext-modules\psGauge\psGaugeModule.js" />
     <Content Include="ext-modules\psGauge\psGaugeTemplate.html" />
+    <Content Include="ext-modules\psWebMetricService\psWebMetricsService.js" />
     <Content Include="index.html" />
     <Content Include="packages.config" />
     <Content Include="Scripts\angular-animate.js" />
