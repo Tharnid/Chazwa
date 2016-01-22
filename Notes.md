@@ -531,8 +531,41 @@ What is the difference between a constant and a read-only field?
 
 	Select the most restrictive accessibility that still gets the job done
 
----
+### Additional Use of Properties
 
+	Define concatenated values (combining first and last names)
+	Express calculations (Line item total in a shopping cart)
+	Expose related objects properties (vendor company name)
 
----
+### Expression-bodied Properties
+
+	public string FullName => FirstName + " " + LastName; C# 6.0
+
+### Benefits of Properties
+
+1. Fined grained access control
+2. Execute code
+3. Set break points or logging
+4. Available for data binding (fields must be encapsulated with properties)
+
+### Good Properties FAQ
+
+#### What is the primary purpose of a property?
+
+	to guard access to fields of a class 
+	and to optionally provide a location for logic
+
+#### What are auto-implemented properties?
+
+	Short cut syntax for defining an implicit backing field with its assocaited property
+	getter and setter.
+
+#### When should you use an auto-implemented property?
+
+	when creating simple properties for a class
+
+#### When shouldn't you use an auto-implemented property?
+
+	If the property requires any code in the getter or setter
+
 ---

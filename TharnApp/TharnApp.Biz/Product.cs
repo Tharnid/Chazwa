@@ -123,6 +123,9 @@ namespace TharnApp.Biz
 
         public string ValidationMessage { get; private set; }
 
+        // Property syntax
+        public string ProductCode => this.Category + "-" + this.SequenceNumber;
+
         public string SayHello()
         {
             //var vendor = new Vendor();
