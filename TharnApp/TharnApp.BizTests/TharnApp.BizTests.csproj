@@ -63,6 +63,10 @@
       <Project>{7989931d-f5be-4ce8-a7c2-bc07578fb947}</Project>
       <Name>TharnApp.Biz</Name>
     </ProjectReference>
+    <ProjectReference Include="..\TharnApp.Common\TharnApp.Common.csproj">
+      <Project>{0acef9c5-48d3-4b75-b6c2-64531e97fbf9}</Project>
+      <Name>TharnApp.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

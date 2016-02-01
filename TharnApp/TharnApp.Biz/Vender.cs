@@ -23,14 +23,74 @@ namespace TharnApp.Biz
         /// <param name="product"></param>
         /// <param name="quantity"></param>
         /// <returns></returns>
-        public bool PlaceOrder(Product product, int quantity)
+        //public OperationalResult PlaceOrder(Product product, int quantity)
+        //{
+        //    // guard statements
+        //    if (product == null)
+        //        throw new ArgumentNullException(nameof(product));  // C# 6 nameof || before that "product"
+        //    // qty > 0
+        //    if (quantity <= 0)
+        //        throw new ArgumentNullException(nameof(quantity));
+
+        //    var success = false;
+
+        //    var orderText = "Order from Acme, Inc" + System.Environment.NewLine +
+        //                    "Product: " + product.ProductCode +
+        //                                            System.Environment.NewLine +
+        //                    "Quantity: " + quantity;
+
+        //    var emailService = new EmailService();
+        //    var confirmation = emailService.SendMessage("New Order", orderText,
+        //                                                             this.Email);
+
+        //    if (confirmation.StartsWith("Message sent:"))
+        //    {
+        //        success = true;
+        //    }
+
+        //    // instance of Operation Result
+        //    var operationResult = new OperationResult(success, orderText);
+
+        //    // return success;
+        //    return operationResult;
+        //}
+
+        public OperationResult PlaceOrder(Product product, int quantity)
         {
-            // guard statements
+            return PlaceOrder(product, quantity, null, null);
+        }
+
+        /// <summary>
+        /// Sends a product order to the vendor.
+        /// </summary>
+        /// <param name="product">Product to order.</param>
+        /// <param name="quantity">Quantity of the product to order.</param>
+        /// <param name="deliverBy">Requested delivery date.</param>
+        /// <returns></returns>
+        public OperationResult PlaceOrder(Product product, int quantity,
+                                            DateTimeOffset? deliverBy)
+        {
+            return PlaceOrder(product, quantity, deliverBy, null);
+        }
+
+        /// <summary>
+        /// Sends a product order to the vendor.
+        /// </summary>
+        /// <param name="product">Product to order.</param>
+        /// <param name="quantity">Quantity of the product to order.</param>
+        /// <param name="deliverBy">Requested delivery date.</param>
+        /// <param name="instructions">Delivery instructions.</param>
+        /// <returns></returns>
+        public OperationResult PlaceOrder(Product product, int quantity,
+                                            DateTimeOffset? deliverBy,
+                                            string instructions)
+        {
             if (product == null)
-                throw new ArgumentNullException(nameof(product));  // C# 6 nameof || before that "product"
-            // qty > 0
+                throw new ArgumentNullException(nameof(product));
             if (quantity <= 0)
-                throw new ArgumentNullException(nameof(quantity));
+                throw new ArgumentOutOfRangeException(nameof(quantity));
+            if (deliverBy <= DateTimeOffset.Now)
+                throw new ArgumentOutOfRangeException(nameof(deliverBy));
 
             var success = false;
 
@@ -38,17 +98,26 @@ namespace TharnApp.Biz
                             "Product: " + product.ProductCode +
                                                     System.Environment.NewLine +
                             "Quantity: " + quantity;
+            if (deliverBy.HasValue)
+            {
+                orderText += System.Environment.NewLine +
+                            "Deliver By: " + deliverBy.Value.ToString("d");
+            }
+            if (!String.IsNullOrWhiteSpace(instructions))
+            {
+                orderText += System.Environment.NewLine +
+                            "Instructions: " + instructions;
+            }
 
             var emailService = new EmailService();
             var confirmation = emailService.SendMessage("New Order", orderText,
                                                                      this.Email);
-
             if (confirmation.StartsWith("Message sent:"))
             {
                 success = true;
             }
-
-            return success;
+            var operationResult = new OperationResult(success, orderText);
+            return operationResult;
         }
 
         /// <summary>

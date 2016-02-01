@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TharnApp.Biz;
+using TharnApp.Common;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,19 +12,36 @@ namespace TharnApp.Biz.Tests
     [TestClass()]
     public class VendorTests
     {
+        //[TestMethod()]
+        //public void PlaceOrderTest()
+        //{
+        //    // Arrange
+        //    var vendor = new Vendor();
+        //    var product = new Product(1, "Saw", "");
+        //    var expected = true;
+
+        //    // Act
+        //    var actual = vendor.PlaceOrder(product, 12); // product and 12 are arguments
+
+        //    // Assert
+        //    Assert.AreEqual(expected, actual);
+        //}
+
         [TestMethod()]
         public void PlaceOrderTest()
         {
             // Arrange
             var vendor = new Vendor();
             var product = new Product(1, "Saw", "");
-            var expected = true;
+            var expected = new OperationResult(true,
+                "Order from Acme, Inc\r\nProduct: Tools-1\r\nQuantity: 12");
 
             // Act
-            var actual = vendor.PlaceOrder(product, 12); // product and 12 are arguments
+            var actual = vendor.PlaceOrder(product, 12);
 
             // Assert
-            Assert.AreEqual(expected, actual);
+            Assert.AreEqual(expected.Success, actual.Success);
+            Assert.AreEqual(expected.Message, actual.Message);
         }
 
         [TestMethod()]
