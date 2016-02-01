@@ -1,7 +1,8 @@
 # C# Studies #
+---
+# C# Best Practices
+----------
 
-----------
-----------
 - **Instance methods** have a value as their receiver
 - **Static method**s have a type
 - **Strings** are not mutated by methods; a new value is produced
@@ -109,6 +110,12 @@ Methods
 	Name the parameters the same name as the related properties
 
 	Method executed when an instance is created from a class
+
+	You get default constrcutor for free
+
+	Constructors can call other constructors
+
+	Only called when object is constructed
 
 **Destructors**
 
@@ -567,5 +574,57 @@ What is the difference between a constant and a read-only field?
 #### When shouldn't you use an auto-implemented property?
 
 	If the property requires any code in the getter or setter
+
+## Method
+---
+
+	A code block
+	Contains a set of programming statements
+	Also called a function
+
+### Defining a Method
+---
+
+- Identify the problem
+- Define a single purpose
+- Specify inputs and outputs
+- State any assumptions
+- Consider errors that could occur
+
+    	Think about all of the things above will helps us write clearer and more purposeful methods
+### Part's of a method
+---
+
+- Signature
+
+### Method Signature
+---
+
+	public	bool	<NameOfMethod>()
+
+	Accessibility Modifier (default is private)
+	Return type - void if no return value
+	Method names - PascalCase
+	Parameter List - empty if no parameters
+
+---
+
+# Beg CSharp
+---
+
+**Formatting Numbers** - is quite complicated
+	so make CultureInfo do the work for you
+
+	use property setters to build your own custom formatting as necessary
+
+	See documentation for more custom formatting strings
+---
+
+# Intermediate CSharp
+---
+---
+# CSharp Design Patterns
+---
+---
 
 ---
