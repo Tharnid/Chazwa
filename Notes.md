@@ -607,6 +607,40 @@ What is the difference between a constant and a read-only field?
 	Method names - PascalCase
 	Parameter List - empty if no parameters
 
+## Method Body
+---
+
+	Contains all the code for a method
+	Between { } curly braces
+	
+	Do something don't let it fail without a reason why
+
+
+**Method Return Value**
+
+	Method signature determines type	
+
+	Return statement must return that type
+
+	Use type of void if the method does not return a value
+
+**Do:**
+
+- Keep Methods short
+
+- Limit length to the number of lines visible in the editor at one time
+- Use white space
+- Use guard clauses
+- Return expected result
+- Implement exception handling
+
+
+**Avoid:**
+
+- Void methods
+	- difficult to test
+- 	
+
 ---
 
 # Beg CSharp
