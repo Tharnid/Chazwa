@@ -16,44 +16,18 @@ namespace TharnApp.Biz
         public string CompanyName { get; set; }
         public string Email { get; set; }
 
-        // Building Method Demo
+        public OperationResult Placeholder(Product product, int quantity)
+        {
+            return PlaceOrder(product, quantity, null, null);
+        }
+
         /// <summary>
-        /// Sends a product order to the vendor
+        /// Sends a product order to the vendor.
         /// </summary>
-        /// <param name="product"></param>
-        /// <param name="quantity"></param>
+        /// <param name="product">Product to order.</param>
+        /// <param name="quantity">Quantity of the product to order.</param>
+        /// <param name="deliverBy">Requested delivery date.</param>
         /// <returns></returns>
-        //public OperationalResult PlaceOrder(Product product, int quantity)
-        //{
-        //    // guard statements
-        //    if (product == null)
-        //        throw new ArgumentNullException(nameof(product));  // C# 6 nameof || before that "product"
-        //    // qty > 0
-        //    if (quantity <= 0)
-        //        throw new ArgumentNullException(nameof(quantity));
-
-        //    var success = false;
-
-        //    var orderText = "Order from Acme, Inc" + System.Environment.NewLine +
-        //                    "Product: " + product.ProductCode +
-        //                                            System.Environment.NewLine +
-        //                    "Quantity: " + quantity;
-
-        //    var emailService = new EmailService();
-        //    var confirmation = emailService.SendMessage("New Order", orderText,
-        //                                                             this.Email);
-
-        //    if (confirmation.StartsWith("Message sent:"))
-        //    {
-        //        success = true;
-        //    }
-
-        //    // instance of Operation Result
-        //    var operationResult = new OperationResult(success, orderText);
-
-        //    // return success;
-        //    return operationResult;
-        //}
 
         public OperationResult PlaceOrder(Product product, int quantity)
         {

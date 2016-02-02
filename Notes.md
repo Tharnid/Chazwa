@@ -662,8 +662,33 @@ PlaceOrder()
 
 PlaceOrder()
 
+## Method Overloading
+---
+
+	Allows to define methods with the same name and purpose
+	but different signatures
+
+### Method Overloading BP
+---
+
+**Do:**
+
+- Keep number of parameters to a minimum
+- Keep order of parameters consistent
+- Define XML document for each overload
+- Consider optional parameters
+
+**Avoid:**
+
+- Confusing overloads
+- Overloads that differ in purpose
+- Duplicating code
 
 ---
+### Method Chaining
+---
+
+
 
 # Beg CSharp
 ---
