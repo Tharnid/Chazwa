@@ -641,6 +641,28 @@ What is the difference between a constant and a read-only field?
 	- difficult to test
 - 	
 
+**Property**
+---
+
+ProductName
+Product Description
+
+	Does it describe data?
+	Does it execute quickly?
+
+**Method**
+
+PlaceOrder()
+
+	Does it describe processing?
+	Does it produce side effects?
+	Does it require parameters?
+
+---
+
+PlaceOrder()
+
+
 ---
 
 # Beg CSharp
