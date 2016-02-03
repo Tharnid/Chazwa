@@ -688,6 +688,18 @@ PlaceOrder()
 ### Method Chaining
 ---
 
+### Method Chaining BP
+---
+
+**Do:**
+
+- Minimize repeated code in method overloads
+- Consider using optional parameters instead of overloads and chaining
+
+**Avoid:**
+
+- If it adds complexity
+- 
 
 
 # Beg CSharp
@@ -703,9 +715,34 @@ PlaceOrder()
 
 # Intermediate CSharp
 ---
----
-# CSharp Design Patterns
----
----
 
 ---
+
+# CSharp Design Patterns
+---
+
+## Creational Patterns
+---
+
+### Abstract Factory 
+---
+
+**Common Problems solved by this pattern**
+
+- App needs to support multiple db's
+	- Isolate database type from application
+
+- Measurement data that comes from multiple surfaces
+	- Serial port, Ethernet, device drive
+
+- Need to create different report types
+	- PDF, Word doc etc
+
+- Provides an abstract class
+	- Generalized interface
+	- Hides details from the rest of the application
+	- Factory class creates an instance of a class that inherits or implements the abstract class
+	- Used in conjunction with Factory Method pattern
+
+---
+

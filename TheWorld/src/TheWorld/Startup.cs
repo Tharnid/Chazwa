@@ -22,11 +22,15 @@ namespace TheWorld
         {
             // app.UseIISPlatformHandler();
 
-            app.Run(async (context) =>
-            {
-                // await context.Response.WriteAsync("Hello World!");
-                await context.Response.WriteAsync($"Hello World: {context.Request.Path}");
-            });
+            //app.Run(async (context) =>
+            //{
+            //    // await context.Response.WriteAsync("Hello World!");
+            //    await context.Response.WriteAsync($"Hello World: {context.Request.Path}");
+            //});
+
+            // will use index.html
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
         }
 
         // Entry point for the application.
