@@ -21,16 +21,37 @@
 
 // immediately invoked function expression (iife)
 
-(function () { // (inputParam)
-    var ele = document.getElementById("username");
-    ele.innerHTML = "Han Solo";
+//(function () { // (inputParam)
+//    var ele = document.getElementById("username");
+//    ele.innerHTML = "Han Solo";
 
-    var main = document.getElementById("main");
-    main.onmouseenter = function () {
+//    var main = document.getElementById("main");
+//    main.onmouseenter = function () {
+//        main.style = "background-color: #888;";
+//    };
+
+//    main.onmouseleave = function () {
+//        main.style = "";
+//    };
+//})(); // you can put params in here....("Hello")
+
+// JQuery version
+
+(function () {
+    var ele = $("#username");
+    ele.text("Han Solo");
+
+    var main = $("#main");
+    main.on("mouseenter", function () {
         main.style = "background-color: #888;";
-    };
+    });
 
-    main.onmouseleave = function () {
+    main.on("mouseleave", function () {
         main.style = "";
-    };
-})(); // you can put params in here....("Hello")
+    });
+
+    var menuItems = $("ul.menu li a");
+    menuItems.on("click", function () {
+        alert("Hello!!!");
+    })
+})();
