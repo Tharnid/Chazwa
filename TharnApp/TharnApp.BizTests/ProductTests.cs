@@ -53,7 +53,7 @@ namespace TharnApp.Biz.Tests
             {
                 ProductId = 1,
                 ProductName = "Saw",
-                Description =  "17-inch steel blade hand saw"
+                Description = "17-inch steel blade hand saw"
             };
 
             var expected = "Hello Saw (1): 17-inch steel blade hand saw" + " Available on: "; ;
@@ -103,7 +103,7 @@ namespace TharnApp.Biz.Tests
 
             // Assert
             Assert.AreEqual(expected, actual);
-        }   
+        }
         [TestMethod()]
         public void ProductName_Format()
         {
@@ -247,6 +247,21 @@ namespace TharnApp.Biz.Tests
             var actual = currentProduct.ProductCode;
 
             //Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod()]
+        public void CalculateSuggestedPriceTest()
+        {
+            // Arrange
+            var currentProduct = new Product(1, "Saw", "");
+            currentProduct.Cost = 50m;
+            var expected = 55m;
+
+            // Act
+            var actual = currentProduct.CalculateSuggestedPrice(10m);
+
+            // Assert
             Assert.AreEqual(expected, actual);
         }
     }

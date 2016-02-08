@@ -699,8 +699,72 @@ PlaceOrder()
 **Avoid:**
 
 - If it adds complexity
+
+
+### Method Overriding
+---
+
+**Object**
+
+- all classes inherit from object
+
+
+**Do:**
+
+- Override ToString for each entity class
+
+**Avoid:**
+
 - 
 
+#### Expression-Bodied Methods
+---
+**Purpose**
+
+- new in C# 6.0
+
+**Do:**
+
+- Use it for very simple methods
+
+**Avoid:**
+
+- Using it when there should be guard clauses
+- Using it when there should be exception handling
+
+#### Creating Good Methods FAQ
+---
+
+1. What is the primary purpose of a **method**?
+	
+	To implement the logic required for specific behavior or functionality in a class
+
+2. What is the difference between a parameter and an argument?
+	
+	parameter is part of the method signature and the argument is part of the method call
+
+3. What is Method Overloading?
+
+	Methods with the same name and purpose but different signatures
+
+
+4. What is Method Chaining?
+
+	One method overload calls another overload to prevent repeated code
+
+5. When is best to use method overloading vs. method overriding?
+
+	Use overloading when one method requires multiple signatures
+	
+	Such as GetCustomer(id) to get the id and GetCustomer(name) to get the name
+
+	Use overidding - when replacing a method defined higher up the object hierarchy
+
+	Such as replacing the ToString() method
+
+6. What is an expression-bodied method?
+
+	A syntax shortcut for single statement methods that return a value
 
 # Beg CSharp
 ---

@@ -49,6 +49,19 @@ namespace TharnApp.Biz
             set { availabilityDate = value; }
         }
 
+        public decimal Cost { get; set; }
+
+        //public decimal CalculateSuggestedPrice(decimal markupPercent)
+        //{
+        //    return this.Cost + (this.Cost * markupPercent / 100);
+        //}
+
+        // More efficient CalculateSuggestedPrice
+
+        public decimal CalculateSuggestedPrice(decimal markupPercent) =>
+        
+            this.Cost + (this.Cost * markupPercent / 100);
+
 
         //private string productName;
 
@@ -146,5 +159,15 @@ namespace TharnApp.Biz
                     availabilityDate?.ToShortDateString();
         }
 
+        //public override string ToString()
+        //{
+        //    return this.ProductName + " (" + this.productId + ")"; // more detailed info about product
+        //}
+
+        // refactoring ToString with Expression-Bodied method
+        public override string ToString() =>
+
+           this.ProductName + " (" + this.productId + ")"; // more detailed info about product
+        
     }
 }
