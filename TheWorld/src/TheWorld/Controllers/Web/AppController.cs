@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Mvc;
+using TheWorld.ViewModels;
 
 
 namespace TheWorld.Controllers.Web
@@ -20,6 +21,12 @@ namespace TheWorld.Controllers.Web
         }
 
         public IActionResult Contact()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Contact(ContactViewModel model)
         {
             return View();
         }
