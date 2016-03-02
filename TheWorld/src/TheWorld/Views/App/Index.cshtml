@@ -4,27 +4,31 @@
     ViewBag.Title = "Home Page";
 }
 
+<div class="row">
+    <div class="col-md-6 col-xs-8">
+        <h1>The World</h1>
+        <p>Fun website coming soon!!!</p>
 
-            <h1>The World</h1>
-            <p>Fun website coming soon!!!</p>    
-
-            <form>
-                <div>
-                    <label>Date</label>
-                </div>
-                <div>
-                    <input />
-                </div>
-                <br />
-                <div>
-                    <label>Location</label>
-                </div>
-                <div>
-                    <input />
-                </div>
-                <div>
-                    <input type="submit" value="Add" />
-                </div>
-            </form>
+        <form>
+            <div class="form-group">
+                <label>Date</label>
+                <input class="form-control"/>
+            </div>
             <br />
+            <div class="form-group">
+                <label>Location</label>
+                <input class="form-control"/>
+            </div>
+            <div>
+                <input type="submit" value="Add" class="btn btn-success" />
+            </div>
+        </form>
+        <br />
+    </div>
+    <div class="col-md-6 col-xs-4">
+        @*For map later*@
+        <h2>The Map</h2>
+    </div>
+</div>
+
 
