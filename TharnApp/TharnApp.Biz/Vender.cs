@@ -12,6 +12,9 @@ namespace TharnApp.Biz
     /// </summary>
     public class Vendor
     {
+        public enum IncludeAddress { Yes, No };
+        public enum SendCopy { Yes, No };
+
         public int VendorId { get; set; }
         public string CompanyName { get; set; }
         public string Email { get; set; }
@@ -91,6 +94,27 @@ namespace TharnApp.Biz
                 success = true;
             }
             var operationResult = new OperationResult(success, orderText);
+            return operationResult;
+        }
+        /// <summary>
+        /// Sends a product to the vendor
+        /// </summary>
+        /// <param name="product">Product to order</param>
+        /// <param name="quantity">quantity of the product to order</param>
+        /// <param name="includeAddress">True to include the shipping address</param>
+        /// <param name="sendCopy">True to send a copy of the email to the current user</param>
+        /// <returns></returns>
+        public OperationResult PlaceOrder(Product product, int quantity,
+                                  IncludeAddress includeAddress,
+                                  SendCopy sendCopy)
+        {
+            var orderText = "Test";
+            //if (includeAddress) orderText += " With Address";
+            //if (sendCopy) orderText += " With Copy";
+            if (includeAddress == IncludeAddress.Yes) orderText += " With Address";
+            if (sendCopy == SendCopy.Yes) orderText += " With Copy";
+
+            var operationResult = new OperationResult(true, orderText);
             return operationResult;
         }
 

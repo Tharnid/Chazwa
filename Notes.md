@@ -766,6 +766,65 @@ PlaceOrder()
 
 	A syntax shortcut for single statement methods that return a value
 
+## Clear Method Parameters
+---
+
+1. **Use XML documentation and list every parameter name**
+
+2. **Limiting the number of parameters** - humans can only remember 7 things...others 4 is max
+
+3. **Use the Object type**
+4. Logical and Consistent Parameter order
+	1. Acted upon or key to the operation
+	2. Required for operation
+	3. Flags in order of importance
+	4. Optional params last 
+
+**Do:**
+
+- Define coherent parameter names
+- use camel case
+- Define an XML document comment for each parameter
+- Keep # of parameters to a minimum
+- Order the parameters in a logical sequence
+
+**Avoid:**
+
+- Unused parameters
+
+### Named Parameters
+---
+
+1. **With named arguments, parameter order doesn't matter**
+2. **Not all arguments need to be named**
+3. **All named arguments must follow positional arguments**
+
+**Do:**
+
+- Use named arguments as needed for clarity when calling a method
+
+
+**Avoid:**
+
+- Unnecessary named arguments
+
+### Enumerated Parameters
+---
+
+**Do:**
+
+- Define a clear name
+- Use Pascal Casing
+- Use enum to represent a set of related values
+- Favor enum over a set of constants
+
+
+**Avoid:**
+
+- Boolean parameters where possible
+- Consider enum types instead
+- Using enum for lists that change often
+
 # Beg CSharp
 ---
 

@@ -73,24 +73,24 @@ namespace TharnApp.Biz.Tests
             Assert.AreEqual(expected.Success, actual.Success);
             Assert.AreEqual(expected.Message, actual.Message);
         }
-        [TestMethod()]
-        public void PlaceOrder_3Parameters()
-        {
-            // Arrange
-            var vendor = new Vendor();
-            var product = new Product(1, "Saw", "");
-            var expected = new OperationResult(true,
-                "Order from Acme, Inc\r\nProduct: Tools-1\r\nQuantity: 12" +
-                "\r\nDeliver By: 10/25/2015");
+        //[TestMethod()]
+        //public void PlaceOrder_3Parameters()
+        //{
+        //    // Arrange
+        //    var vendor = new Vendor();
+        //    var product = new Product(1, "Saw", "");
+        //    var expected = new OperationResult(true,
+        //        "Order from Acme, Inc\r\nProduct: Tools-1\r\nQuantity: 12" +
+        //        "\r\nDeliver By: 10/25/2015");
 
-            // Act
-            var actual = vendor.PlaceOrder(product, 12,
-                new DateTimeOffset(2015, 10, 25, 0, 0, 0, new TimeSpan(-7, 0, 0)));
+        //    // Act
+        //    var actual = vendor.PlaceOrder(product, 12,
+        //        new DateTimeOffset(2015, 10, 25, 0, 0, 0, new TimeSpan(-7, 0, 0)));
 
-            // Assert
-            Assert.AreEqual(expected.Success, actual.Success);
-            Assert.AreEqual(expected.Message, actual.Message);
-        }
+        //    // Assert
+        //    Assert.AreEqual(expected.Success, actual.Success);
+        //    Assert.AreEqual(expected.Message, actual.Message);
+        //}
 
         [TestMethod()]
         [ExpectedException(typeof(ArgumentNullException))]
@@ -104,6 +104,47 @@ namespace TharnApp.Biz.Tests
 
             // Assert
             // Expected exception
+        }
+
+        //[TestMethod()]
+        //public void PlaceOrderTest_WithAddress()
+        //{
+        //    // Arrange
+        //    var vendor = new Vendor();
+        //    var product = new Product(1, "Saw", "");
+        //    var expected = new OperationResult(true, "Test with Address");
+
+        //    //var actual = vendor.PlaceOrder(product, 12, true, false);
+
+        //    //var actual = vendor.PlaceOrder(product, 12,
+        //    //                                includeAddress: true, sendCopy: false);
+
+        //    //Act
+        //    var actual = vendor.PlaceOrder(product, 12,
+        //                        Vendor.IncludeAddress.Yes,
+        //                        Vendor.SendCopy.No);
+
+        //    // Assert
+        //    Assert.AreEqual(expected.Success, actual.Success);
+        //    Assert.AreEqual(expected.Message, actual.Message);
+        //}
+
+        [TestMethod()]
+        public void PlaceOrderTest_WithAddress()
+        {
+            // Arrange
+            var vendor = new Vendor();
+            var product = new Product(1, "Saw", "");
+            var expected = new OperationResult(true, "Test With Address");
+
+            // Act
+            var actual = vendor.PlaceOrder(product, 12,
+                                Vendor.IncludeAddress.Yes,
+                                Vendor.SendCopy.No);
+
+            // Assert
+            Assert.AreEqual(expected.Success, actual.Success);
+            Assert.AreEqual(expected.Message, actual.Message);
         }
     }
 }
