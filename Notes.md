@@ -825,6 +825,41 @@ PlaceOrder()
 - Consider enum types instead
 - Using enum for lists that change often
 
+### Optional Parameters
+---
+
+1. Specify a default value
+2. Are optional when the method is called
+3. If argument is not provided, default is used
+4. Can dramatically reduce the number of overloads
+
+- Optional params must be defined after required params
+- When calling the method, if an argument is provided for any optional params, it must also provide arguments for all preceding params
+- or used named arguments
+
+**Do:**
+
+- Use optional parameters to minimize overload bloat
+
+**Avoid:**
+
+- Optional params when the params are one or the over
+
+### Ref and Out Parameters
+---
+
+- Returns multiple values:
+	- Value defined in the return statement
+	- One or more param values defined with the ref or out keyword
+
+**Do:**
+
+- Use optional parameters to minimize overload bloat
+
+**Avoid:**
+
+- Optional params when the params are one or the over
+
 # Beg CSharp
 ---
 

@@ -30,37 +30,11 @@ namespace TharnApp.Biz
         /// <param name="product">Product to order.</param>
         /// <param name="quantity">Quantity of the product to order.</param>
         /// <param name="deliverBy">Requested delivery date.</param>
-        /// <returns></returns>
-
-        public OperationResult PlaceOrder(Product product, int quantity)
-        {
-            return PlaceOrder(product, quantity, null, null);
-        }
-
-        /// <summary>
-        /// Sends a product order to the vendor.
-        /// </summary>
-        /// <param name="product">Product to order.</param>
-        /// <param name="quantity">Quantity of the product to order.</param>
-        /// <param name="deliverBy">Requested delivery date.</param>
-        /// <returns></returns>
-        public OperationResult PlaceOrder(Product product, int quantity,
-                                            DateTimeOffset? deliverBy)
-        {
-            return PlaceOrder(product, quantity, deliverBy, null);
-        }
-
-        /// <summary>
-        /// Sends a product order to the vendor.
-        /// </summary>
-        /// <param name="product">Product to order.</param>
-        /// <param name="quantity">Quantity of the product to order.</param>
-        /// <param name="deliverBy">Requested delivery date.</param>
         /// <param name="instructions">Delivery instructions.</param>
         /// <returns></returns>
         public OperationResult PlaceOrder(Product product, int quantity,
-                                            DateTimeOffset? deliverBy,
-                                            string instructions)
+                                            DateTimeOffset? deliverBy = null,
+                                            string instructions = "standard delivery")
         {
             if (product == null)
                 throw new ArgumentNullException(nameof(product));

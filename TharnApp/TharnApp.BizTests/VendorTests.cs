@@ -57,22 +57,22 @@ namespace TharnApp.Biz.Tests
             Assert.AreEqual(expected, actual);
         }
 
-        [TestMethod()]
-        public void PlaceOrderTest()
-        {
-            // Arrange
-            var vendor = new Vendor();
-            var product = new Product(1, "Saw", "");
-            var expected = new OperationResult(true,
-                "Order from Acme, Inc\r\nProduct: Tools-1\r\nQuantity: 12");
+        //[TestMethod()]
+        //public void PlaceOrderTest()
+        //{
+        //    // Arrange
+        //    var vendor = new Vendor();
+        //    var product = new Product(1, "Saw", "");
+        //    var expected = new OperationResult(true,
+        //        "Order from Acme, Inc\r\nProduct: Tools-1\r\nQuantity: 12");
 
-            // Act
-            var actual = vendor.PlaceOrder(product, 12);
+        //    // Act
+        //    var actual = vendor.PlaceOrder(product, 12);
 
-            // Assert
-            Assert.AreEqual(expected.Success, actual.Success);
-            Assert.AreEqual(expected.Message, actual.Message);
-        }
+        //    // Assert
+        //    Assert.AreEqual(expected.Success, actual.Success);
+        //    Assert.AreEqual(expected.Message, actual.Message);
+        //}
         //[TestMethod()]
         //public void PlaceOrder_3Parameters()
         //{
@@ -141,6 +141,25 @@ namespace TharnApp.Biz.Tests
             var actual = vendor.PlaceOrder(product, 12,
                                 Vendor.IncludeAddress.Yes,
                                 Vendor.SendCopy.No);
+
+            // Assert
+            Assert.AreEqual(expected.Success, actual.Success);
+            Assert.AreEqual(expected.Message, actual.Message);
+        }
+
+        [TestMethod()]
+        public void PlaceOrder_NoDeliveryDate()
+        {
+            // Arrange
+            var vendor = new Vendor();
+            var product = new Product(1, "Saw", "");
+            var expected = new OperationResult(true,
+                        "Order from Acme, Inc\r\nProduct: Tools-1\r\nQuantity: 12" +
+                        "\r\nInstructions: Deliver to Suite 42");
+
+            // Act
+            var actual = vendor.PlaceOrder(product, 12,
+                                instructions: "Deliver to Suite 42");
 
             // Assert
             Assert.AreEqual(expected.Success, actual.Success);
