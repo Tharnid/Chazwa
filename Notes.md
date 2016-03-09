@@ -860,6 +860,32 @@ PlaceOrder()
 
 - Optional params when the params are one or the over
 
+### Clear Method Parameters FAQ
+---
+
+- **What is the difference between a parameter and an argument?**
+	- parameter is part of the method signature
+	- argument is part of the method call
+- **What is a named argument and when should it be used?**
+	- It uses the parameter name when calling the method
+	- Used to clarify the purpose of an argument and define arguments without concern for their position in the parameter list
+- **How is an optional parameter defined?**
+	- by specifying a default value
+- **What is the difference between passing an argument by value vs. by reference?**
+	- When passed by value (which is the default), the value of the argument passed to the method
+	- When passed by reference(using ref or out), the variable is effectively passed to the method
+	- Because of this, passing by reference enables the method to change the value of the parameter and have that change reflected in the calling code
+- **What is the difference between ref and out?**
+	- Ref param requires the argument be initialized before it is passed
+	- Out param must be declared, but initialized before it is passed
+		- The method must provide a value for the out parameter
+		- 
+
+## Handling Strings
+---
+
+ 
+
 # Beg CSharp
 ---
 
