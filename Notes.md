@@ -884,7 +884,35 @@ PlaceOrder()
 ## Handling Strings
 ---
 
- 
+- **Strings are immutable**
+- Value type could be a piece of paper
+- Reference type are instructions that refer to something
+- **Strings are references types**
+- **Act like a value type**
+
+### Handling Null Strings
+---
+
+**C# 6 Null Condition Operator**
+
+		result = vendorInfo**?**.ToLower();
+
+- Null Conditional Operator handles null condition for us
+
+		If null then null if not then dot
+
+**! = bang operator**
+
+**Do:**
+
+- Handle null strings (often forgotten)
+- write unit tests that cover null conditions
+- Do use IsNullOrWhiteSpace when testing for null in a block of code
+- Use the null-conditional operator when checking for null in a single statement
+
+**Avoid:**
+
+- Code that does not check for nulls
 
 # Beg CSharp
 ---

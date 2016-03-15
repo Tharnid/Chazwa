@@ -105,5 +105,25 @@ namespace TharnApp.Biz
                                                         this.Email);
             return confirmation;
         }
+
+        // overriding ToString method
+        public override string ToString()
+        {
+            string vendorInfo = "Vendor: " + this.CompanyName;
+            // string vendorInfo = null;
+            string result;
+            if (!String.IsNullOrWhiteSpace(vendorInfo))
+            {
+                result = vendorInfo.ToUpper();
+                result = vendorInfo.ToLower();
+                result = vendorInfo.Replace("Vendor", "Supplier");
+
+                var length = vendorInfo.Length;
+                var index = vendorInfo.IndexOf(":");
+                var begins = vendorInfo.StartsWith("Vendor");
+            }
+
+            return vendorInfo;
+        }
     }
 }
