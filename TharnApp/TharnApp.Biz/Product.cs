@@ -137,7 +137,13 @@ namespace TharnApp.Biz
         public string ValidationMessage { get; private set; }
 
         // Property syntax
-        public string ProductCode => this.Category + "-" + this.SequenceNumber;
+        // public string ProductCode => this.Category + "-" + this.SequenceNumber;
+        // public string ProductCode => String.Format("{0}-{1:0000}", // formats to four places
+        // this.Category,
+        // this.SequenceNumber);
+
+        public string ProductCode => $"{this.Category}-{this.SequenceNumber:0000}";
+        
 
         public string SayHello()
         {

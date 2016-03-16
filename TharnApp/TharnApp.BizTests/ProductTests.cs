@@ -241,7 +241,7 @@ namespace TharnApp.Biz.Tests
             //Arrange
             var currentProduct = new Product();
 
-            var expected = "Tools-1";
+            var expected = "Tools-0001";
 
             //Act
             var actual = currentProduct.ProductCode;

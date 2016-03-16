@@ -914,6 +914,95 @@ PlaceOrder()
 
 - Code that does not check for nulls
 
+### Verbatim String Literals (quoted strings)
+---
+
+	var orderText = "Product: Tools-1\r\nQuantity: 12\r\nInstructions: standard delivery";
+
+**denoted by placing an @ in front of string quotation mark**
+
+**Do:**
+
+- Use verbatim string literals when the string contains special characters such as backslashes
+- Do use verbatim string literals to hold folder or file names @"c:\whatever\whatever.txt" @"Say it with a long ""a"" sound
+
+### Formatting Strings
+---
+
+	var p = String.Format("{}-{1}",
+							product.Category,
+							product.SequenceNumber);
+**Using String.Format is bulky**
+
+**Do:**
+
+- User String.Format to insert the value of an expression into a string (Better technique with C# 6)
+- Include a formatting string as needed
+
+		String.Format("Deliver by:{0:d}",
+			deliverBy);
+
+**Avoid:**
+
+- Using String.Format when concatenating string literals
+
+		String.Format("Hello {0}", "World");
+
+### String Interpolation (New in C# 6)
+---
+
+		var pc = $"{product.Category}-{product.SequenceNumber}";
+
+**Do:**
+
+- Use String Interpolation instead of String.Format
+- Include a formatting string as needed
+
+		$"Deliver by:{deliverBy :d}";
+
+**Avoid:**
+
+- If you are using Visual Studio 2013 or older
+
+### Building Long Strings
+---
+
+**StringBuilder**
+
+- Conceptually a mutable string
+- Allows string operations, such as as concatenation, without creating a new string
+- Provides methods for manipulating the mutable string
+	- Append, Insert, Replace, etc
+- Use ToString to convert to a string
+- More efficient when working with strings that are
+	- Built up with many separate concatenation operations
+	- Changed a large number of times, such as within a loop
+
+**Do:**
+
+- Use StringBuilder when building up a string with numerous concatenation operations
+- Use StringBuilder when modifying a string numerous times (such as a loop)
+- Consider readability when modifying code
+
+**Avoid:**
+
+- Using StringBuilder when only modifying a string a few times
+
+1. **What does it mean to say that C# strings are immutable?**
+	- C# strings cannot be modified once create
+
+2. **String a reference or value type?**
+	- a string is a reference type that acts like a value type
+
+3. **What is the best way to check if a string is null?**
+	- it depends
+	- Using String.IsNullOrWhiteSpace is great when checking nulls for a code block
+	- Using the new C# 6 null-conditional operator is great for code statements
+
+4. **What are the benefits to using StringBuilder?**
+	- The .Net StringBuilder class is mutable, meaning that it can be changed
+	- Most efficient when appending lots of strings
+
 # Beg CSharp
 ---
 
@@ -923,6 +1012,7 @@ PlaceOrder()
 	use property setters to build your own custom formatting as necessary
 
 	See documentation for more custom formatting strings
+
 ---
 
 # Intermediate CSharp
