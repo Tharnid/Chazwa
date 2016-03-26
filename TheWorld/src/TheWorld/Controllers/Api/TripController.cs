@@ -7,17 +7,20 @@ using TheWorld.Models;
 using TheWorld.ViewModels;
 using System.Net;
 using AutoMapper;
+using Microsoft.Extensions.Logging;
 
 namespace TheWorld.Controllers.Api
 {
     [Route("api/trips")]
     public class TripController : Controller
     {
+        private ILogger<TripController> _logger;
         private IWorldRepository _repository;
 
-        public TripController(IWorldRepository repository)
+        public TripController(IWorldRepository repository, ILogger<TripController> logger)
         {
             _repository = repository;
+            _logger = logger;
         }
 
         [HttpGet("")]
@@ -29,25 +32,6 @@ namespace TheWorld.Controllers.Api
             return Json(results);
         }
 
-        //[HttpPost("")]
-        //public JsonResult Post([FromBody]Trip vm)
-        //{
-        //    if(ModelState.IsValid)
-        //    {
-        //        var newTrip = Mapper.Map<Trip>(vm);
-
-        //        // Save to database
-
-
-        //        Response.StatusCode = (int)HttpStatusCode.Created;
-        //        return Json(true);
-        //    }
-
-        //    Response.StatusCode = (int)HttpStatusCode.BadRequest;
-        //    // return Json("Epic Fail!!!");
-        //    return Json(new { Message = "Failed", ModelState = ModelState });
-        //}
-
         [HttpPost("")]
         public JsonResult Post([FromBody]TripViewModel vm)
         {
@@ -58,7 +42,8 @@ namespace TheWorld.Controllers.Api
                     var newTrip = Mapper.Map<Trip>(vm);
 
                     // Save to database
-                   // _repository.AddTrip(newTrip);
+                    _logger.LogInformation("Attempting to save a new trip!!!");
+                    // _repository.AddTrip(newTrip);
 
 
                     Response.StatusCode = (int)HttpStatusCode.Created;
@@ -67,6 +52,7 @@ namespace TheWorld.Controllers.Api
             }
             catch (Exception ex)
             {
+                _logger.LogError("Failed to save new Trip man!!!", ex);
                 Response.StatusCode = (int)HttpStatusCode.BadRequest;
                 return Json( new { Message = ex.Message });
             }
