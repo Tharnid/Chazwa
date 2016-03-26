@@ -23,4 +23,11 @@ dnx web = runs the web server (kestrel)
 
 	dnx ef migrations remove [insert name here]
 
+Json options for JavaScript
+---
+
+Startup -> ConfigureServices -> services.AddMvc(see repo code)
+
+- Good for JavaScript Interchangeability
+
 ---

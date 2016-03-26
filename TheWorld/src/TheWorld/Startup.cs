@@ -11,6 +11,9 @@ using Microsoft.Extensions.PlatformAbstractions;
 using TheWorld.Services;
 using TheWorld.Models;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json.Serialization;
+using AutoMapper;
+using TheWorld.ViewModels;
 
 namespace TheWorld
 {
@@ -33,7 +36,11 @@ namespace TheWorld
         // For more information on how to configure your application, visit http://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc();
+            services.AddMvc()
+                .AddJsonOptions(opt =>
+                {
+                    opt.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
+                });
 
             // configure logging
             services.AddLogging();
@@ -69,6 +76,11 @@ namespace TheWorld
             // will use index.html
             // app.UseDefaultFiles();
 
+            Mapper.Initialize(config =>
+            {
+                config.CreateMap<Trip, TripViewModel>().ReverseMap();  // go from trip to viewmodel and from viewmodel to trip hence reverse map
+                config.CreateMap<Stop, StopViewModel>().ReverseMap();
+            });
 
             app.UseStaticFiles();
 
