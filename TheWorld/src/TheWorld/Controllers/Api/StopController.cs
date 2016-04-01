@@ -46,5 +46,37 @@ namespace TheWorld.Controllers.Api
 
         }
 
+        public JsonResult Post(string tripName, [FromBody]StopViewModel vm)
+        {
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    // Map to entity
+                    var newStop = Mapper.Map<Stop>(vm);
+
+                    // Looking up Geocoding
+
+
+                    // Save to db
+                    _repository.AddStop(tripName, newStop);
+
+                    if (_repository.SaveAll())
+                    {
+                        Response.StatusCode = (int)HttpStatusCode.Created;
+                        return Json(Mapper.Map<StopViewModel>(newStop));
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError("Failed to save new stop!!!", ex);
+                Response.StatusCode = (int)HttpStatusCode.BadRequest;
+                return Json("Failed to save a new stop!!!");
+            }
+            Response.StatusCode = (int)HttpStatusCode.BadRequest;
+            return Json(new { Message = "Failed", ModelState = ModelState });
+        }
+
     }
 }
