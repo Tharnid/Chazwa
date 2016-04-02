@@ -49,6 +49,9 @@ namespace TheWorld
                 .AddSqlServer()
                 .AddDbContext<WorldContext>();
 
+            // coordinate service
+            services.AddScoped<CoordService>();
+
             services.AddTransient<WorldContextSeedData>();
             services.AddScoped<IWorldRepository, WorldRepository>(); // Use scoped because we want the constructing of the context to happen once per request
 
