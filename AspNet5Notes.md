@@ -23,6 +23,8 @@ dnx web = runs the web server (kestrel)
 
 	dnx ef migrations remove [insert name here]
 
+	dnx ef migrations add IdentityEntities
+
 Json options for JavaScript
 ---
 
