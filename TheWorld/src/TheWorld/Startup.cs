@@ -14,6 +14,7 @@ using Microsoft.Extensions.Logging;
 using Newtonsoft.Json.Serialization;
 using AutoMapper;
 using TheWorld.ViewModels;
+using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace TheWorld
 {
@@ -41,6 +42,16 @@ namespace TheWorld
                 {
                     opt.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
                 });
+
+            // adding Identity Services
+            services.AddIdentity<WorldUser, IdentityRole>(config =>
+            {
+                // configure the identity stuff here
+                config.User.RequireUniqueEmail = true;
+                config.Password.RequiredLength = 8;
+                config.Cookies.ApplicationCookie.LoginPath = "/Auth/Login";
+            })
+            .AddEntityFrameworkStores<WorldContext>();
 
             // configure logging
             services.AddLogging();
@@ -78,6 +89,9 @@ namespace TheWorld
 
             // will use index.html
             // app.UseDefaultFiles();
+
+            // Using Identity
+            app.UseIdentity();
 
             Mapper.Initialize(config =>
             {
