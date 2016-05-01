@@ -43,7 +43,7 @@ namespace TheWorld.Controllers.Api
         {
           var newTrip = Mapper.Map<Trip>(vm);
 
-          newTrip.UserName = User.Identity.Name;
+          newTrip.UserName = User.Identity.Name;  // assume its for the user that is logged in
 
           // Save to the Database
           _logger.LogInformation("Attempting to save a new trip");
