@@ -1,9 +1,9 @@
 ﻿// app-trips.js
-
 (function () {
 
     "use strict";
 
-    // creating module
-    angular.module("app-trips", []);
+    // Creating the Module
+    angular.module("app-trips", ["simpleControls"]);
+
 })();

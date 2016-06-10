@@ -7,6 +7,7 @@
     <script src="~/lib/angular/angular.min.js"></script>   
     <script src="~/js/app-trips.js"></script>
     <script src="~/js/tripsController.js"></script>
+    <script src="~/js/simpleControls.js"></script>
 }
 <div class="row" ng-app="app-trips">
     
@@ -14,7 +15,9 @@
 
     <div ng-controller="tripsController as vm">
         @*{{ vm.name }}*@
-
+        <div class="text-danger" ng-show="vm.errorMessage">{{ vm.errorMessage }}</div>
+        <wait-cursor display-when="vm.isBusy"></wait-cursor>
+        @*<wait-cursor ng-show="true"></wait-cursor>*@
         <table class="table table-responsive table-striped">
             <tr ng-repeat="trip in vm.trips">
                 <td>{{ trip.name }}</td>
